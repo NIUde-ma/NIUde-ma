@@ -78,6 +78,7 @@ RUN go version
 
 ENV PYTHONUNBUFFERED=1
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
 # 安装常用的Python库
 RUN pip3 install --no-cache-dir --trusted-host files.pythonhosted.org --upgrade pip \
     setuptools \
@@ -94,6 +95,11 @@ RUN pip3 install --no-cache-dir --trusted-host files.pythonhosted.org --upgrade 
     paramiko \
     flasgger \
     requests \
+    fake_useragent \
+    lxml \
+    bs4 \
+    lxml \
+    moviepy \
     keras
 
 RUN apt-get update && apt-get install -y \
