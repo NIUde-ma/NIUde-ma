@@ -1,5 +1,4 @@
 #!/bin/bash
-
 help_int() {
     echo -e "module = restart is docker restart_ing"
     echo -e "module = run is docker running "
@@ -17,67 +16,94 @@ if [ $# -ne 2 ]; then
 fi
 
 function get_container_id() {
-    docker ps | grep "$1" | awk '{print $1}'
+    local name=$2
+    local docker_id=`docker ps | grep "$name" | tail -n +2 | awk '{print $1}'`
+    if [ -z "$docker_id" ]; then
+        echo "Docker container '$name' is not UP"
+        exit 0
+    else
+        echo $docker_id
+    fi
 }
 
 function go_to_docker() {
-    local container_id=$(get_container_id "$1")
-    docker exec -it "$container_id" /bin/bash
+    local name=$2
+    local container_id=$(get_container_id)
+    if [ -z "$container_id" ]; then
+        echo "Docker container '$name' is not UP"
+        exit 0
+    else 
+        docker exec -it $container_id /bin/bash
+    fi
 }
 
 function restart_docker() {
-    local container_id=$(get_container_id "$1")
-    docker restart "$container_id"
+    local name=$2
+    local container_id=$(get_container_id)
+    if [ -z "$container_id" ]; then
+        echo "Docker container '$name' is not UP"
+        exit 0
+    else 
+        docker restart $container_id
+    fi
 }
 
 function stop_docker() {
-    local container_id=$(get_container_id "$1")
-    docker stop "$container_id"
+    local name=$2
+    local container_id=$(get_container_id)
+    if [ -z "$container_id" ]; then
+        echo "Docker container '$name' is not UP"
+        exit 0
+    else       
+        docker stop "$container_id"
+    fi
 }
 
 function my_docker_run() {
-    local find_docker=$(docker ps | grep niude)
+    local find_docker=$(docker ps | grep "$name")
     if [[ -z "$find_docker" ]]; then
-        if [[ "$module" == "run" && "$name" == "niude" ]]; then
-            echo "docker is not up"
+        if [[ "$module" == "run" ]]; then
+            echo "Docker container '$name' is not UP"
             local container_name="${name}_$(uuidgen | cut -d'-' -f1)"
             docker run -d -ti --rm --name "$container_name" -v /home/shuaima66/Downloads/:/root/Downloads -p 9527:22 niude:0.1 /bin/bash -c "echo 'root:NIUde' | chpasswd && service ssh start && /bin/bash"
-            go_to_docker "niude"
+            go_to_docker
         else
-            help_int
+            echo -e "Docker container '$name' is not UP"
+            exit 0
         fi
     elif [[ "$module" == "restart" ]]; then
-        echo "docker is restart ing"
-        restart_docker "niude"
+        echo "Docker container '$name' is restarting"
+        restart_docker 
     elif [[ "$module" == "stop" ]]; then
-        echo "docker is status stop"
-        stop_docker "niude"
+        echo "Docker container '$name' is stopping"
+        stop_docker 
     else
-        echo "docker is Running --->>> $find_docker"
-        go_to_docker "niude"
+        echo "Docker container '$name' is Running --->>> $find_docker"
+        go_to_docker 
     fi
 }
 
 function mdc_docker_run() {
-    local find_docker=$(docker ps | grep deniu)
+    local find_docker=$(docker ps | grep "$name")
     if [[ -z "$find_docker" ]]; then
-        if [[ "$module" == "run" && "$name" == "deniu" ]]; then
-            echo "docker is not up" 
-            local container_name="deniu_$(uuidgen | cut -d'-' -f1)"
+        if [[ "$module" == "run" ]]; then
+            echo "Docker container '$name' is not UP" 
+            local container_name="${name}_$(uuidgen | cut -d'-' -f1)"
             docker run -d -ti --rm --name "$container_name" -v /home/shuaima66/Downloads/:/root/Downloads -p 9528:22 niude:v0.1 /bin/bash -c "echo 'root:NIUde' | chpasswd && service ssh start && /bin/bash"
-            go_to_docker "deniu"
+            go_to_docker 
         else
-            help_int
+            echo -e "Docker container '$name' is not UP"
+            exit 0
         fi
     elif [[ "$module" == "restart" ]]; then
-        echo "docker is restart ing"
-        restart_docker "deniu"
+        echo "Docker container '$name' is restarting"
+        restart_docker
     elif [[ "$module" == "stop" ]]; then
-        echo "docker is status stop"
-        stop_docker "deniu"
+        echo "Docker container '$name' is stopping"
+        stop_docker 
     else
-        echo "docker is Running --->>> $find_docker"
-        go_to_docker "deniu"
+        echo "Docker container '$name' is Running --->>> $find_docker"
+        go_to_docker 
     fi
 }
 
@@ -86,3 +112,4 @@ if [ "$name" == "mdc" ]; then
 else
     my_docker_run
 fi
+
