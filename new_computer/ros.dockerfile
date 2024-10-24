@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     iputils-clockdiff \
     openssh-server  passwd \
     vim \
+    cron \
     mc \
     ncdu \
     mc \
