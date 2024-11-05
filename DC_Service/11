@@ -1,0 +1,37 @@
+{
+	"approver": "",
+	"attachmentList": [],
+	"csProductId": "775",
+	"dutyDev": "binwang33",
+	"effectBuildId": 72684,
+	"exhibitor": "shuaima6",
+	"expectResolvedTime": "",
+	"findBuild": 72684,
+	"findDepth": "easy",
+	"findMethod": "caseRun",
+	"moduleIdList": [
+		"1824583182419501065"
+	],
+	"onlineProblemBug": 0,
+	"planId": 15523,
+	"pompProjectCode": "R-220800026",
+	"priority": 1,
+	"probability": 1,
+	"productId": "",
+	"rdgModuleId": "",
+	"rdgModuleName": "",
+	"rdgProductId": "",
+	"rdgProductName": "",
+	"rdgProjectId": "",
+	"rdgProjectName": "",
+	"relatedDemand": {},
+	"severity": 1,
+	"sfxvsh": 0,
+	"steps": "<p>[操作步骤]</p>1.<br>2.<br>3.<br><p>[现象]</p><br><p>[期待结果]</p><br>",
+	"tagIdList": [
+		26680
+	],
+	"title": "111",
+	"type": "27393",
+	"ztProductId": 826
+}

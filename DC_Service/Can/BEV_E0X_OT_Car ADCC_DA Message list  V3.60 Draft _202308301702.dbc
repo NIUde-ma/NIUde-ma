@@ -1,0 +1,1949 @@
+VERSION ""
+
+
+NS_ : 
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+        SG_MUL_VAL_
+
+BS_:
+
+BU_: ADCC_DA 
+
+
+BO_ 325 ADS_ONEBOX_2: 24 Vector__XXX
+ SG_ FCM_2_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ FCM_2_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ FCM_2_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ FCM_2_AebReqTyp : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FCM_2_AebTarDec : 19|12@0+ (0.01,-20) [-20|0] "m/s2"  ADCC_DA
+ SG_ FCM_2_AebTarDecVld : 32|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FCM_2_AwbReq : 33|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FCM_2_AwbLvl : 35|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FCM_2_BrkPreFillReq : 36|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FCM_2_AbaReq : 37|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FCM_2_AbaLvl : 39|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FCM_2_Avl : 40|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 871 ADS_BNCM_1: 24 ADCC_DA
+ SG_ ADS_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_Chanllenge1 : 23|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_Chanllenge2 : 31|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_ParkingActiveSubFuncSts : 34|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_RPAIntFunSts : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RPAOutFunSts : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ RpaStartButSts : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADAS_enum_ApaRpaSts : 43|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADAS_enum_ParkingQuitInd : 54|7@0+ (1,0) [0|127] ""  Vector__XXX
+ SG_ ADAS_enum_ParkingDriOperateInd : 62|7@0+ (1,0) [0|127] ""  Vector__XXX
+ SG_ ADS_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADAS_enum_ParkingPauseInd : 84|5@0+ (1,0) [0|31] ""  Vector__XXX
+ SG_ PrkInSts : 85|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FrontLeftOutsts : 86|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FrontRightOutsts : 87|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FrontStrightOutsts : 88|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ BackLeftOutsts : 89|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ BackRightOutsts : 90|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ BackStrightOutsts : 91|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FrontLeftParallelOutsts : 92|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ FrontRightParallelOutsts : 93|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ParkingStopDist : 103|10@0+ (0.1,0) [0|102.3] "m"  Vector__XXX
+ SG_ ParkingCompleteTime : 109|10@0+ (1,0) [0|1023] "s"  Vector__XXX
+ SG_ ParkOutDirectionSt : 115|4@0+ (1,0) [0|15] ""  Vector__XXX
+
+BO_ 901 ADS_ASU_1: 32 ADCC_DA
+ SG_ ADS_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_Road_infor_available : 23|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_Road_Type : 22|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_Rough_Sta_L : 19|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_Road_Features_L : 31|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_LongitudinalDist_L : 43|12@0+ (0.01,0) [0|30] "m"  Vector__XXX
+ SG_ ADS_Rough_Sta_R : 17|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_Road_Features_R : 27|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_LongitudinalDist_R : 39|12@0+ (0.01,0) [0|30] "m"  Vector__XXX
+ SG_ ADS_CRC2 : 71|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_Resd2 : 79|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_FeatureHight_L : 87|10@0+ (0.001,-0.5) [-0.5|0.523] "m"  Vector__XXX
+ SG_ ADS_FeatureHight_R : 93|10@0+ (0.001,-0.5) [-0.5|0.523] "m"  Vector__XXX
+ SG_ SpeedBump_0_ID : 99|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_0_Valid : 127|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ SpeedBump_0_Dx : 111|10@0+ (0.1,0) [0|100] "m"  Vector__XXX
+ SG_ SpeedBump_0_ExistProb : 117|6@0+ (2,0) [0|100] "%"  Vector__XXX
+ SG_ SpeedBump_1_ID : 126|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_1_Valid : 122|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_CRC3 : 135|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_Resd3 : 143|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_1_Dx : 151|10@0+ (0.1,0) [0|100] "m"  Vector__XXX
+ SG_ SpeedBump_1_ExistProb : 157|6@0+ (2,0) [0|100] "%"  Vector__XXX
+ SG_ SpeedBump_2_ID : 167|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_2_Valid : 163|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ SpeedBump_2_Dx : 161|10@0+ (0.1,0) [0|100] "m"  Vector__XXX
+ SG_ SpeedBump_2_ExistProb : 183|6@0+ (2,0) [0|100] "%"  Vector__XXX
+ SG_ SpeedBump_3_ID : 191|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_3_Valid : 187|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_CRC4 : 199|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_Resd4 : 207|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_3_Dx : 215|10@0+ (0.1,0) [0|100] "m"  Vector__XXX
+ SG_ SpeedBump_3_ExistProb : 221|6@0+ (2,0) [0|100] "%"  Vector__XXX
+ SG_ SpeedBump_4_ID : 231|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ SpeedBump_4_Valid : 227|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ SpeedBump_4_Dx : 225|10@0+ (0.1,0) [0|100] "m"  Vector__XXX
+ SG_ SpeedBump_4_ExistProb : 247|6@0+ (2,0) [0|100] "%"  Vector__XXX
+
+BO_ 1301 ADCC_TimeSync: 8 ADCC_DA
+ SG_ TimeSync_Type m: 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ TimeSync_CRC : 15|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ TimeSync_SequenceCounter : 19|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ TimeSync_TimeDomain : 23|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ TimeSync_UserByte0 m0x20: 31|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ TimeSync_SyncTimeSec m0x20: 39|32@0+ (1,0) [0|4294967295] ""  Vector__XXX
+ SG_ TimeSync_OverflowOfSeconds m0x28: 25|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ TimeSync_SGW m0x28: 26|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ TimeSync_Reserved0 m0x28: 31|5@0+ (1,0) [0|31] ""  Vector__XXX
+ SG_ TimeSync_SyncTimeNSec m0x28: 39|32@0+ (1,0) [0|4294967295] ""  Vector__XXX
+
+BO_ 783 ADS_COM_1: 8 ADCC_DA
+ SG_ ADS_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_FunctionSuppressReq : 23|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_HPASts : 27|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_VPASts : 31|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADCC_CameraStreamSts : 18|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADCC_CameraErrorCode : 21|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADCC_HWRequest : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_PP_M_Request : 33|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_HighwayZoneState : 39|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADCC_CoolingReq : 42|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADCC_UploadFlag : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_SurroundCameraErrorSts : 55|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADCC_SysReadySts : 43|1@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 788 ADS_COM_2: 8 Vector__XXX
+ SG_ ADS_2_AEBStatus : 26|3@0+ (1,0) [0|5] ""  ADCC_DA
+ SG_ ADS_2_FCWStatus : 54|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 794 ADS_COM_3: 24 ADCC_DA
+ SG_ ADS_3_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_3_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_3_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_3_ICAStatus : 23|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_3_ICATextinfo : 19|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_3_ACCSts : 31|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_3_DriverHandsoffWarning : 27|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_3_AESStatus : 39|3@0+ (1,0) [0|7] ""  Vector__XXX
+
+BO_ 1445 FCM_FVSync: 16 Vector__XXX
+ SG_ TripCnt : 7|24@0+ (1,0) [0|16777215] ""  ADCC_DA
+ SG_ ResetCnt : 31|16@0+ (1,0) [0|65535] ""  ADCC_DA
+ SG_ AuthInfo : 47|64@0+ (1,0) [0|18446744073709551615] ""  ADCC_DA
+
+BO_ 809 ADCC_FVSyncRequest: 8 ADCC_DA
+ SG_ SynRequestFlag : 7|64@0+ (1,0) [17|17] ""  Vector__XXX
+
+BO_ 1217 ASU_1: 8 Vector__XXX
+ SG_ ASU_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ ASU_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ ASU_1_ASUSysFailrSts : 19|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ASU_1_SuspCurrentLvl : 23|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ ASU_1_ECASSysSts : 26|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ ASU_1_SuspTmpAdjSts : 17|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_MaintainMod : 51|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ASU_1_ECASErrSts : 28|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ASU_1_SuspTarLvl : 31|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ ASU_1_EasyEntryEna : 32|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_AutoEasyEntryFb : 33|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_ECASModeFb : 36|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ ASU_1_BluetoothManEasyEntryFb : 37|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_HighwayModFb : 38|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_CDCErrSts : 39|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ ASU_1_SuspDampingLvl : 42|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 776 ASU_2: 8 Vector__XXX
+ SG_ ASU_2_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ ASU_2_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ ASU_2_LFHeight : 23|12@0+ (0.1,-150) [0|259.4] "mm"  ADCC_DA
+ SG_ ASU_2_RFHeight : 27|12@0+ (0.1,-150) [0|259.4] "mm"  ADCC_DA
+ SG_ ASU_2_LRHeight : 47|12@0+ (0.1,-150) [0|259.4] "mm"  ADCC_DA
+ SG_ ASU_2_RRHeight : 51|12@0+ (0.1,-150) [0|259.4] "mm"  ADCC_DA
+ SG_ ASU_2_sensorErrorSts : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+
+BO_ 1291 BMS_2_G: 8 Vector__XXX
+ SG_ BMS_SOCLight : 62|7@0+ (1,0) [0|100] "%"  ADCC_DA
+
+BO_ 1295 BMS_3_G: 8 Vector__XXX
+ SG_ BMS_ChgWireConnect_LightSts : 32|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BMS_Chg_LightSts : 33|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 879 BNCM_4: 16 Vector__XXX
+ SG_ BNCM_4_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ BNCM_4_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ BNCM_4_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ BNCM_4_ChallengeFeedback : 23|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ BNCM_4_RpaDevicefailSts : 26|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ BNCM_4_RpaModReq : 29|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_RpaModselect : 34|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ BNCM_4_RpaBtnSts : 35|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_StraightInBtnSts : 36|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_StraightOutBtnSts : 37|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_RpaBtnCancelSts : 38|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_PrkOutModSelRmt : 43|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ BNCM_4_HeartbeatSignal : 45|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ BNCM_4_RpaDeviceDisSts : 81|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ BNCM_4_BLEConnSts : 83|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ BNCM_4_BLEErrStatus : 84|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1143 CDU_2: 8 Vector__XXX
+ SG_ OBC_CC_ConnectSts : 27|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 1172 TMS_1: 8 Vector__XXX
+ SG_ ExternalTemperature_C : 39|8@0+ (0.5,-40) [-40|85] "°C"  ADCC_DA
+ SG_ ExternalTemperatureFailSts : 40|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 321 CSA_1: 8 Vector__XXX
+ SG_ CSA_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ CSA_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ CSA_1_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ GearShiftPos : 19|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ GearShiftPosInverse : 23|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ STAT_ParkButton : 25|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ STAT_ShifterLeverFault : 28|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ DriveModeActive : 37|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ DriveModeReq : 39|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 631 CSA_2: 8 Vector__XXX
+ SG_ CSA_2_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ CSA_2_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ CSA_2_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ CSA_2_AllWarningInfo : 21|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ CSA_2_TurnSigLvrCmd : 34|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 571 FLZCU_1: 8 Vector__XXX
+ SG_ FLZCU_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ FLZCU_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ FLZCU_1_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ HoodLockSts : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FL_SeatOccupiedSts : 21|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ LHTurnlightSts : 19|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RHTurnlightSts : 20|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HoodSts : 30|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ LHFDoorLockSts : 25|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ LHFdoorSts : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ LHFSeatBeltSW : 31|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FL_SeatBeltFaultStatus : 61|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1181 FLZCU_9: 8 Vector__XXX
+ SG_ FLZCU_9_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ FLZCU_9_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ FLZCU_9_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ FLZCU_9_PowerMode : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FLZCU_9_ArmingSts : 25|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 843 FLZCU_10: 8 Vector__XXX
+ SG_ HOD_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ HOD_RollingCounter : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ HOD_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ HOD_OnOffSts : 16|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_OnOffStsValid : 17|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_HandOnSts : 19|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ HOD_OneHand_Area : 21|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ HOD_OneHand_AreaValid : 22|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_LeftArea_Sts : 25|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ HOD_LeftArea_StsVD : 26|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_RightArea_Sts : 28|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ HOD_RightArea_StsVD : 29|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_CAP_SENSOR_ERR : 30|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_ECU_HW_Fault : 31|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_BAT_LOW : 32|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_BAT_HIGH : 33|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_ResponseError : 34|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ HOD_FC_SYSTEM_ERR : 35|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1030 FLZCU_12: 16 Vector__XXX
+ SG_ FLZCU_12_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ FLZCU_12_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ FLZCU_FrontWiperParkStatus : 24|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FLZCU_FrontWiperWipingStatus : 31|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RearViewFoldSts : 58|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 864 MFS_2: 8 Vector__XXX
+ SG_ MFS_2_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ MFS_2_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ MFS_RESPlus : 31|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ MFS_SETMinus : 33|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ MFS_Time_Gap_Reduce : 44|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ MFS_Time_Gap_Add : 46|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ MFS_Rsp_Error : 47|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ MFS_LeftRoller : 51|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ MFS_LeftRollerMiddleKey : 55|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ MFS_LeRollrUpDwnAdjSteps : 60|5@0+ (1,0) [0|31] ""  ADCC_DA
+
+BO_ 683 FRZCU_1: 8 Vector__XXX
+ SG_ FRZCU_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ FRZCU_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ FRZCU_1_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ RHFDoorSts : 22|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RHRDoorSts : 49|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RHFDoorLockSts : 59|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RHRDoorLockSts : 61|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 699 RZCU_2: 8 Vector__XXX
+ SG_ RZCU_2_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ RZCU_2_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ RZCU_2_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ LHRdoorSts : 21|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ LHRDoorLockSts : 55|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ TrunkLockSts : 53|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1258 RZCU_7: 8 Vector__XXX
+ SG_ RZCU_7_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ RZCU_7_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ RZCU_RearWiperWipingStatus : 19|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RZCU_RearWiperParkStatus : 20|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1050 FLCR_1: 8 Vector__XXX
+ SG_ FLCR_1_SysSt : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FLCR_1_BlkSts : 21|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1062 FLCR_2: 8 Vector__XXX
+ SG_ FLCR_2_FCTAWarn : 21|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FLCR_2_FCTBWarn : 22|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FLCR_2_FCTAFCTBONOFFSts : 39|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1067 FRCR_1: 8 Vector__XXX
+ SG_ FRCR_1_SysSt : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ FRCR_1_BlkSts : 21|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1077 FRCR_2: 8 Vector__XXX
+ SG_ FRCR_2_FCTAWarn : 21|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ FRCR_2_FCTBWarn : 22|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1095 RLCR_1: 8 Vector__XXX
+ SG_ RLCR_1_SysSt : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_1_BlkSts : 18|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RLCR_1_BSDWarn : 21|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_1_DOWWarn : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1104 RLCR_2: 8 Vector__XXX
+ SG_ RLCR_2_RCWWarn : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_2_RCTAWarn : 18|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RLCR_2_RCTBWarn : 19|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RLCR_2_BSDLCWONOFFSts : 33|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_2_DOWONOFFSts : 35|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_2_RCWONOFFSts : 37|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RLCR_2_RCTARCTBONOFFSts : 47|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1267 RRCR_1: 8 Vector__XXX
+ SG_ RRCR_1_SysSt : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RRCR_1_BlkSts : 18|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RRCR_1_BSDWarn : 21|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ RRCR_1_DOWWarn : 23|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1271 RRCR_2: 8 Vector__XXX
+ SG_ RRCR_2_RCTAWarn : 18|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ RRCR_2_RCTBWarn : 19|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1252 ICC_COM_1: 8 Vector__XXX
+ SG_ TotalOdometer_km_OBD : 23|24@0+ (0.1,0) [0|999999.9] "km"  ADCC_DA
+
+BO_ 1296 ICC_COM_8: 8 Vector__XXX
+ SG_ CurrentTimeYear : 7|8@0+ (1,2000) [2000|2255] ""  ADCC_DA
+ SG_ CurrentTimeMonth : 15|4@0+ (1,0) [1|12] ""  ADCC_DA
+ SG_ CurrentTimeDay : 23|5@0+ (1,0) [1|31] ""  ADCC_DA
+ SG_ CurrentTimeHour : 31|5@0+ (1,0) [0|23] ""  ADCC_DA
+ SG_ CurrentTimeMinute : 39|6@0+ (1,0) [0|59] ""  ADCC_DA
+ SG_ CurrentTimeSecond : 47|6@0+ (1,0) [0|59] ""  ADCC_DA
+
+BO_ 1157 ICC_DA_15: 8 Vector__XXX
+ SG_ ICC_DA_15_ExtremeEnergySaveMode : 28|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1279 ICC_COM_16: 8 Vector__XXX
+ SG_ ICC_SentinelModeSts : 17|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ICC_CameraErrorCode : 25|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ICC_SentinelRequest : 27|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ICC_StartDeInitCameraStream : 29|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ ICC_CameraRecoveryRequest : 31|2@0+ (1,0) [0|3] ""  ADCC_DA
+
+BO_ 1208 PPMID_1: 8 Vector__XXX
+ SG_ PPMID_1_HWSt : 18|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PPMID_1_PPSt : 19|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PPMID_1_PPMICounter : 20|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PPMID_1_PPMISt : 23|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 582 PDC_1: 64 Vector__XXX
+ SG_ PDC_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FOLDistance : 23|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FOLZoneStatus : 30|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FMLDistance : 26|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FMLZoneStatus : 33|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FMRDistance : 45|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FMRZoneStatus : 52|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FORDistance : 48|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FORZoneStatus : 87|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_ROLDistance : 83|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_ROLZoneStatus : 90|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RMLDistance : 102|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_RMLZoneStatus : 109|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RMRDistance : 105|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_RMRZoneStatus : 112|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RORDistance : 151|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_RORZoneStatus : 158|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_LSFDistance : 154|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_LSFZoneStatus : 161|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FKPLSFMDistance : 173|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FKPLSFMZoneStatus : 180|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FKPLSRMDistance : 176|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_CRC4 : 199|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd4 : 207|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FKPLSRMZoneStatus : 215|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_LSRDistance : 211|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_LSRZoneStatus : 218|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RSFDistance : 230|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_RSFZoneStatus : 237|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FKPRSFMDistance : 233|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FKPRSFMZoneStatus : 240|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_CRC5 : 263|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr5 : 267|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd5 : 271|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_FKPRSRMDistance : 279|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_FKPRSRMZoneStatus : 286|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RSRDistance : 282|9@0+ (1,0) [0|250] "cm"  ADCC_DA
+ SG_ PDC_1_RSRZoneStatus : 289|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_ParKASSStatus : 298|3@0+ (1,0) [0|7] ""  ADCC_DA
+ SG_ PDC_1_PASTrailerHitchDetected : 311|2@0+ (1,0) [0|3] ""  ADCC_DA
+ SG_ PDC_1_PDCSwFdbk : 309|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_FrontWarningType : 308|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RearWarningType : 319|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_LeftSideWarningType : 359|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_RightSideWarningType : 355|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_STATRearPDCActive : 315|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_STATFrntPDCActive : 314|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_STATSidePDCActive : 313|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_CRC6 : 327|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_1_RollgCntr6 : 331|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_1_Resd6 : 335|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ PDC_1_STATSensorState : 343|12@0+ (1,0) [0|4095] ""  ADCC_DA
+ SG_ PDC_1_STATPDCHMIMode : 347|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_FrontPDCMuteFeedback : 346|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_1_FKPMuteFeedback : 345|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1392 PDC_2: 16 Vector__XXX
+ SG_ PDC_2_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_2_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_2_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ DTC_Number1 : 23|10@0+ (1,0) [0|1023] ""  ADCC_DA
+ SG_ DTC_State1 : 29|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ DTC_Number2 : 39|10@0+ (1,0) [0|1023] ""  ADCC_DA
+ SG_ DTC_State2 : 45|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ DTC_Number3 : 55|10@0+ (1,0) [0|1023] ""  ADCC_DA
+ SG_ DTC_State3 : 61|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ PDC_2_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_2_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_2_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ DTC_Number4 : 87|10@0+ (1,0) [0|1023] ""  ADCC_DA
+ SG_ DTC_State4 : 93|1@0+ (1,0) [0|1] ""  ADCC_DA
+ SG_ DTC_Number5 : 103|10@0+ (1,0) [0|1023] ""  ADCC_DA
+ SG_ DTC_State5 : 109|1@0+ (1,0) [0|1] ""  ADCC_DA
+
+BO_ 1415 PDC_3: 16 Vector__XXX
+ SG_ PDC_3_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ PDC_3_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ PDC_3_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_DA
+ SG_ BOOT_Version_Number : 19|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ HardWare_Version_Number : 23|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ SoftWare_Version_Number : 31|40@0+ (1,0) [0|1099511627775] ""  ADCC_DA
+ SG_ Software_ID : 87|16@0+ (1,0) [0|65535] ""  ADCC_DA
+
+BO_ 1035 VCC_1: 8 Vector__XXX
+ SG_ VCC_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_DA
+ SG_ VCC_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_DA
+ SG_ VCC_1_CarMode : 31|3@0+ (1,0) [0|7] ""  ADCC_DA
+
+BO_ 1601 NMm_ADCC: 8 ADCC_DA
+ SG_ srcNodeID_ADCC : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ RMR_ADCC : 8|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ NMm_ADCC_Reserved1 : 15|7@0+ (1,0) [0|127] ""  Vector__XXX
+ SG_ ADCC_Wakeup_Poweron : 16|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_Wakeup_NM : 17|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_Wakeup_Diag : 18|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_Awake_Poweron : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_Awake_NM : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADCC_Awake_Diag : 42|1@0+ (1,0) [0|1] ""  Vector__XXX
+
+
+CM_ "Version:V3.4,Date:2023.04.26,Author:FangZheng,Review:ZhonglingWang,Approval:JiancaiLi,Description:(ADS_BNCM_1(0x367))1、change the ID and Msg Cycle Time(ms)
+2、change the Signal Value Description:
+   ADAS_enum_ParkingQuitInd
+   ADAS_enum_ParkingDriOperateInd
+   ADAS_enum_ParkingPauseInd
+3、add signal:
+   ParkOutDirectionSt`
+(BNCM_4(0x36F))1、change the ID and Msg Cycle Time(ms)
+2、change Start Bit:
+   BNCM_4_RpaDeviceDisSts
+   BNCM_4_BLEConnSts
+   BNCM_4_BLEErrStatus`
+(PDC_Priv_xx_Point)add“unknown”Type in the Signal “Point_xx_High”'s Signal  for Value Description PDC`
+(PDC_3(0x587))change the Bit Length for DA:
+BOOT_Version_Number
+HardWare_Version_Number
+SoftWare_Version_Number;
+Version:V3.41,Date:2023.05.29,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FCM_TSR00_03(0x415))change Signal Max. Value(phys) for HOLO:
+FCM_TsrInternal_ID01
+FCM_TsrInternal_ID02
+FCM_TsrInternal_ID03`
+(FCM_Lane_Left(0x416))change Signal Max. Value(phys) for HOLO:
+FCM_ConeRoadEdgeModelC3_Left
+FCM_LeftLaneModelC3
+FCM_NextLeftLaneModelC3`
+(FCM_Lane_Right(0x417))change Signal Max. Value(phys) for HOLO:
+FCM_ConeRoadEdgeModelC3_Right
+FCM_RightLaneModelC3
+FCM_NextRightLaneModelC3`
+(ADS_Parking_Status(0x20F))change the Msg ID to 0x20F for PDC`
+(FCM_RoadInformation(0x400))add signal:FCM_FailureSts For FRM(HOLO);
+Version:V3.5,Date:2023.06.15,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(LCM_2(0x02E))add Signal Value Description for LCM:
+INS_Calib_Status:0x3:Ins_Solution Divergence
+add signal:
+LCM_2_BlockCounter
+Ins_PrecisionStatus
+GNSS_Sts`
+(LCM_3(0x026))add signal for LCM:
+LCM_3_BlockCounter`
+(LCM_10(0x124))add signal for LCM:
+LCM_10_BlockCounter`
+(ASU_1(0x4C1))delete signal for DA:
+ASU_1_Resd1;
+Version:V3.51,Date:2023.07.12,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FLZCU_1(0x23B))add this message for DA;
+Version:V3.52,Date:2023.07.19,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FLZCU_1(0x24B))add new signal for DA`
+(FLZCU_9(0x49D))add new signal for DA`
+(FRZCU_1(0x2AB))add this message for DA`
+(RZCU_2(0x2BB))add this message for DA;
+Version:V3.60,Date:2023.07.29,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(TCM_1(0x4AF))add this message for DA`
+(ADS_COM_1(0x30F))add signal for DA
+ADCC_SurroundCameraErrorSts
+ADCC_SysReadySts`
+(FLZCU_1(0x23B))add signal for DA:
+HoodLockSts
+FL_SeatOccupiedSts
+FL_SeatBeltFaultStatus`
+(FLZCU_9(0x49D))add E2E for DA`
+(FLZCU_12(0x406))add signal for DA:
+FLZCU_FrontWiperParkStatus
+FLZCU_FrontWiperWipingStatus
+RearViewFoldSts`
+(FRZCU_1(0x2AB))add signal for DA:
+RHFDoorLockSts
+RHRDoorLockSts`
+(RZCU_2(0x2BB))add signal for DA:
+LHRDoorLockSts
+TrunkLockSts`
+(RZCU_7(0x4EA))add signal for DA:
+RZCU_RearWiperWipingStatus
+RZCU_RearWiperParkStatus`
+(VCC_1(0x40B))add message and signal for DA:
+VCC_1_CarMode`
+(FCM_RoadInformation(0x400))add signal for FRM(HOLO):
+FCM_NumObstacles;
+ ";
+
+CM_ BO_ 1301 "中高配以ADCC时间同步信息为主";
+CM_ SG_ 325 FCM_2_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0009";
+CM_ SG_ 325 FCM_2_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 325 FCM_2_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 325 FCM_2_AebReqTyp "Emergency brake request";
+CM_ SG_ 325 FCM_2_AebTarDec "AEB target deceleration";
+CM_ SG_ 325 FCM_2_AebTarDecVld "AEB target deceleration valid";
+CM_ SG_ 325 FCM_2_AwbReq "AWB request";
+CM_ SG_ 325 FCM_2_AwbLvl "AWB request level";
+CM_ SG_ 325 FCM_2_BrkPreFillReq "ABP request";
+CM_ SG_ 325 FCM_2_AbaReq "ABA request";
+CM_ SG_ 325 FCM_2_AbaLvl "ABA request level";
+CM_ SG_ 325 FCM_2_Avl "FCM Function State
+FCM整体可用状态";
+CM_ SG_ 871 ADS_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x000D";
+CM_ SG_ 871 ADS_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 871 ADS_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 871 ADS_Chanllenge1 "ADCC功能安全校验请求";
+CM_ SG_ 871 ADS_Chanllenge2 "ADCC功能安全校验请求";
+CM_ SG_ 871 ADS_ParkingActiveSubFuncSts "泊车功能选择状态（直入直出、巡航泊车功能暂不开发，信号预留）";
+CM_ SG_ 871 ADS_RPAIntFunSts "遥控泊入功能可用状态";
+CM_ SG_ 871 RPAOutFunSts "遥控泊出功能可用状态";
+CM_ SG_ 871 RpaStartButSts "RPA开启开关可用状态";
+CM_ SG_ 871 ADAS_enum_ApaRpaSts "Rpa功能状态";
+CM_ SG_ 871 ADAS_enum_ParkingQuitInd "泊出功能退出原因(内容可调）";
+CM_ SG_ 871 ADAS_enum_ParkingDriOperateInd "驾驶员操作提示信息(内容可调）";
+CM_ SG_ 871 ADS_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x000E";
+CM_ SG_ 871 ADS_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 871 ADS_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 871 ADAS_enum_ParkingPauseInd "泊车暂停原因(内容可调）";
+CM_ SG_ 871 PrkInSts "遥控泊入方向显示";
+CM_ SG_ 871 FrontLeftOutsts "车头向左泊出可用状态";
+CM_ SG_ 871 FrontRightOutsts "车头右向泊出可用状态";
+CM_ SG_ 871 FrontStrightOutsts "车头直出泊出可用状态";
+CM_ SG_ 871 BackLeftOutsts "车尾左向泊出可用状态";
+CM_ SG_ 871 BackRightOutsts "车尾右向泊出可用状态";
+CM_ SG_ 871 BackStrightOutsts "车尾直出泊出可用状态";
+CM_ SG_ 871 FrontLeftParallelOutsts "车头向左水平泊出可用状态";
+CM_ SG_ 871 FrontRightParallelOutsts "车头向右水平泊出可用状态";
+CM_ SG_ 871 ParkingStopDist "泊车剩余距离";
+CM_ SG_ 871 ParkingCompleteTime "泊车用时";
+CM_ SG_ 871 ParkOutDirectionSt "泊出方向状态（实际泊出方向）";
+CM_ SG_ 901 ADS_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 901 ADS_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 901 ADS_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 901 ADS_Road_infor_available "路面信息有效位";
+CM_ SG_ 901 ADS_Road_Type "路面状态类型";
+CM_ SG_ 901 ADS_Rough_Sta_L "左轮路面不平（凹/凸）状态";
+CM_ SG_ 901 ADS_Road_Features_L "左轮单一路面特征类型";
+CM_ SG_ 901 ADS_LongitudinalDist_L "左前车轮轮心在地面的投影点到路面特征区域边缘的距离";
+CM_ SG_ 901 ADS_Rough_Sta_R "右轮路面不平（凹/凸）状态";
+CM_ SG_ 901 ADS_Road_Features_R "右轮单一路面特征类型";
+CM_ SG_ 901 ADS_LongitudinalDist_R "右前车轮轮心在地面的投影点到路面特征区域边缘的距离";
+CM_ SG_ 901 ADS_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 901 ADS_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 901 ADS_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 901 ADS_FeatureHight_L "左前车轮前方特征路面凸起高度（或凹陷深度）";
+CM_ SG_ 901 ADS_FeatureHight_R "右前车轮前方特征路面凸起高度（或凹陷深度）";
+CM_ SG_ 901 SpeedBump_0_ID "减速带编号";
+CM_ SG_ 901 SpeedBump_0_Valid "减速带有效位";
+CM_ SG_ 901 SpeedBump_0_Dx "减速带距离";
+CM_ SG_ 901 SpeedBump_0_ExistProb "减速带存在的概率";
+CM_ SG_ 901 SpeedBump_1_ID "减速带编号";
+CM_ SG_ 901 SpeedBump_1_Valid "减速带有效位";
+CM_ SG_ 901 ADS_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes        
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 901 ADS_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 901 ADS_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 901 SpeedBump_1_Dx "减速带距离";
+CM_ SG_ 901 SpeedBump_1_ExistProb "减速带存在的概率";
+CM_ SG_ 901 SpeedBump_2_ID "减速带编号";
+CM_ SG_ 901 SpeedBump_2_Valid "减速带有效位";
+CM_ SG_ 901 SpeedBump_2_Dx "减速带距离";
+CM_ SG_ 901 SpeedBump_2_ExistProb "减速带存在的概率";
+CM_ SG_ 901 SpeedBump_3_ID "减速带编号";
+CM_ SG_ 901 SpeedBump_3_Valid "减速带有效位";
+CM_ SG_ 901 ADS_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes        
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 901 ADS_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 901 ADS_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 901 SpeedBump_3_Dx "减速带距离";
+CM_ SG_ 901 SpeedBump_3_ExistProb "减速带存在的概率";
+CM_ SG_ 901 SpeedBump_4_ID "减速带编号";
+CM_ SG_ 901 SpeedBump_4_Valid "减速带有效位";
+CM_ SG_ 901 SpeedBump_4_Dx "减速带距离";
+CM_ SG_ 901 SpeedBump_4_ExistProb "减速带存在的概率";
+CM_ SG_ 1301 TimeSync_Type "Mode Signal: Multiplexer: 0x20 = SYNC with CRC, 0x28 = FUP with CRC, 0x10 = SYNC, 0x18 = FUP";
+CM_ SG_ 1301 TimeSync_CRC "CRC calculation: AUTOSAR_SWS_CRCLibrary.pdf, function Crc_CalculateCRC8H2F()";
+CM_ SG_ 1301 TimeSync_SequenceCounter "SC = Sequence Counter";
+CM_ SG_ 1301 TimeSync_TimeDomain "Time Domain 0 to 15";
+CM_ SG_ 1301 TimeSync_UserByte0 "Mode 32:UserByte0";
+CM_ SG_ 1301 TimeSync_SyncTimeSec "Mode 32:SyncTime: seconds";
+CM_ SG_ 1301 TimeSync_OverflowOfSeconds "Mode 40:OVS = Overflow of seconds, must be added to SyncTimeSec";
+CM_ SG_ 1301 TimeSync_SGW "Mode 40:SyncToGTM = 0
+SyncToSubDomain = 1";
+CM_ SG_ 1301 TimeSync_Reserved0 "Mode 40:FUP Byte3: Bit7 to Bit3 reserved area";
+CM_ SG_ 1301 TimeSync_SyncTimeNSec "Mode 40:SyncTime: nanoseconds";
+CM_ SG_ 783 ADS_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x000F";
+CM_ SG_ 783 ADS_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 783 ADS_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 783 ADS_1_FunctionSuppressReq "ADAS functoin suppress requst";
+CM_ SG_ 783 ADS_1_HPASts "HPA状态信号";
+CM_ SG_ 783 ADS_1_VPASts "VPA状态信号";
+CM_ SG_ 783 ADCC_CameraStreamSts "ADCC侧Camera链路工作状态
+0x0:Reset  刚上电，未初始化状态
+0x1:Inited  ADCC侧96722，camera 均device detect成功
+0x2:Working  和ICC侧通信链路建立成功，正常通信
+0x3:DeInitFinish  ADCC侧链路去初始化完成
+0x4:Error  ADCC侧链路出现故障
+0x5:Recoverying  ADCC侧链路正在恢复中(预留)
+0x6~0x7:Reserved";
+CM_ SG_ 783 ADCC_CameraErrorCode "ADCC侧Camera链路错误码";
+CM_ SG_ 783 ADCC_HWRequest "Haptic Warning Request";
+CM_ SG_ 783 ADCC_PP_M_Request "AEB PP Request";
+CM_ SG_ 783 ADCC_HighwayZoneState "当前车辆是否在高速公路状态判断";
+CM_ SG_ 783 ADCC_CoolingReq "BOSCH ADCCwater cooling level:
+0x1:Low       -> LEVEL 1：3 L/min
+0x2:Middle    -> LEVEL 2：3.5 L/min
+0x3:High      -> LEVEL 3:：4 L/min
+0x4:Critical  -> LEVEL 4：4.5 L/min
+0x5:Emergency -> LEVEL 5：5 L/min";
+CM_ SG_ 783 ADCC_UploadFlag "闲时上传需求判断";
+CM_ SG_ 783 ADCC_SurroundCameraErrorSts "环视摄像头故障状态：每个bit位表征一个摄像头的故障状态，当前环视和后环视摄像头同时故障时，对应值为0000 0011";
+CM_ SG_ 783 ADCC_SysReadySts "系统初始化完成状态";
+CM_ SG_ 788 ADS_2_AEBStatus "AEB状态信号";
+CM_ SG_ 788 ADS_2_FCWStatus "FCW状态信号";
+CM_ SG_ 794 ADS_3_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0011";
+CM_ SG_ 794 ADS_3_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 794 ADS_3_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 794 ADS_3_ICAStatus "ICA状态信号";
+CM_ SG_ 794 ADS_3_ICATextinfo "ICA状态信号";
+CM_ SG_ 794 ADS_3_ACCSts "ACC状态信号";
+CM_ SG_ 794 ADS_3_DriverHandsoffWarning "驾驶员脱手报警请求";
+CM_ SG_ 794 ADS_3_AESStatus "AES状态信号";
+CM_ SG_ 1445 TripCnt "同步计数器";
+CM_ SG_ 1445 ResetCnt "重置计数器";
+CM_ SG_ 1445 AuthInfo "认证信息";
+CM_ SG_ 809 SynRequestFlag "同步请求标识
+0x11:  同步请求标识
+other: error";
+CM_ SG_ 1217 ASU_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0012";
+CM_ SG_ 1217 ASU_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1217 ASU_1_ASUSysFailrSts "ASU System failure state.";
+CM_ SG_ 1217 ASU_1_SuspCurrentLvl "Suspension Current High Level
+0x0：无效
+0x1：非常高的等级
+0x2：介于非常高和高的等级之间
+0x3：高等级
+0x4：介于高等级和正常等级之间
+0x5：正常等级
+0x6：介于正常和低等级之间
+0x7：低等级
+0x8：介于低等级和极低等级之间
+0x9：非常低的等级
+0xA：方便上下车高度等级
+0xB：便利装载高度等级
+0xC~0xF：预留";
+CM_ SG_ 1217 ASU_1_ECASSysSts "ECAS System State";
+CM_ SG_ 1217 ASU_1_SuspTmpAdjSts "Suspension temporary Adjust Status";
+CM_ SG_ 1217 ASU_1_MaintainMod "indicate the AirSuspension is in maintain mode or not.";
+CM_ SG_ 1217 ASU_1_ECASErrSts "ECAS Error Status";
+CM_ SG_ 1217 ASU_1_SuspTarLvl "Suspension Target High Level
+0x0：无要求
+0x1：非常高的等级
+0x2：高等级
+0x3：正常等级
+0x4：低等级
+0x5：非常低的等级
+0x6：方便上下车高度等级
+0x7：便利装载高度等级";
+CM_ SG_ 1217 ASU_1_EasyEntryEna "easy Entry Enable.";
+CM_ SG_ 1217 ASU_1_AutoEasyEntryFb "Auto Easy Entry feedback";
+CM_ SG_ 1217 ASU_1_ECASModeFb "ECAS Mode feedback";
+CM_ SG_ 1217 ASU_1_BluetoothManEasyEntryFb "Bluetooth Manual Easy Entry feedback";
+CM_ SG_ 1217 ASU_1_HighwayModFb "Highway Mode feedback";
+CM_ SG_ 1217 ASU_1_CDCErrSts "CDC error Satus";
+CM_ SG_ 1217 ASU_1_SuspDampingLvl "Suspension Target High Level";
+CM_ SG_ 776 ASU_2_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0013";
+CM_ SG_ 776 ASU_2_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 776 ASU_2_LFHeight "Height of front left wheel.";
+CM_ SG_ 776 ASU_2_RFHeight "Height of front right wheel.";
+CM_ SG_ 776 ASU_2_LRHeight "Height of rear left wheel.";
+CM_ SG_ 776 ASU_2_RRHeight "Height of rear right wheel.";
+CM_ SG_ 776 ASU_2_sensorErrorSts "Sensor Error Status.";
+CM_ SG_ 1291 BMS_SOCLight "BMS_SOCLight";
+CM_ SG_ 1295 BMS_ChgWireConnect_LightSts "BMS_ChgWireConnect_LightSts";
+CM_ SG_ 1295 BMS_Chg_LightSts "BMS_Chg_LightSts";
+CM_ SG_ 879 BNCM_4_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0024";
+CM_ SG_ 879 BNCM_4_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 879 BNCM_4_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 879 BNCM_4_ChallengeFeedback "ADCC功能安全校验反馈";
+CM_ SG_ 879 BNCM_4_RpaDevicefailSts "蓝牙故障状态反馈";
+CM_ SG_ 879 BNCM_4_RpaModReq "进入遥控泊车模式请求";
+CM_ SG_ 879 BNCM_4_RpaModselect "遥控泊入；
+遥控泊出；";
+CM_ SG_ 879 BNCM_4_RpaBtnSts "RPA开关控制状态";
+CM_ SG_ 879 BNCM_4_StraightInBtnSts "直入功能开关控制状态";
+CM_ SG_ 879 BNCM_4_StraightOutBtnSts "直出功能开关控制状态";
+CM_ SG_ 879 BNCM_4_RpaBtnCancelSts "RPA功能取消开关控制状态";
+CM_ SG_ 879 BNCM_4_PrkOutModSelRmt "泊出方向选择";
+CM_ SG_ 879 BNCM_4_HeartbeatSignal "蓝牙心跳信号";
+CM_ SG_ 879 BNCM_4_RpaDeviceDisSts "蓝牙设备距离状态反馈";
+CM_ SG_ 879 BNCM_4_BLEConnSts "蓝牙连接状态";
+CM_ SG_ 879 BNCM_4_BLEErrStatus "蓝牙故障状态";
+CM_ SG_ 1143 OBC_CC_ConnectSts "CC connect states";
+CM_ SG_ 1172 ExternalTemperature_C "External temperature（℃）
+Invalid: When external temperature is fail, the signal value is 0xFE.";
+CM_ SG_ 1172 ExternalTemperatureFailSts "External Temperature Sensor Fail Status
+外温传感器故障状态";
+CM_ SG_ 321 CSA_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0029";
+CM_ SG_ 321 CSA_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 321 CSA_1_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 321 GearShiftPos "Driver requested gear shift position";
+CM_ SG_ 321 GearShiftPosInverse "Driver requested gear shift position inverse";
+CM_ SG_ 321 STAT_ParkButton "Driver Request Park Button";
+CM_ SG_ 321 STAT_ShifterLeverFault "Shift sensor fault status";
+CM_ SG_ 321 DriveModeActive "SBW decide whether enter into Sport Mode.";
+CM_ SG_ 321 DriveModeReq "SBW transmit Sport Mode request.";
+CM_ SG_ 631 CSA_2_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x002A";
+CM_ SG_ 631 CSA_2_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 631 CSA_2_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 631 CSA_2_AllWarningInfo "EGS全部报警信号
+T1C项目，EGS此信号发0x0、0x1、0x4，仪表接收";
+CM_ SG_ 631 CSA_2_TurnSigLvrCmd "turn signal lever command for CSA.";
+CM_ SG_ 571 FLZCU_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0036";
+CM_ SG_ 571 FLZCU_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 571 FLZCU_1_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 571 FL_SeatOccupiedSts "主驾座椅占位状态，0为未占位，1为占位";
+CM_ SG_ 571 LHFSeatBeltSW "安全带检测开关，0为未插入，1为插入";
+CM_ SG_ 571 FL_SeatBeltFaultStatus "安全带故障状态";
+CM_ SG_ 1181 FLZCU_9_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x009C";
+CM_ SG_ 1181 FLZCU_9_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1181 FLZCU_9_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 1181 FLZCU_9_PowerMode "低压电源状态";
+CM_ SG_ 1181 FLZCU_9_ArmingSts "整车设防/解防成功状态信号
+设防成功0x1,解防成功0x2
+设防成功/解放成功后0x1或0x2值连续发送";
+CM_ SG_ 843 HOD_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0038";
+CM_ SG_ 843 HOD_RollingCounter "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 843 HOD_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 843 HOD_OnOffSts "驾驶员是否手方握向盘";
+CM_ SG_ 843 HOD_OnOffStsValid "驾驶员是否手握方向盘有效位";
+CM_ SG_ 843 HOD_HandOnSts "驾驶员单手或双手扶持状态";
+CM_ SG_ 843 HOD_OneHand_Area "驾驶员单手手扶方向盘的区域";
+CM_ SG_ 843 HOD_OneHand_AreaValid "驾驶员单手手扶方向盘的区域有效位";
+CM_ SG_ 843 HOD_LeftArea_Sts "驾驶员单手搭或单手握的状态";
+CM_ SG_ 843 HOD_LeftArea_StsVD "驾驶员单手搭或单手握的状态有效位";
+CM_ SG_ 843 HOD_RightArea_Sts "驾驶员单手搭或单手握的状态";
+CM_ SG_ 843 HOD_RightArea_StsVD "驾驶员单手搭或单手握的状态有效位";
+CM_ SG_ 843 HOD_FC_CAP_SENSOR_ERR "电容传感器故障";
+CM_ SG_ 843 HOD_FC_ECU_HW_Fault "ECU硬件故障";
+CM_ SG_ 843 HOD_FC_BAT_LOW "电池电压低";
+CM_ SG_ 843 HOD_FC_BAT_HIGH "电池电压高";
+CM_ SG_ 843 HOD_FC_ResponseError "Response Error Bit";
+CM_ SG_ 843 HOD_FC_SYSTEM_ERR "系统故障";
+CM_ SG_ 1030 FLZCU_12_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x009B
+CRC Reserved.";
+CM_ SG_ 1030 FLZCU_12_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1030 FLZCU_FrontWiperParkStatus "前雨刮归位信号";
+CM_ SG_ 1030 FLZCU_FrontWiperWipingStatus "前雨刮工作状态";
+CM_ SG_ 1030 RearViewFoldSts "后视镜折叠状态";
+CM_ SG_ 864 MFS_2_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0039";
+CM_ SG_ 864 MFS_2_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 864 MFS_RESPlus "CC/SL RES/+ button
+备注：无该按键功能或没有触发该按键时，MFS此信号发0x0";
+CM_ SG_ 864 MFS_SETMinus "CC/SL SET/- button
+备注：无该按键功能或没有触发该按键时，MFS此信号发0x0";
+CM_ SG_ 864 MFS_Time_Gap_Reduce "时距（本车离前车间距/本车车速）
+备注：无该按键功能或没有触发该按键时，MFS此信号发0x0";
+CM_ SG_ 864 MFS_Time_Gap_Add "时距（本车离前车间距/本车车速）
+备注：无该按键功能或没有触发该按键时，MFS此信号发0x0";
+CM_ SG_ 864 MFS_LeftRoller "CC/SL RES/+ button
+备注：无该按键功能或没有触发该按键时，MFS此信号发0x0
+原始脉冲发送逻辑：转一圈x个脉冲
+快滚：单位时间内大于 x个脉冲/s  MFS发送快滚动
+慢滚同上逻辑
+自驾收到信号后逻辑：后续定出";
+CM_ SG_ 864 MFS_LeRollrUpDwnAdjSteps "左侧滚轮上下滚动计数";
+CM_ SG_ 683 FRZCU_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x003A";
+CM_ SG_ 683 FRZCU_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 683 FRZCU_1_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 699 RZCU_2_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x003B";
+CM_ SG_ 699 RZCU_2_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 699 RZCU_2_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 1258 RZCU_7_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0083";
+CM_ SG_ 1258 RZCU_7_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1258 RZCU_RearWiperWipingStatus "后雨刮工作状态";
+CM_ SG_ 1258 RZCU_RearWiperParkStatus "后雨刮归位信号";
+CM_ SG_ 1050 FLCR_1_SysSt "System self-test State";
+CM_ SG_ 1050 FLCR_1_BlkSts "Blockage Status";
+CM_ SG_ 1062 FLCR_2_FCTAWarn "FCTA Warning";
+CM_ SG_ 1062 FLCR_2_FCTBWarn "FCTB Warning";
+CM_ SG_ 1062 FLCR_2_FCTAFCTBONOFFSts "FCTA/FCTB Switch status";
+CM_ SG_ 1067 FRCR_1_SysSt "System self-test State";
+CM_ SG_ 1067 FRCR_1_BlkSts "Blockage Status";
+CM_ SG_ 1077 FRCR_2_FCTAWarn "FCTA Warning";
+CM_ SG_ 1077 FRCR_2_FCTBWarn "FCTB Warning";
+CM_ SG_ 1095 RLCR_1_SysSt "System self-test State";
+CM_ SG_ 1095 RLCR_1_BlkSts "Blockage Status";
+CM_ SG_ 1095 RLCR_1_BSDWarn "BSD/LCA Warning";
+CM_ SG_ 1095 RLCR_1_DOWWarn "Door open warning Warning";
+CM_ SG_ 1104 RLCR_2_RCWWarn "Rear Collision Warning Warning";
+CM_ SG_ 1104 RLCR_2_RCTAWarn "RCTA Warning";
+CM_ SG_ 1104 RLCR_2_RCTBWarn "RCTB Warning";
+CM_ SG_ 1104 RLCR_2_BSDLCWONOFFSts "BSD/LCA Switch status";
+CM_ SG_ 1104 RLCR_2_DOWONOFFSts "Door open warning Switch status";
+CM_ SG_ 1104 RLCR_2_RCWONOFFSts "Rear Collision Warning Switch Status";
+CM_ SG_ 1104 RLCR_2_RCTARCTBONOFFSts "RCTA/RCTB Switch status";
+CM_ SG_ 1267 RRCR_1_SysSt "System self-test State";
+CM_ SG_ 1267 RRCR_1_BlkSts "Blockage Status";
+CM_ SG_ 1267 RRCR_1_BSDWarn "BSD/LCA Warning";
+CM_ SG_ 1267 RRCR_1_DOWWarn "Door open warning Warning";
+CM_ SG_ 1271 RRCR_2_RCTAWarn "RCTA Warning";
+CM_ SG_ 1271 RRCR_2_RCTBWarn "RCTB Warning";
+CM_ SG_ 1252 TotalOdometer_km_OBD "GB18285-2018新增OBD输出检查要求车辆累积行驶里程信号。";
+CM_ SG_ 1296 CurrentTimeYear "GPS时间（年）";
+CM_ SG_ 1296 CurrentTimeMonth "GPS时间（月）";
+CM_ SG_ 1296 CurrentTimeDay "GPS时间（日）";
+CM_ SG_ 1296 CurrentTimeHour "GPS时间（时）";
+CM_ SG_ 1296 CurrentTimeMinute "GPS时间（分）";
+CM_ SG_ 1296 CurrentTimeSecond "GPS时间（秒）";
+CM_ SG_ 1279 ICC_SentinelModeSts "哨兵模式开启/关闭的状态";
+CM_ SG_ 1279 ICC_CameraErrorCode "ICC侧Camera链路错误码";
+CM_ SG_ 1279 ICC_SentinelRequest "哨兵模式进入，退出请求";
+CM_ SG_ 1279 ICC_StartDeInitCameraStream "ICC通知ADCC开始关闭Camera视频流";
+CM_ SG_ 1279 ICC_CameraRecoveryRequest "ICC通知ADCC恢复Camera视频链路";
+CM_ SG_ 1208 PPMID_1_HWSt "Haptic warming status/震动提醒的状态";
+CM_ SG_ 1208 PPMID_1_PPSt "Pre-pretension status/预预紧的状态";
+CM_ SG_ 1208 PPMID_1_PPMICounter "PPMI counter/寿命计数状态";
+CM_ SG_ 1208 PPMID_1_PPMISt "PPMI status/ PPMI是否有故障";
+CM_ SG_ 582 PDC_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_FOLDistance "Front Outter Left sensor zone distance
+FOL倒车雷达距离";
+CM_ SG_ 582 PDC_1_FOLZoneStatus "Front Outter Left sensor zone alarm
+FOL倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_FMLDistance "Front Middle Left sensor zone distance
+FIL倒车雷达距离";
+CM_ SG_ 582 PDC_1_FMLZoneStatus "Front Middle Left sensor zone alarm
+FIL倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_FMRDistance "Front Middle Right sensor zone distance
+FMR倒车雷达距离";
+CM_ SG_ 582 PDC_1_FMRZoneStatus "Front Middle Rear sensor zone alarm
+FMR倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_FORDistance "Front Outter Right sensor zone distance
+FOR倒车雷达边距离";
+CM_ SG_ 582 PDC_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_FORZoneStatus "Front Outter Right sensor zone alarm
+FOR倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_ROLDistance "Rear Outter Left sensor zone distance
+ROL倒车雷达距离";
+CM_ SG_ 582 PDC_1_ROLZoneStatus "Rear Outter Left sensor zone alarm
+ROL倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_RMLDistance "Rear Middle Left sensor zone distance
+RIL倒车雷达距离";
+CM_ SG_ 582 PDC_1_RMLZoneStatus "Rear Middle Left sensor zone alarm
+RIL倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_RMRDistance "Rear Middle Right sensor zone distance
+RMR倒车雷达距离";
+CM_ SG_ 582 PDC_1_RMRZoneStatus "Rear Middle Rear sensor zone alarm
+RMR倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_RORDistance "Rear Outter Right sensor zone distance
+ROR倒车雷达边距离";
+CM_ SG_ 582 PDC_1_RORZoneStatus "Rear Outter Right sensor zone alarm
+ROR倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_LSFDistance "Left Side Front sensor zone distance
+左前边倒车雷达距离";
+CM_ SG_ 582 PDC_1_LSFZoneStatus "Left Side Front sensor zone alarm
+左前边倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_FKPLSFMDistance "Left Front Side Middle flank zone distance
+左前边中间区域距离";
+CM_ SG_ 582 PDC_1_FKPLSFMZoneStatus "Left Front Side Middle flank zone alarm
+左前边中间区报警";
+CM_ SG_ 582 PDC_1_FKPLSRMDistance "Left Rear Side Middle flank zone distance
+左后边中间区域距离";
+CM_ SG_ 582 PDC_1_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_FKPLSRMZoneStatus "Left Rear Side Middle flank zone alarm
+左后边中间区报警";
+CM_ SG_ 582 PDC_1_LSRDistance "Left Side Rear sensor zone distance
+左后边倒车雷达距离";
+CM_ SG_ 582 PDC_1_LSRZoneStatus "Left Side Rear sensor zone alarm
+左后边倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_RSFDistance "Right Side Front sensor zone distance
+右前边倒车雷达距离";
+CM_ SG_ 582 PDC_1_RSFZoneStatus "Right Side Front sensor zone alarm
+右前边倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_FKPRSFMDistance "Right Front Side Middle flank zone distance
+右前边中间区域距离";
+CM_ SG_ 582 PDC_1_FKPRSFMZoneStatus "Right Front Side Middle flank zone alarm
+右前边中间区报警";
+CM_ SG_ 582 PDC_1_CRC5 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr5 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd5 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_FKPRSRMDistance "Right Rear Side Middle flank zone distance
+右后边中间区域距离";
+CM_ SG_ 582 PDC_1_FKPRSRMZoneStatus "Right Rear Side Middle flank zone alarm
+右后边中间区报警";
+CM_ SG_ 582 PDC_1_RSRDistance "Right Side Rear sensor zone distance
+右后边倒车雷达距离";
+CM_ SG_ 582 PDC_1_RSRZoneStatus "Right Side Rear sensor zone alarm
+右后边倒车雷达区域报警";
+CM_ SG_ 582 PDC_1_ParKASSStatus "PDC function status
+ PDC功能状态";
+CM_ SG_ 582 PDC_1_PASTrailerHitchDetected "PAS_TrailerHitchDetected
+ PAS检测到拖车钩信号";
+CM_ SG_ 582 PDC_1_PDCSwFdbk "泊车辅助功能开关反馈";
+CM_ SG_ 582 PDC_1_FrontWarningType "蜂鸣器报警信号";
+CM_ SG_ 582 PDC_1_RearWarningType "蜂鸣器报警信号";
+CM_ SG_ 582 PDC_1_LeftSideWarningType "蜂鸣器报警信号";
+CM_ SG_ 582 PDC_1_RightSideWarningType "蜂鸣器报警信号";
+CM_ SG_ 582 PDC_1_CRC6 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 582 PDC_1_RollgCntr6 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 582 PDC_1_Resd6 "Profile1A:E2E Reserved";
+CM_ SG_ 582 PDC_1_STATSensorState "0x0:Sensor normal
+0x1:FOL sensor error
+0x2:FML sensor error
+0x4:FMR sensor error
+0x8:FOR sensor error
+0x10:FSR sensor error
+0x20:RSR sensor error
+0x40:ROR sensor error
+0x80: RMR sensor error
+0x100:RML sensor error
+0x200:ROL sensor error
+0x400:RSL sensor error
+0x800:FSL sensor error";
+CM_ SG_ 1392 PDC_2_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 1392 PDC_2_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1392 PDC_2_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 1392 PDC_2_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 1392 PDC_2_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1392 PDC_2_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 1415 PDC_3_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 1415 PDC_3_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1415 PDC_3_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 1415 BOOT_Version_Number "define as chery request";
+CM_ SG_ 1415 HardWare_Version_Number "define as chery request";
+CM_ SG_ 1415 SoftWare_Version_Number "define as chery request";
+CM_ SG_ 1415 Software_ID "define as chery request";
+CM_ SG_ 1035 VCC_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:No ASIL requirements.Not configure
+CRC Reserved.";
+CM_ SG_ 1035 VCC_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1601 RMR_ADCC "If set to 1 to force the network management of all other nodes on the bus into the re-peat message state.";
+CM_ SG_ 1601 ADCC_Wakeup_Poweron "Wakeup Source1 Reserved";
+CM_ SG_ 1601 ADCC_Wakeup_NM "NM报文";
+CM_ SG_ 1601 ADCC_Wakeup_Diag "Wakeup Source3 Reserved";
+CM_ SG_ 1601 ADCC_Awake_Poweron "PowerMode ON";
+CM_ SG_ 1601 ADCC_Awake_NM "Awake Reason2 Reserved";
+CM_ SG_ 1601 ADCC_Awake_Diag "接收到本部件相关的诊断报文";
+
+
+BA_DEF_ BO_  "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","IfActive","CE","CA","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition","CA","CE","Event";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BU_  "NmStationAddress" INT 0 63;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_  "NmBaseAddress" HEX 1024 1087;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_ "GenSigMeplex" STRING;
+BA_DEF_ SG_ "GenSigASIL" ENUM "QM","A","B","C","D","";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN_FD";
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "BusType" "CAN FD";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_ "GenSigMeplex" "";
+BA_DEF_DEF_ "GenSigASIL" "QM";
+BA_ "DBName" "BEV_E0X_OT_Car ADCC_DA Message list  V3.60 Draft _202308301702";
+BA_ "GenMsgILSupport" BO_ 325 1;
+BA_ "GenMsgCycleTime" BO_ 325 10;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_CRC1 5;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_Resd1 5;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AebReqTyp 2;
+BA_ "GenSigStartValue" SG_ 325 FCM_2_AebTarDec 2000;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AebTarDec 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AebTarDecVld 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AwbReq 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AwbLvl 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_BrkPreFillReq 5;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AbaReq 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_AbaLvl 2;
+BA_ "GenSigASIL"  SG_ 325 FCM_2_Avl 2;
+BA_ "GenMsgILSupport" BO_ 871 1;
+BA_ "GenMsgCycleTime" BO_ 871 50;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 871 ADS_Chanllenge1 2;
+BA_ "GenSigASIL"  SG_ 871 ADS_Chanllenge2 2;
+BA_ "GenSigASIL"  SG_ 871 ADS_ParkingActiveSubFuncSts 2;
+BA_ "GenSigASIL"  SG_ 871 ADS_RPAIntFunSts 2;
+BA_ "GenSigASIL"  SG_ 871 RPAOutFunSts 2;
+BA_ "GenSigASIL"  SG_ 871 RpaStartButSts 2;
+BA_ "GenSigASIL"  SG_ 871 ADAS_enum_ApaRpaSts 2;
+BA_ "GenSigASIL"  SG_ 871 ADAS_enum_ParkingQuitInd 2;
+BA_ "GenSigASIL"  SG_ 871 ADAS_enum_ParkingDriOperateInd 2;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 871 ADS_1_Resd2 5;
+BA_ "GenSigASIL"  SG_ 871 ADAS_enum_ParkingPauseInd 2;
+BA_ "GenSigASIL"  SG_ 871 PrkInSts 2;
+BA_ "GenSigASIL"  SG_ 871 FrontLeftOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 FrontRightOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 FrontStrightOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 BackLeftOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 BackRightOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 BackStrightOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 FrontLeftParallelOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 FrontRightParallelOutsts 2;
+BA_ "GenSigASIL"  SG_ 871 ParkingStopDist 2;
+BA_ "GenSigASIL"  SG_ 871 ParkingCompleteTime 2;
+BA_ "GenSigASIL"  SG_ 871 ParkOutDirectionSt 2;
+BA_ "GenMsgILSupport" BO_ 901 1;
+BA_ "GenMsgCycleTime" BO_ 901 50;
+BA_ "GenSigASIL"  SG_ 901 ADS_CRC1 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Resd1 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Road_infor_available 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Road_Type 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Rough_Sta_L 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Road_Features_L 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_LongitudinalDist_L 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Rough_Sta_R 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Road_Features_R 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_LongitudinalDist_R 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_CRC2 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Resd2 5;
+BA_ "GenSigStartValue" SG_ 901 ADS_FeatureHight_L 500;
+BA_ "GenSigASIL"  SG_ 901 ADS_FeatureHight_L 5;
+BA_ "GenSigStartValue" SG_ 901 ADS_FeatureHight_R 500;
+BA_ "GenSigASIL"  SG_ 901 ADS_FeatureHight_R 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_0_ID 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_0_Valid 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_0_Dx 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_0_ExistProb 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_1_ID 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_1_Valid 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_CRC3 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Resd3 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_1_Dx 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_1_ExistProb 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_2_ID 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_2_Valid 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_2_Dx 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_2_ExistProb 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_3_ID 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_3_Valid 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_CRC4 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 901 ADS_Resd4 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_3_Dx 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_3_ExistProb 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_4_ID 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_4_Valid 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_4_Dx 5;
+BA_ "GenSigASIL"  SG_ 901 SpeedBump_4_ExistProb 5;
+BA_ "GenMsgILSupport" BO_ 1301 1;
+BA_ "GenMsgCycleTime" BO_ 1301 500;
+BA_ "GenMsgCycleTimeFast" BO_ 1301 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1301 1;
+BA_ "GenMsgDelayTime" BO_ 1301 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_Type 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_CRC 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_SequenceCounter 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_TimeDomain 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_UserByte0 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_SyncTimeSec 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_OverflowOfSeconds 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_SGW 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_Reserved0 5;
+BA_ "GenSigASIL"  SG_ 1301 TimeSync_SyncTimeNSec 5;
+BA_ "GenMsgILSupport" BO_ 783 1;
+BA_ "GenMsgCycleTime" BO_ 783 50;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_FunctionSuppressReq 2;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_HPASts 2;
+BA_ "GenSigASIL"  SG_ 783 ADS_1_VPASts 2;
+BA_ "GenSigASIL"  SG_ 783 ADCC_CameraStreamSts 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_CameraErrorCode 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_HWRequest 2;
+BA_ "GenSigASIL"  SG_ 783 ADCC_PP_M_Request 2;
+BA_ "GenSigASIL"  SG_ 783 ADCC_HighwayZoneState 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_CoolingReq 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_UploadFlag 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_SurroundCameraErrorSts 5;
+BA_ "GenSigASIL"  SG_ 783 ADCC_SysReadySts 5;
+BA_ "GenMsgILSupport" BO_ 788 1;
+BA_ "GenMsgCycleTime" BO_ 788 50;
+BA_ "GenSigASIL"  SG_ 788 ADS_2_AEBStatus 2;
+BA_ "GenSigASIL"  SG_ 788 ADS_2_FCWStatus 5;
+BA_ "GenMsgILSupport" BO_ 794 1;
+BA_ "GenMsgCycleTime" BO_ 794 50;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_CRC1 5;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_Resd1 5;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_ICAStatus 2;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_ICATextinfo 2;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_ACCSts 2;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_DriverHandsoffWarning 2;
+BA_ "GenSigASIL"  SG_ 794 ADS_3_AESStatus 2;
+BA_ "GenMsgILSupport" BO_ 1445 1;
+BA_ "GenMsgSendType" BO_ 1445 3;
+BA_ "GenMsgCycleTime" BO_ 1445 3000;
+BA_ "GenMsgCycleTimeFast" BO_ 1445 50;
+BA_ "GenMsgNrOfRepetition" BO_ 1445 3;
+BA_ "GenSigSendType" SG_ 1445 TripCnt 5;
+BA_ "GenSigASIL"  SG_ 1445 TripCnt 5;
+BA_ "GenSigSendType" SG_ 1445 ResetCnt 5;
+BA_ "GenSigASIL"  SG_ 1445 ResetCnt 5;
+BA_ "GenSigSendType" SG_ 1445 AuthInfo 5;
+BA_ "GenSigASIL"  SG_ 1445 AuthInfo 5;
+BA_ "GenMsgILSupport" BO_ 809 1;
+BA_ "GenMsgSendType" BO_ 809 1;
+BA_ "GenMsgCycleTimeFast" BO_ 809 50;
+BA_ "GenMsgNrOfRepetition" BO_ 809 3;
+BA_ "GenSigSendType" SG_ 809 SynRequestFlag 5;
+BA_ "GenSigASIL"  SG_ 809 SynRequestFlag 5;
+BA_ "GenMsgILSupport" BO_ 1217 1;
+BA_ "GenMsgCycleTime" BO_ 1217 100;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_RollgCntr1 5;
+BA_ "GenSigStartValue" SG_ 1217 ASU_1_ASUSysFailrSts 1;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_ASUSysFailrSts 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_SuspCurrentLvl 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_ECASSysSts 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_SuspTmpAdjSts 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_MaintainMod 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_ECASErrSts 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_SuspTarLvl 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_EasyEntryEna 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_AutoEasyEntryFb 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_ECASModeFb 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_BluetoothManEasyEntryFb 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_HighwayModFb 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_CDCErrSts 2;
+BA_ "GenSigASIL"  SG_ 1217 ASU_1_SuspDampingLvl 2;
+BA_ "GenMsgILSupport" BO_ 776 1;
+BA_ "GenMsgCycleTime" BO_ 776 50;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_CRC1 5;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_RollgCntr1 5;
+BA_ "GenSigStartValue" SG_ 776 ASU_2_LFHeight 1500;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_LFHeight 2;
+BA_ "GenSigStartValue" SG_ 776 ASU_2_RFHeight 1500;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_RFHeight 2;
+BA_ "GenSigStartValue" SG_ 776 ASU_2_LRHeight 1500;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_LRHeight 2;
+BA_ "GenSigStartValue" SG_ 776 ASU_2_RRHeight 1500;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_RRHeight 2;
+BA_ "GenSigASIL"  SG_ 776 ASU_2_sensorErrorSts 2;
+BA_ "GenMsgILSupport" BO_ 1291 1;
+BA_ "GenMsgCycleTime" BO_ 1291 500;
+BA_ "GenSigASIL"  SG_ 1291 BMS_SOCLight 2;
+BA_ "GenMsgILSupport" BO_ 1295 1;
+BA_ "GenMsgCycleTime" BO_ 1295 500;
+BA_ "GenSigASIL"  SG_ 1295 BMS_ChgWireConnect_LightSts 5;
+BA_ "GenSigASIL"  SG_ 1295 BMS_Chg_LightSts 5;
+BA_ "GenMsgILSupport" BO_ 879 1;
+BA_ "GenMsgCycleTime" BO_ 879 50;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_CRC1 5;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_Resd1 5;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_ChallengeFeedback 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaDevicefailSts 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaModReq 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaModselect 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaBtnSts 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_StraightInBtnSts 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_StraightOutBtnSts 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaBtnCancelSts 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_PrkOutModSelRmt 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_HeartbeatSignal 2;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_RpaDeviceDisSts 5;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_BLEConnSts 5;
+BA_ "GenSigASIL"  SG_ 879 BNCM_4_BLEErrStatus 5;
+BA_ "GenMsgILSupport" BO_ 1143 1;
+BA_ "GenMsgCycleTime" BO_ 1143 100;
+BA_ "GenSigASIL"  SG_ 1143 OBC_CC_ConnectSts 1;
+BA_ "GenMsgILSupport" BO_ 1172 1;
+BA_ "GenMsgCycleTime" BO_ 1172 100;
+BA_ "GenSigStartValue" SG_ 1172 ExternalTemperature_C 254;
+BA_ "GenSigASIL"  SG_ 1172 ExternalTemperature_C 5;
+BA_ "GenSigASIL"  SG_ 1172 ExternalTemperatureFailSts 5;
+BA_ "GenMsgILSupport" BO_ 321 1;
+BA_ "GenMsgCycleTime" BO_ 321 10;
+BA_ "GenSigASIL"  SG_ 321 CSA_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 321 CSA_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 321 CSA_1_Resd 5;
+BA_ "GenSigStartValue" SG_ 321 GearShiftPos 15;
+BA_ "GenSigASIL"  SG_ 321 GearShiftPos 2;
+BA_ "GenSigASIL"  SG_ 321 GearShiftPosInverse 2;
+BA_ "GenSigASIL"  SG_ 321 STAT_ParkButton 2;
+BA_ "GenSigASIL"  SG_ 321 STAT_ShifterLeverFault 2;
+BA_ "GenSigASIL"  SG_ 321 DriveModeActive 5;
+BA_ "GenSigASIL"  SG_ 321 DriveModeReq 5;
+BA_ "GenMsgILSupport" BO_ 631 1;
+BA_ "GenMsgCycleTime" BO_ 631 20;
+BA_ "GenSigASIL"  SG_ 631 CSA_2_CRC1 5;
+BA_ "GenSigASIL"  SG_ 631 CSA_2_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 631 CSA_2_Resd1 5;
+BA_ "GenSigASIL"  SG_ 631 CSA_2_AllWarningInfo 2;
+BA_ "GenSigASIL"  SG_ 631 CSA_2_TurnSigLvrCmd 2;
+BA_ "GenMsgILSupport" BO_ 571 1;
+BA_ "GenMsgCycleTime" BO_ 571 20;
+BA_ "GenSigASIL"  SG_ 571 FLZCU_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 571 FLZCU_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 571 FLZCU_1_Resd 5;
+BA_ "GenSigStartValue" SG_ 571 HoodLockSts 3;
+BA_ "GenSigASIL"  SG_ 571 HoodLockSts 5;
+BA_ "GenSigASIL"  SG_ 571 FL_SeatOccupiedSts 5;
+BA_ "GenSigASIL"  SG_ 571 LHTurnlightSts 2;
+BA_ "GenSigASIL"  SG_ 571 RHTurnlightSts 2;
+BA_ "GenSigASIL"  SG_ 571 HoodSts 1;
+BA_ "GenSigStartValue" SG_ 571 LHFDoorLockSts 3;
+BA_ "GenSigASIL"  SG_ 571 LHFDoorLockSts 1;
+BA_ "GenSigASIL"  SG_ 571 LHFdoorSts 1;
+BA_ "GenSigASIL"  SG_ 571 LHFSeatBeltSW 1;
+BA_ "GenSigASIL"  SG_ 571 FL_SeatBeltFaultStatus 5;
+BA_ "GenMsgILSupport" BO_ 1181 1;
+BA_ "GenMsgCycleTime" BO_ 1181 100;
+BA_ "GenSigASIL"  SG_ 1181 FLZCU_9_CRC 5;
+BA_ "GenSigASIL"  SG_ 1181 FLZCU_9_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1181 FLZCU_9_Resd1 5;
+BA_ "GenSigASIL"  SG_ 1181 FLZCU_9_PowerMode 5;
+BA_ "GenSigASIL"  SG_ 1181 FLZCU_9_ArmingSts 5;
+BA_ "GenMsgILSupport" BO_ 843 1;
+BA_ "GenMsgCycleTime" BO_ 843 50;
+BA_ "GenSigASIL"  SG_ 843 HOD_CRC 5;
+BA_ "GenSigASIL"  SG_ 843 HOD_RollingCounter 5;
+BA_ "GenSigASIL"  SG_ 843 HOD_Resd1 5;
+BA_ "GenSigASIL"  SG_ 843 HOD_OnOffSts 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_OnOffStsValid 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_HandOnSts 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_OneHand_Area 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_OneHand_AreaValid 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_LeftArea_Sts 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_LeftArea_StsVD 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_RightArea_Sts 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_RightArea_StsVD 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_CAP_SENSOR_ERR 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_ECU_HW_Fault 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_BAT_LOW 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_BAT_HIGH 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_ResponseError 2;
+BA_ "GenSigASIL"  SG_ 843 HOD_FC_SYSTEM_ERR 2;
+BA_ "GenMsgILSupport" BO_ 1030 1;
+BA_ "GenMsgCycleTime" BO_ 1030 100;
+BA_ "GenSigASIL"  SG_ 1030 FLZCU_12_CRC 5;
+BA_ "GenSigASIL"  SG_ 1030 FLZCU_12_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1030 FLZCU_FrontWiperParkStatus 5;
+BA_ "GenSigASIL"  SG_ 1030 FLZCU_FrontWiperWipingStatus 5;
+BA_ "GenSigASIL"  SG_ 1030 RearViewFoldSts 5;
+BA_ "GenMsgILSupport" BO_ 864 1;
+BA_ "GenMsgCycleTime" BO_ 864 50;
+BA_ "GenSigASIL"  SG_ 864 MFS_2_CRC 5;
+BA_ "GenSigASIL"  SG_ 864 MFS_2_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 864 MFS_RESPlus 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_SETMinus 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_Time_Gap_Reduce 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_Time_Gap_Add 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_Rsp_Error 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_LeftRoller 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_LeftRollerMiddleKey 2;
+BA_ "GenSigASIL"  SG_ 864 MFS_LeRollrUpDwnAdjSteps 2;
+BA_ "GenMsgILSupport" BO_ 683 1;
+BA_ "GenMsgCycleTime" BO_ 683 20;
+BA_ "GenSigASIL"  SG_ 683 FRZCU_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 683 FRZCU_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 683 FRZCU_1_Resd 5;
+BA_ "GenSigASIL"  SG_ 683 RHFDoorSts 1;
+BA_ "GenSigASIL"  SG_ 683 RHRDoorSts 1;
+BA_ "GenSigStartValue" SG_ 683 RHFDoorLockSts 3;
+BA_ "GenSigASIL"  SG_ 683 RHFDoorLockSts 5;
+BA_ "GenSigStartValue" SG_ 683 RHRDoorLockSts 3;
+BA_ "GenSigASIL"  SG_ 683 RHRDoorLockSts 5;
+BA_ "GenMsgILSupport" BO_ 699 1;
+BA_ "GenMsgCycleTime" BO_ 699 20;
+BA_ "GenSigASIL"  SG_ 699 RZCU_2_CRC 5;
+BA_ "GenSigASIL"  SG_ 699 RZCU_2_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 699 RZCU_2_Resd 5;
+BA_ "GenSigASIL"  SG_ 699 LHRdoorSts 1;
+BA_ "GenSigStartValue" SG_ 699 LHRDoorLockSts 3;
+BA_ "GenSigASIL"  SG_ 699 LHRDoorLockSts 5;
+BA_ "GenSigStartValue" SG_ 699 TrunkLockSts 3;
+BA_ "GenSigASIL"  SG_ 699 TrunkLockSts 5;
+BA_ "GenMsgILSupport" BO_ 1258 1;
+BA_ "GenMsgCycleTime" BO_ 1258 100;
+BA_ "GenSigASIL"  SG_ 1258 RZCU_7_CRC 5;
+BA_ "GenSigASIL"  SG_ 1258 RZCU_7_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1258 RZCU_RearWiperWipingStatus 5;
+BA_ "GenSigASIL"  SG_ 1258 RZCU_RearWiperParkStatus 5;
+BA_ "GenMsgILSupport" BO_ 1050 1;
+BA_ "GenMsgCycleTime" BO_ 1050 100;
+BA_ "GenSigASIL"  SG_ 1050 FLCR_1_SysSt 2;
+BA_ "GenSigASIL"  SG_ 1050 FLCR_1_BlkSts 2;
+BA_ "GenMsgILSupport" BO_ 1062 1;
+BA_ "GenMsgCycleTime" BO_ 1062 100;
+BA_ "GenSigASIL"  SG_ 1062 FLCR_2_FCTAWarn 5;
+BA_ "GenSigASIL"  SG_ 1062 FLCR_2_FCTBWarn 2;
+BA_ "GenSigASIL"  SG_ 1062 FLCR_2_FCTAFCTBONOFFSts 5;
+BA_ "GenMsgILSupport" BO_ 1067 1;
+BA_ "GenMsgCycleTime" BO_ 1067 100;
+BA_ "GenSigASIL"  SG_ 1067 FRCR_1_SysSt 2;
+BA_ "GenSigASIL"  SG_ 1067 FRCR_1_BlkSts 2;
+BA_ "GenMsgILSupport" BO_ 1077 1;
+BA_ "GenMsgCycleTime" BO_ 1077 100;
+BA_ "GenSigASIL"  SG_ 1077 FRCR_2_FCTAWarn 5;
+BA_ "GenSigASIL"  SG_ 1077 FRCR_2_FCTBWarn 2;
+BA_ "GenMsgILSupport" BO_ 1095 1;
+BA_ "GenMsgCycleTime" BO_ 1095 100;
+BA_ "GenSigASIL"  SG_ 1095 RLCR_1_SysSt 2;
+BA_ "GenSigASIL"  SG_ 1095 RLCR_1_BlkSts 2;
+BA_ "GenSigASIL"  SG_ 1095 RLCR_1_BSDWarn 5;
+BA_ "GenSigASIL"  SG_ 1095 RLCR_1_DOWWarn 5;
+BA_ "GenMsgILSupport" BO_ 1104 1;
+BA_ "GenMsgCycleTime" BO_ 1104 100;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_RCWWarn 5;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_RCTAWarn 5;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_RCTBWarn 2;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_BSDLCWONOFFSts 5;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_DOWONOFFSts 5;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_RCWONOFFSts 5;
+BA_ "GenSigASIL"  SG_ 1104 RLCR_2_RCTARCTBONOFFSts 5;
+BA_ "GenMsgILSupport" BO_ 1267 1;
+BA_ "GenMsgCycleTime" BO_ 1267 100;
+BA_ "GenSigASIL"  SG_ 1267 RRCR_1_SysSt 2;
+BA_ "GenSigASIL"  SG_ 1267 RRCR_1_BlkSts 2;
+BA_ "GenSigASIL"  SG_ 1267 RRCR_1_BSDWarn 5;
+BA_ "GenSigASIL"  SG_ 1267 RRCR_1_DOWWarn 5;
+BA_ "GenMsgILSupport" BO_ 1271 1;
+BA_ "GenMsgCycleTime" BO_ 1271 100;
+BA_ "GenSigASIL"  SG_ 1271 RRCR_2_RCTAWarn 5;
+BA_ "GenSigASIL"  SG_ 1271 RRCR_2_RCTBWarn 2;
+BA_ "GenMsgILSupport" BO_ 1252 1;
+BA_ "GenMsgCycleTime" BO_ 1252 100;
+BA_ "GenSigASIL"  SG_ 1252 TotalOdometer_km_OBD 5;
+BA_ "GenMsgILSupport" BO_ 1296 1;
+BA_ "GenMsgCycleTime" BO_ 1296 500;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeYear 5;
+BA_ "GenSigStartValue" SG_ 1296 CurrentTimeMonth 1;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeMonth 5;
+BA_ "GenSigStartValue" SG_ 1296 CurrentTimeDay 1;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeDay 5;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeHour 5;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeMinute 5;
+BA_ "GenSigASIL"  SG_ 1296 CurrentTimeSecond 5;
+BA_ "GenMsgILSupport" BO_ 1157 1;
+BA_ "GenMsgSendType" BO_ 1157 3;
+BA_ "GenMsgCycleTime" BO_ 1157 100;
+BA_ "GenMsgCycleTimeFast" BO_ 1157 50;
+BA_ "GenMsgNrOfRepetition" BO_ 1157 3;
+BA_ "GenMsgDelayTime" BO_ 1157 5;
+BA_ "GenSigASIL"  SG_ 1157 ICC_DA_15_ExtremeEnergySaveMode 5;
+BA_ "GenMsgILSupport" BO_ 1279 1;
+BA_ "GenMsgSendType" BO_ 1279 3;
+BA_ "GenMsgCycleTime" BO_ 1279 100;
+BA_ "GenMsgCycleTimeFast" BO_ 1279 50;
+BA_ "GenMsgNrOfRepetition" BO_ 1279 3;
+BA_ "GenMsgDelayTime" BO_ 1279 5;
+BA_ "GenSigASIL"  SG_ 1279 ICC_SentinelModeSts 5;
+BA_ "GenSigASIL"  SG_ 1279 ICC_CameraErrorCode 5;
+BA_ "GenSigSendType" SG_ 1279 ICC_SentinelRequest 5;
+BA_ "GenSigASIL"  SG_ 1279 ICC_SentinelRequest 5;
+BA_ "GenSigSendType" SG_ 1279 ICC_StartDeInitCameraStream 5;
+BA_ "GenSigASIL"  SG_ 1279 ICC_StartDeInitCameraStream 5;
+BA_ "GenSigSendType" SG_ 1279 ICC_CameraRecoveryRequest 5;
+BA_ "GenSigASIL"  SG_ 1279 ICC_CameraRecoveryRequest 5;
+BA_ "GenMsgILSupport" BO_ 1208 1;
+BA_ "GenMsgCycleTime" BO_ 1208 100;
+BA_ "GenSigASIL"  SG_ 1208 PPMID_1_HWSt 5;
+BA_ "GenSigASIL"  SG_ 1208 PPMID_1_PPSt 5;
+BA_ "GenSigASIL"  SG_ 1208 PPMID_1_PPMICounter 5;
+BA_ "GenSigStartValue" SG_ 1208 PPMID_1_PPMISt 1;
+BA_ "GenSigASIL"  SG_ 1208 PPMID_1_PPMISt 5;
+BA_ "GenMsgILSupport" BO_ 582 1;
+BA_ "GenMsgCycleTime" BO_ 582 20;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd1 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FOLDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FOLDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FOLZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FMLDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FMLDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FMLZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FMRDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FMRDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FMRZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FORDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FORDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd2 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FORZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_ROLDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_ROLDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_ROLZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_RMLDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RMLDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RMLZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_RMRDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RMRDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RMRZoneStatus 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC3 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd3 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_RORDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RORDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RORZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_LSFDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_LSFDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_LSFZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FKPLSFMDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPLSFMDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPLSFMZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FKPLSRMDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPLSRMDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC4 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd4 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPLSRMZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_LSRDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_LSRDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_LSRZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_RSFDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RSFDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RSFZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FKPRSFMDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPRSFMDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPRSFMZoneStatus 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC5 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr5 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd5 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_FKPRSRMDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPRSRMDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPRSRMZoneStatus 5;
+BA_ "GenSigStartValue" SG_ 582 PDC_1_RSRDistance 251;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RSRDistance 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RSRZoneStatus 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_ParKASSStatus 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_PASTrailerHitchDetected 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_PDCSwFdbk 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FrontWarningType 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RearWarningType 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_LeftSideWarningType 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RightSideWarningType 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_STATRearPDCActive 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_STATFrntPDCActive 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_STATSidePDCActive 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_CRC6 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_RollgCntr6 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_Resd6 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_STATSensorState 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_STATPDCHMIMode 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FrontPDCMuteFeedback 5;
+BA_ "GenSigASIL"  SG_ 582 PDC_1_FKPMuteFeedback 5;
+BA_ "GenMsgILSupport" BO_ 1392 1;
+BA_ "GenMsgCycleTime" BO_ 1392 1000;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_CRC1 5;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_Resd1 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_Number1 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_State1 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_Number2 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_State2 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_Number3 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_State3 5;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_CRC2 5;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 1392 PDC_2_Resd2 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_Number4 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_State4 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_Number5 5;
+BA_ "GenSigASIL"  SG_ 1392 DTC_State5 5;
+BA_ "GenMsgILSupport" BO_ 1415 1;
+BA_ "GenMsgCycleTime" BO_ 1415 5000;
+BA_ "GenSigASIL"  SG_ 1415 PDC_3_CRC1 5;
+BA_ "GenSigASIL"  SG_ 1415 PDC_3_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 1415 PDC_3_Resd1 5;
+BA_ "GenSigASIL"  SG_ 1415 BOOT_Version_Number 5;
+BA_ "GenSigASIL"  SG_ 1415 HardWare_Version_Number 5;
+BA_ "GenSigASIL"  SG_ 1415 SoftWare_Version_Number 5;
+BA_ "GenSigASIL"  SG_ 1415 Software_ID 5;
+BA_ "GenMsgILSupport" BO_ 1035 1;
+BA_ "GenMsgCycleTime" BO_ 1035 100;
+BA_ "GenSigASIL"  SG_ 1035 VCC_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 1035 VCC_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1035 VCC_1_CarMode 5;
+BA_ "NmMessage" BO_ 1601 1;
+BA_ "GenMsgCycleTime" BO_ 1601 1000;
+BA_ "CANFD_BRS" BO_ 1601 0;
+BA_ "VFrameFormat" BO_ 1601 0;
+BA_ "GenSigStartValue" SG_ 1601 srcNodeID_ADCC 65;
+BA_ "GenSigASIL"  SG_ 1601 srcNodeID_ADCC 5;
+BA_ "GenSigASIL"  SG_ 1601 RMR_ADCC 5;
+BA_ "GenSigASIL"  SG_ 1601 NMm_ADCC_Reserved1 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Wakeup_Poweron 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Wakeup_NM 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Wakeup_Diag 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Awake_Poweron 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Awake_NM 5;
+BA_ "GenSigASIL"  SG_ 1601 ADCC_Awake_Diag 5;
+VAL_ 325 FCM_2_AebReqTyp 3 "Reserved" 2 "Reserved" 1 "Request" 0 "No Request" ;
+VAL_ 325 FCM_2_AebTarDec 4095 "Invalid" ;
+VAL_ 325 FCM_2_AebTarDecVld 1 "Valid" 0 "Invalid" ;
+VAL_ 325 FCM_2_AwbReq 1 "Request" 0 "No Request" ;
+VAL_ 325 FCM_2_AwbLvl 3 "Level3" 2 "Level2" 1 "Level1" 0 "No Level" ;
+VAL_ 325 FCM_2_BrkPreFillReq 1 "Request" 0 "No Request" ;
+VAL_ 325 FCM_2_AbaReq 1 "Request" 0 "No Request" ;
+VAL_ 325 FCM_2_AbaLvl 3 "Level3" 2 "Level2" 1 "Level1" 0 "No Level" ;
+VAL_ 325 FCM_2_Avl 1 "Available" 0 "Not available" ;
+VAL_ 871 ADS_ParkingActiveSubFuncSts 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "RPA Out on" 1 "RPA Int on" 0 "No Request" ;
+VAL_ 871 ADS_RPAIntFunSts 1 "Available" 0 "not Available" ;
+VAL_ 871 RPAOutFunSts 1 "Available" 0 "not Available" ;
+VAL_ 871 RpaStartButSts 1 "Available" 0 "not Available" ;
+VAL_ 871 ADAS_enum_ApaRpaSts 8 "Undo" 7 "Pause" 6 "Terminate" 5 "Failure" 4 "Completed" 3 "Parking active" 2 "Searching" 1 "Standby" 0 "Off" ;
+VAL_ 871 ADAS_enum_ParkingQuitInd 49 " Req_Quit_Response_Timeout" 48 " Req_Quit_No_Avalible_Slot" 47 " Req_Quit_Passager_Door" 46 " Req_Quit_FreeSpace_Limit" 45 " Req_Quit_LOC_Unavilable" 44 " Req_Quit_Not allow_Area" 43 " Req_Quit_Pitch_Over limit" 42 " Req_Quit_Slope _Over limit" 41 " Req_Quit_ Path_Long_Over" 40 " Req_Quit_ Folded_Mirror" 39 " Req_Quit_Charge plug connected" 38 " Req_Quit_  Limitation _ PER_Fusion_Map" 37 " Req_Quit_ Limited_ Sensors" 36 " Req_Quit_ Still_moving_in_recovery_stages " 35 " Req_Quit_ Path_upload_timeout" 34 " Req_Quit_ Training_process_overflow" 33 " Req_Quit_ Corresponding_remind_timeout" 32 " Req_Quit_ Backward_move _ long" 31 " Req_Quit_ Internal_components_abnormal" 30 " Req_Quit_Function_Safety（因为功能安全原因导致泊车系统退出）" 29 " Req_Quit_Engine_Front_Door_Open（前引擎盖打开，泊车系统退出）" 28 " Req_Quit_Remote_device（遥控设备原因导致系统退出）" 27 " Req_Quit_Door_Lock（车辆上锁，泊车系统退出）（用于RPA）" 26 " Req_Quit_Unsafe_Behavior（P/EPB没被置起P-lock）" 25 " Req_Quit_No_POC_Slot_Avaliable（无可用泊出车位，泊车系统退出）" 24 " Req_Quit_Phone_LowBattey（手机电池电量低，泊车系统退出）" 23 " Req_Quit_Phone_Disconnected（与手机断开连接，泊车系统退出）" 22 " Req_Quit_Other_Reason" 21 " Req_Quit_Path_Deviation" 20 " Req_Quit_Steering Wheel Intervention (reserved)（驾驶员干预方向盘，泊车系统退出）" 19 " Req_Quit_External ECU actvie（ESP动态干预，泊车系统退出）" 18 " Req_Quit_Vehicle Block（车辆Block, 泊车系统退出）" 17 " Req_Quit_EPB_Apply（EPB拉起，泊车系统退出）" 16 " Req_Quit_Gear Interrupt (wrong gear position)（挡位不对，泊车系统退出）" 15 " Req_Quit_Gear Intervention(driver intervention)（驾驶员干预挡位，泊车系统退出）" 14 " Req_Quit_Terminate_Button_Pressed（取消摁键摁下，泊车系统退出）" 13 " Req_Quit_Surround_View（环视关闭，泊车系统退出）" 12 " Req_Quit_Luggage Door Open（后备箱打开，泊车系统退出）" 11 " Req_Quit_Driver_Door(all Doors)（车门打开，泊车系统退出）" 10 " Req_Quit_Seat belt unbuckle（安全带解开，泊车系统退出）" 9 " Req_Quit_TJA（TJA开启，泊车系统退出）" 8 " Req_Quit_ACC（ACC开启，泊车系统退出）" 7 " Req_Quit_Gas pedal（油门踏板踩下，泊车系统退出）" 6 " Req_Quit_Speed high（泊车速度太大，泊车系统退出）" 5 " Req_Quit_Space limit（泊车空间不足，泊车系统退出）" 4 " Req_Quit_Trajectory（泊车轨迹规划失败，泊车系统退出）" 3 " Req_Quit_Recover_Interrupt_Times_Overflow（暂停次数超限，泊车系统退出）" 2 " Req_Quit_Move times overflow（泊车次数超限，泊车系统退出）" 1 " Req_Quit_Timing overflow（泊车/暂停超时，泊车系统退出）" 0 " No Request" ;
+VAL_ 871 ADAS_enum_ParkingDriOperateInd 46 "Req_Path saving" 45 "Req_Speed over limit,APA can't avtive" 44 "Req_Parking resume" 43 "Req_Caution rear space" 42 "Req_Target slot occupied, try to paking in other slot" 41 "Req_Training path is mapping" 40 "Req_Path length  ready exceed limit" 39 "Req_System will automatically Save path after trainning success" 38 "Req_stop_Paking slot first released" 37 "Req_Confirm_Save training Path" 36 "Req_Press Brake and press recovery button" 35 "Req_PS_Repeat_Input" 34 "Req_Undo_Select" 33 "Req_Steering Wheel_HandOff" 32 "Req_PS_Input" 31 "Req_ Confirm_Press Undo Switch" 30 "Req_Foward move a bit" 29 "Req_Open_outside rear view Mirror" 28 "Req_MRA_start_confirm" 27 "Reserved" 26 "Reserved" 25 "Reserved" 24 "Reserved" 23 "Req_Repress_Parking Switch" 22 "Req_POC Direction Select" 21 "Req_Function off" 20 "Req_Process bar" 19 "Req_Release Brake" 18 "Req_Confirm_Press DM Switch" 17 "Req_Press Brake Pedal" 16 "Req_Surround_View" 15 "Req_Buckle Seat Belt" 14 "Req_Close Door (all doors)" 13 "Req_Close Engine Front Door" 12 "Req_Close Trunk" 11 "Req_Leave_Car" 10 "Req EPB_Applied(Req_Gear P and EPB Applied)" 9 "Req_Connect_Phone" 8 "Req_Function Select for A/RPA" 7 "Req_Turn_lever（Reserved)" 6 "Req_PS_ID_Selection" 5 "Req_Stop" 4 "Req_SearchingProcess" 3 "Req_Slow_Down" 2 "Req_Gear_D" 1 "Req_Function Select" 0 "No Request" ;
+VAL_ 871 ADAS_enum_ParkingPauseInd 11 " Req_Recover_Camera blocked" 10 " Req_Recover_Seat belt_Unbuckled" 9 " Req_Recover_Trunk_Open" 8 " Req_Recover_External Mirror_Open" 7 " Req_Recover_Vehicle standstill overtime" 6 " Req_Recover_Pedestrain In Trajectory " 5 " Req_Recover_Key out of range" 4 " Req_Recover_Phone out of range" 3 " Req_Recover_Found Obstacle In Trajectory" 2 " Req_Recover_PassengerDoor_Open" 1 " Req_Recover_Press_ Resume Switch" 0 " No Request" ;
+VAL_ 871 PrkInSts 1 "RPA Front int" 0 "RPA back int" ;
+VAL_ 871 FrontLeftOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 FrontRightOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 FrontStrightOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 BackLeftOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 BackRightOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 BackStrightOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 FrontLeftParallelOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 FrontRightParallelOutsts 1 "Available" 0 "not Available" ;
+VAL_ 871 ParkOutDirectionSt 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "Back Right Cross" 7 "Back Left Cross" 6 "Back Out" 5 "Front Right Parallel" 4 "Front Right Cross" 3 "Front Out" 2 "Front Left Parallel" 1 "Front Left Cross" 0 "none" ;
+VAL_ 901 ADS_Road_infor_available 1 "Available" 0 "Not Available " ;
+VAL_ 901 ADS_Road_Type 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Gravel road " 1 "Bumpy road" 0 "Flat road" ;
+VAL_ 901 ADS_Rough_Sta_L 3 "convex" 2 "concave" 1 "flat" 0 "Unknown" ;
+VAL_ 901 ADS_Road_Features_L 15 "Invalid" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "Others" 7 "Pit" 6 "Cement joint" 5 "Bridge joint " 4 "Continuous Speed Bumps" 3 "High-speed vibration zone " 2 "Manhole cover" 1 "Speed Bump?" 0 "No Object" ;
+VAL_ 901 ADS_Rough_Sta_R 3 "convex" 2 "concave" 1 "flat" 0 "Unknown" ;
+VAL_ 901 ADS_Road_Features_R 15 "Invalid" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "Others" 7 "Pit" 6 "Cement joint" 5 "Bridge joint " 4 "Continuous Speed Bumps" 3 "High-speed vibration zone " 2 "Manhole cover" 1 "Speed Bump?" 0 "No Object" ;
+VAL_ 901 SpeedBump_0_ID 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 901 SpeedBump_0_Valid 1 "valid" 0 "Invalid" ;
+VAL_ 901 SpeedBump_1_ID 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 901 SpeedBump_1_Valid 1 "valid" 0 "Invalid" ;
+VAL_ 901 SpeedBump_2_ID 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 901 SpeedBump_2_Valid 1 "valid" 0 "Invalid" ;
+VAL_ 901 SpeedBump_3_ID 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 901 SpeedBump_3_Valid 1 "valid" 0 "Invalid" ;
+VAL_ 901 SpeedBump_4_ID 14 "14" 13 "13" 12 "12" 11 "11" 10 "10" 9 "9" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 901 SpeedBump_4_Valid 1 "valid" 0 "Invalid" ;
+VAL_ 783 ADS_1_FunctionSuppressReq 3 "Reserved" 2 "Standard_Height" 1 "Disable" 0 "No Request" ;
+VAL_ 783 ADS_1_HPASts 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Training terminate" 8 "Training Completed" 7 "Training" 6 "Pause" 5 "Terminate" 4 "Failure" 3 "Completed" 2 "Guidance active" 1 "Standby" 0 "Off" ;
+VAL_ 783 ADS_1_VPASts 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "Self build map" 7 "Pause" 6 "Terminate" 5 "Failure" 4 "Completed" 3 "Guidance active" 2 "Standby" 1 "Passive" 0 "Off" ;
+VAL_ 783 ADCC_CameraStreamSts 7 "Reserved" 6 "Reserved" 5 "Recoverying  " 4 "Error  " 3 "DeInitFinish  " 2 "Working  " 1 "Inited  " 0 "Reset  " ;
+VAL_ 783 ADCC_CameraErrorCode 7 "reserved(未定义errorcode 时发0x4)" 6 "reserved(未定义errorcode 时发0x4)" 5 "reserved(未定义errorcode 时发0x4)" 4 "reserved(未定义errorcode 时发0x4)" 3 "ErrorCode3" 2 "ErrorCode2" 1 "ErrorCode1" 0 "NoError" ;
+VAL_ 783 ADCC_HWRequest 1 "Demand" 0 "No demand" ;
+VAL_ 783 ADCC_PP_M_Request 1 "Demand" 0 "No demand" ;
+VAL_ 783 ADCC_HighwayZoneState 3 "Reserved" 2 "Reserved" 1 "Highway zone" 0 "Invalid/unknown " ;
+VAL_ 783 ADCC_CoolingReq 7 "Reserved" 6 "Reserved" 5 "Emergency" 4 "Critical" 3 "High" 2 "Middle" 1 "Low" 0 "No Request" ;
+VAL_ 783 ADCC_UploadFlag 1 "request" 0 "no req" ;
+VAL_ 783 ADCC_SurroundCameraErrorSts 8 "RightViewError" 4 "LeftViewError" 2 "RearViewError" 1 "FrontViewError" 0 "NoError" ;
+VAL_ 783 ADCC_SysReadySts 1 "not Ready" 0 "Ready" ;
+VAL_ 788 ADS_2_AEBStatus 5 "pre-fill" 4 "active" 3 "no_active" 2 "Failure" 1 "ON" 0 "OFF" ;
+VAL_ 788 ADS_2_FCWStatus 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "level 3(high)" 2 "level 2(middle)" 1 "level 1(low)" 0 "no request" ;
+VAL_ 794 ADS_3_ICAStatus 7 "reserved" 6 "reserved" 5 "Suspend" 4 "Failure" 3 "Active" 2 "Stanby" 1 "Passive" 0 "Off" ;
+VAL_ 794 ADS_3_ICATextinfo 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "reserved" 7 "TJAICA degrade to ACC" 6 "TJAICA resumed" 5 "TJAICA Suspend" 4 "TJAICA failure" 3 "TJAICA Cancelled" 2 "TJAICA Cannot Be Activated" 1 "TJAICA Activated" 0 "No dispaly" ;
+VAL_ 794 ADS_3_ACCSts 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "reserved" 9 "reserved" 8 "Stand Active" 7 " failure" 6 " Stand Wait" 5 " Override" 4 " Brake Only" 3 " Active_Control" 2 " Standby" 1 " Passive" 0 " Off" ;
+VAL_ 794 ADS_3_DriverHandsoffWarning 7 "reserved" 6 "reserved" 5 "reserved" 4 "Warning 4 for stage4(Punishment)" 3 "Warning 3 for stage3(TOR)" 2 "Warning 2  for stage2" 1 "Warning 1 for stage1" 0 "None" ;
+VAL_ 794 ADS_3_AESStatus 7 "reserved" 6 "reserved" 5 "reserved" 4 "Passive" 3 "Failure" 2 "Active" 1 "Standby" 0 "OFF" ;
+VAL_ 1217 ASU_1_ASUSysFailrSts 3 "Reserved" 2 "Fail" 1 "LimpupMode" 0 "No Fail" ;
+VAL_ 1217 ASU_1_SuspCurrentLvl 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "easy Loading level" 10 "easy Entry Enable level" 9 "Very low level" 8 "Between low and very low level" 7 "Low level" 6 "Between normal and low level" 5 "Normal level" 4 "Between high and normal level" 3 "High level" 2 "Between Very high and high level" 1 "Very High level" 0 "Invalid" ;
+VAL_ 1217 ASU_1_ECASSysSts 4 "Function Shutdown" 3 "AxisHolding" 2 "AxisLowering" 1 "AxisLifting" 0 "InValid" ;
+VAL_ 1217 ASU_1_SuspTmpAdjSts 1 "Disable" 0 "Enable" ;
+VAL_ 1217 ASU_1_MaintainMod 3 "MaintainModexitReq" 2 "OFF, susp isnot in MaintainMod" 1 "ON,susp is in MaintainMod" 0 "Initializing" ;
+VAL_ 1217 ASU_1_ECASErrSts 3 "fault priority 3(Very seriously)" 2 "fault priority 2(seriously)" 1 "fault priority 1(minor)" 0 "no error" ;
+VAL_ 1217 ASU_1_SuspTarLvl 7 "easy Loading level" 6 "easy Entry Enable level" 5 "very low level" 4 "low level" 3 "normal level" 2 "high level" 1 "Very high level" 0 "No requirement" ;
+VAL_ 1217 ASU_1_EasyEntryEna 1 "Enable" 0 "Not Enable" ;
+VAL_ 1217 ASU_1_AutoEasyEntryFb 1 "Enable" 0 "Not Enable" ;
+VAL_ 1217 ASU_1_ECASModeFb 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "All Road" 2 "sport" 1 "normal" 0 "comfort" ;
+VAL_ 1217 ASU_1_BluetoothManEasyEntryFb 1 "Active" 0 "Inactive" ;
+VAL_ 1217 ASU_1_HighwayModFb 1 "Active" 0 "Inactive" ;
+VAL_ 1217 ASU_1_CDCErrSts 1 "error" 0 "no error" ;
+VAL_ 1217 ASU_1_SuspDampingLvl 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Soft" 3 "Middle" 2 "Hard    " 1 "Very Hard" 0 "None" ;
+VAL_ 776 ASU_2_LFHeight 4095 "Invalid" ;
+VAL_ 776 ASU_2_RFHeight 4095 "Invalid" ;
+VAL_ 776 ASU_2_LRHeight 4095 "Invalid" ;
+VAL_ 776 ASU_2_RRHeight 4095 "Invalid" ;
+VAL_ 776 ASU_2_sensorErrorSts 15 "four sensors are faulty" 14 "LF RF and LR sensors are faulty " 13 "LF RF and RR sensors are faulty " 12 "LF and RF sensor fault " 11 "LF LR and RR sensors are faulty " 10 "LF and LR sensor fault " 9 "LF and RR sensor fault " 8 "LF sensor fault  " 7 "RF LR and RR sensors  faulty " 6 "RF and LR sensors  faulty " 5 "RF and RR sensor fault " 4 "RF sensor faulty " 3 "RR and LR sensors faulty " 2 "LR sensor faulty " 1 "RR sensor faulty " 0 "all four sensors no fault " ;
+VAL_ 1291 BMS_SOCLight 127 "Invalid" ;
+VAL_ 1295 BMS_ChgWireConnect_LightSts 1 "Connect" 0 "DIsconnect" ;
+VAL_ 1295 BMS_Chg_LightSts 1 "charging" 0 "No Charge" ;
+VAL_ 879 BNCM_4_RpaDevicefailSts 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "Other Failures" 2 "LowBatt" 1 "Offline" 0 "NoFailure" ;
+VAL_ 879 BNCM_4_RpaModReq 1 "Request" 0 "No request" ;
+VAL_ 879 BNCM_4_RpaModselect 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "RPA Out on" 1 "RPA Int on" 0 "Not select" ;
+VAL_ 879 BNCM_4_RpaBtnSts 1 "Pressed ON" 0 "No Pressed" ;
+VAL_ 879 BNCM_4_StraightInBtnSts 1 "Pressed ON" 0 "No Pressed" ;
+VAL_ 879 BNCM_4_StraightOutBtnSts 1 "Pressed ON" 0 "No Pressed" ;
+VAL_ 879 BNCM_4_RpaBtnCancelSts 1 "Pressed ON" 0 "No Pressed" ;
+VAL_ 879 BNCM_4_PrkOutModSelRmt 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Back Right Cross" 7 "Back Left Cross" 6 "Back Out" 5 "Front Right Parallel" 4 "Front Right Cross" 3 "Front Out" 2 "Front Left Parallel" 1 "Front Left Cross" 0 "none" ;
+VAL_ 879 BNCM_4_HeartbeatSignal 1 "Active" 0 "NotActive" ;
+VAL_ 879 BNCM_4_RpaDeviceDisSts 3 "out of range" 2 "Normal Range" 1 "in the Car" 0 "not valid" ;
+VAL_ 879 BNCM_4_BLEConnSts 3 "Reserved" 2 "Connection" 1 "Not connection" 0 "Default" ;
+VAL_ 879 BNCM_4_BLEErrStatus 1 "Error" 0 "No Error" ;
+VAL_ 1143 OBC_CC_ConnectSts 7 "Reserved" 6 "Reserved" 5 "Error" 4 "Half Connection" 3 "V2L" 2 "V2V" 1 "Charge Connected" 0 "Not connected" ;
+VAL_ 1172 ExternalTemperature_C 255 "Invalid" 254 "invalid" ;
+VAL_ 1172 ExternalTemperatureFailSts 1 "Fail Present" 0 "Fail Not Present" ;
+VAL_ 321 GearShiftPos 15 "SNA(Double fault shifter sensor)" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Shifter not initialized / INIT" 7 "Tip-(manual shift down)" 6 "Tip+(manual shift up)" 5 "POS_FIVE (backwards twice / Y2)" 4 "POS_FOUR (backwards once / Y1)" 3 "POS_THREE (forward once / X1)" 2 "POS_TWO (forward twice / X2)" 1 "POS_ONE (Z)(Manual position)" 0 "POS_ZERO (Z)" ;
+VAL_ 321 GearShiftPosInverse 15 "POS_ZERO (Z)" 14 "POS_ONE (Z)(Manual position)" 13 "POS_TWO (forward twice / X2)" 12 "POS_THREE (forward once / X1)" 11 "POS_FOUR (backwards once / Y1)" 10 "POS_FIVE (backwards twice / Y2)" 9 "Tip+(manual shift up)" 8 "Tip-(manual shift down)" 7 "Shifter not initialized / INIT" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Reserved" 0 "SNA(Double fault shifter sensor)" ;
+VAL_ 321 STAT_ParkButton 3 "reserved" 2 "Park button fault" 1 "driver request park button" 0 "no request" ;
+VAL_ 321 STAT_ShifterLeverFault 7 "Invalid" 6 "Reserve" 5 "Reserve" 4 "Reserve" 3 "Shift sensors both fault" 2 "Shift sensor 2 fault" 1 "Shift sensor 1 fault" 0 "Shift sensors both ok" ;
+VAL_ 321 DriveModeActive 3 "Invalid" 2 "Reserve" 1 "Sport Mode Active" 0 "Normal Mode" ;
+VAL_ 321 DriveModeReq 3 "Invalid" 2 "Reserve" 1 "Sport Mode Button Pressed" 0 "Sport Mode Button Unpressed" ;
+VAL_ 631 CSA_2_AllWarningInfo 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Please check the position of the gear shift" 3 "Third grade failure of gear shift mechanism(Reserved)" 2 "Second grade failure of gear shift mechanism" 1 "First grade failure of gear shift mechanism" 0 "No error" ;
+VAL_ 631 CSA_2_TurnSigLvrCmd 7 "fault" 6 "Reserved" 5 "Reserved" 4 "right change" 3 "left change" 2 "turn right" 1 "turn left" 0 "OFF" ;
+VAL_ 571 HoodLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 571 FL_SeatOccupiedSts 1 "Active" 0 "Not Active" ;
+VAL_ 571 LHTurnlightSts 1 "Active" 0 "Not Active" ;
+VAL_ 571 RHTurnlightSts 1 "Active" 0 "Not Active" ;
+VAL_ 571 HoodSts 3 "Reserved" 2 "full_open" 1 "Ajar " 0 "Close" ;
+VAL_ 571 LHFDoorLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 571 LHFdoorSts 3 "Reserved" 2 "full_open" 1 "Ajar " 0 "Close" ;
+VAL_ 571 LHFSeatBeltSW 1 "Active" 0 "Not Active" ;
+VAL_ 571 FL_SeatBeltFaultStatus 1 "Fault" 0 "Not_Fault" ;
+VAL_ 1181 FLZCU_9_PowerMode 3 "Reserved" 2 "ON" 1 "Comfortable" 0 "Off" ;
+VAL_ 1181 FLZCU_9_ArmingSts 3 "Invalid" 2 "Disarming successful" 1 "Arming successful" 0 "Not active" ;
+VAL_ 843 HOD_OnOffSts 1 "Hand On" 0 "Hand Off" ;
+VAL_ 843 HOD_OnOffStsValid 1 "Valid" 0 "Invalid" ;
+VAL_ 843 HOD_HandOnSts 3 "Invalid" 2 "Two Hand" 1 "One Hand" 0 "None" ;
+VAL_ 843 HOD_OneHand_Area 3 "Below Area" 2 "Right Area" 1 "Left Area" 0 "None" ;
+VAL_ 843 HOD_OneHand_AreaValid 1 "Valid" 0 "Invalid" ;
+VAL_ 843 HOD_LeftArea_Sts 2 "Left Area Grab" 1 "Left Area Touch" 0 "None" ;
+VAL_ 843 HOD_LeftArea_StsVD 1 "Valid" 0 "Invalid" ;
+VAL_ 843 HOD_RightArea_Sts 2 "Right Area Grab" 1 "Right Area Touch" 0 "None" ;
+VAL_ 843 HOD_RightArea_StsVD 1 "Valid" 0 "Invalid" ;
+VAL_ 843 HOD_FC_CAP_SENSOR_ERR 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 843 HOD_FC_ECU_HW_Fault 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 843 HOD_FC_BAT_LOW 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 843 HOD_FC_BAT_HIGH 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 843 HOD_FC_ResponseError 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 843 HOD_FC_SYSTEM_ERR 1 "Fault Occurred" 0 "No Fault" ;
+VAL_ 1030 FLZCU_FrontWiperParkStatus 1 "Returned" 0 "NotReturned" ;
+VAL_ 1030 FLZCU_FrontWiperWipingStatus 2 "high" 1 "low" 0 "OFF" ;
+VAL_ 1030 RearViewFoldSts 2 "unFold" 1 "Fold" 0 "invalid" ;
+VAL_ 864 MFS_RESPlus 3 "invalid" 2 "Stuck" 1 "Pressed" 0 "Not action" ;
+VAL_ 864 MFS_SETMinus 3 "invalid" 2 "Stuck" 1 "Pressed" 0 "Not action" ;
+VAL_ 864 MFS_Time_Gap_Reduce 3 "invalid" 2 "Stuck" 1 "Pressed" 0 "Not action" ;
+VAL_ 864 MFS_Time_Gap_Add 3 "invalid" 2 "Stuck" 1 "Pressed" 0 "Not action" ;
+VAL_ 864 MFS_Rsp_Error 1 "Error" 0 "No error" ;
+VAL_ 864 MFS_LeftRoller 15 "invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "ScrollDownQuickly" 3 "ScrollDownSlowly" 2 "ScrollUpQuickly" 1 "ScrollUpSlowly" 0 "Not action" ;
+VAL_ 864 MFS_LeftRollerMiddleKey 7 "invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Stuck" 2 "Long Pressed" 1 "Pressed" 0 "Not action" ;
+VAL_ 683 RHFDoorSts 3 "Reserved" 2 "full_open" 1 "Ajar " 0 "Close" ;
+VAL_ 683 RHRDoorSts 3 "Reserved" 2 "full_open" 1 "Ajar " 0 "Close" ;
+VAL_ 683 RHFDoorLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 683 RHRDoorLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 699 LHRdoorSts 3 "Reserved" 2 "full_open" 1 "Ajar " 0 "Close" ;
+VAL_ 699 LHRDoorLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 699 TrunkLockSts 3 "Unknown" 2 "Superlocked" 1 "Unlocked" 0 "Locked" ;
+VAL_ 1258 RZCU_RearWiperWipingStatus 2 "high" 1 "low" 0 "OFF" ;
+VAL_ 1258 RZCU_RearWiperParkStatus 1 "Returned" 0 "NotReturned" ;
+VAL_ 1050 FLCR_1_SysSt 3 "System Error" 2 "Temporary Error" 1 "On" 0 "Off" ;
+VAL_ 1050 FLCR_1_BlkSts 1 "Blockage" 0 "Not Blockage" ;
+VAL_ 1062 FLCR_2_FCTAWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1062 FLCR_2_FCTBWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1062 FLCR_2_FCTAFCTBONOFFSts 3 "Reserved" 2 "warning and braking" 1 "warning" 0 "OFF" ;
+VAL_ 1067 FRCR_1_SysSt 3 "System Error" 2 "Temporary Error" 1 "On" 0 "Off" ;
+VAL_ 1067 FRCR_1_BlkSts 1 "Blockage" 0 "Not Blockage" ;
+VAL_ 1077 FRCR_2_FCTAWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1077 FRCR_2_FCTBWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1095 RLCR_1_SysSt 3 "System Error" 2 "Temporary Error" 1 "On" 0 "Off" ;
+VAL_ 1095 RLCR_1_BlkSts 1 "Blockage" 0 "Not Blockage" ;
+VAL_ 1095 RLCR_1_BSDWarn 3 "Not Used" 2 "Critical Warning" 1 "Standard Warning" 0 "No Warning" ;
+VAL_ 1095 RLCR_1_DOWWarn 3 "Not Used" 2 "Level2 Warning " 1 "Level1 Warning " 0 "No Warning" ;
+VAL_ 1104 RLCR_2_RCWWarn 3 "Not Used" 2 "Level2 Warning " 1 "Level1 Warning " 0 "No Warning" ;
+VAL_ 1104 RLCR_2_RCTAWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1104 RLCR_2_RCTBWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1104 RLCR_2_BSDLCWONOFFSts 3 "Reserved" 2 "ON" 1 "OFF" 0 "Not active" ;
+VAL_ 1104 RLCR_2_DOWONOFFSts 3 "Reserved" 2 "ON" 1 "OFF" 0 "Not active" ;
+VAL_ 1104 RLCR_2_RCWONOFFSts 3 "Reserved" 2 "ON" 1 "OFF" 0 "Not active" ;
+VAL_ 1104 RLCR_2_RCTARCTBONOFFSts 3 "Reserved" 2 "warning and braking" 1 "warning" 0 "OFF" ;
+VAL_ 1267 RRCR_1_SysSt 3 "System Error" 2 "Temporary Error" 1 "On" 0 "Off" ;
+VAL_ 1267 RRCR_1_BlkSts 1 "Blockage" 0 "Not Blockage" ;
+VAL_ 1267 RRCR_1_BSDWarn 3 "Not Used" 2 "Critical Warning" 1 "Standard Warning" 0 "No Warning" ;
+VAL_ 1267 RRCR_1_DOWWarn 3 "Not Used" 2 "Level2 Warning " 1 "Level1 Warning " 0 "No Warning" ;
+VAL_ 1271 RRCR_2_RCTAWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1271 RRCR_2_RCTBWarn 1 "Warning" 0 "No Warning" ;
+VAL_ 1252 TotalOdometer_km_OBD 16777215 "Invalid" ;
+VAL_ 1157 ICC_DA_15_ExtremeEnergySaveMode 1 "ON" 0 "OFF" ;
+VAL_ 1279 ICC_SentinelModeSts 3 "Reserved" 2 "ON" 1 "OFF" 0 "invalid" ;
+VAL_ 1279 ICC_CameraErrorCode 3 "ErrorCode3" 2 "ErrorCode2" 1 "ErrorCode1" 0 "NoError" ;
+VAL_ 1279 ICC_SentinelRequest 3 "OFF" 2 "ExitSentinelRequest" 1 "EnterSentinelRequest" 0 "Not Active" ;
+VAL_ 1279 ICC_StartDeInitCameraStream 3 "Reserved" 2 "Reserved" 1 "ICC_StartDeInitCameraStream" 0 "Not Active" ;
+VAL_ 1279 ICC_CameraRecoveryRequest 3 "Reserved" 2 "Reserved" 1 "ICC_StartRecovery" 0 "Not Active" ;
+VAL_ 1208 PPMID_1_HWSt 1 "Active" 0 "Not Active" ;
+VAL_ 1208 PPMID_1_PPSt 1 "Active" 0 "Not Active" ;
+VAL_ 1208 PPMID_1_PPMICounter 1 "Count is full" 0 "Count not full" ;
+VAL_ 1208 PPMID_1_PPMISt 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "External error" 2 "PPMI internal error" 1 "PPMI initialization" 0 "PPMI no error" ;
+VAL_ 582 PDC_1_FOLDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FOLZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "0 Hz 121 to 150 cm;" 5 "0 Hz 91 to 120 cm;" 4 "0 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FMLDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FMLZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "0 Hz 121 to 150 cm;" 5 "0 Hz 91 to 120 cm;" 4 "0 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FMRDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FMRZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "0 Hz 121 to 150 cm;" 5 "0 Hz 91 to 120 cm;" 4 "0 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FORDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FORZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "0 Hz 121 to 150 cm;" 5 "0 Hz 91 to 120 cm;" 4 "0 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_ROLDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_ROLZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "1 Hz 121 to 150 cm;" 5 "2 Hz 91 to 120 cm;" 4 "2 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_RMLDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_RMLZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "1 Hz 121 to 150 cm;" 5 "2 Hz 91 to 120 cm;" 4 "2 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_RMRDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_RMRZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "1 Hz 121 to 150 cm;" 5 "2 Hz 91 to 120 cm;" 4 "2 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_RORDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_RORZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "1 Hz 121 to 150 cm;" 5 "2 Hz 91 to 120 cm;" 4 "2 Hz 61 to 90 cm;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_LSFDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_LSFZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FKPLSFMDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FKPLSFMZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FKPLSRMDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FKPLSRMZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_LSRDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_LSRZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_RSFDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_RSFZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FKPRSFMDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FKPRSFMZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_FKPRSRMDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_FKPRSRMZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_RSRDistance 251 "No object" 511 "Invalid" ;
+VAL_ 582 PDC_1_RSRZoneStatus 15 "Reserved;" 14 "Reserved;" 13 "Reserved;" 12 "Reserved;" 11 "Reserved;" 10 "Reserved;" 9 "Reserved;" 8 "Reserved;" 7 "Reserved;" 6 "Reserved;" 5 "Reserved;" 4 "Reserved;" 3 "4 Hz 41 to 60 cm;" 2 "4 Hz 31 to 40 cm;" 1 "Continuous 0 to 30 cm;" 0 "No sound / Mute;" ;
+VAL_ 582 PDC_1_ParKASSStatus 7 "Invaild" 6 "Front Rear active Side failure" 5 "System failure" 4 "Front failure Rear active" 3 "Front active Rear failure" 2 "Active" 1 "Standby" 0 "Off" ;
+VAL_ 582 PDC_1_PASTrailerHitchDetected 3 "Invalid" 2 "Unknown" 1 "Yes" 0 "No" ;
+VAL_ 582 PDC_1_PDCSwFdbk 1 "disable" 0 "enable" ;
+VAL_ 582 PDC_1_FrontWarningType 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Buzzer ON at 1Hz" 5 "Buzzer ON at 2Hz" 4 "Buzzer ON at 2Hz" 3 "Buzzer ON at 4Hz" 2 "Buzzer ON at 4Hz" 1 "Buzzer ON" 0 "Buzzer OFF" ;
+VAL_ 582 PDC_1_RearWarningType 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Buzzer ON at 1Hz" 5 "Buzzer ON at 2Hz" 4 "Buzzer ON at 2Hz" 3 "Buzzer ON at 4Hz" 2 "Buzzer ON at 4Hz" 1 "Buzzer ON" 0 "Buzzer OFF" ;
+VAL_ 582 PDC_1_LeftSideWarningType 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Buzzer ON at 1Hz" 5 "Buzzer ON at 2Hz" 4 "Buzzer ON at 2Hz" 3 "Buzzer ON at 4Hz" 2 "Buzzer ON at 4Hz" 1 "Buzzer ON" 0 "Buzzer OFF" ;
+VAL_ 582 PDC_1_RightSideWarningType 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Buzzer ON at 1Hz" 5 "Buzzer ON at 2Hz" 4 "Buzzer ON at 2Hz" 3 "Buzzer ON at 4Hz" 2 "Buzzer ON at 4Hz" 1 "Buzzer ON" 0 "Buzzer OFF" ;
+VAL_ 582 PDC_1_STATRearPDCActive 1 "active" 0 "inactive" ;
+VAL_ 582 PDC_1_STATFrntPDCActive 1 "active" 0 "inactive" ;
+VAL_ 582 PDC_1_STATSidePDCActive 1 "active" 0 "inactive" ;
+VAL_ 582 PDC_1_STATPDCHMIMode 1 "Request" 0 "No request" ;
+VAL_ 582 PDC_1_FrontPDCMuteFeedback 1 "ON" 0 "OFF" ;
+VAL_ 582 PDC_1_FKPMuteFeedback 1 "ON" 0 "OFF" ;
+VAL_ 1392 DTC_Number1 1023 "Invalid" ;
+VAL_ 1392 DTC_State1 1 "Fault" 0 "Normal" ;
+VAL_ 1392 DTC_Number2 1023 "Invalid" ;
+VAL_ 1392 DTC_State2 1 "Fault" 0 "Normal" ;
+VAL_ 1392 DTC_Number3 1023 "Invalid" ;
+VAL_ 1392 DTC_State3 1 "Fault" 0 "Normal" ;
+VAL_ 1392 DTC_Number4 1023 "Invalid" ;
+VAL_ 1392 DTC_State4 1 "Fault" 0 "Normal" ;
+VAL_ 1392 DTC_Number5 1023 "Invalid" ;
+VAL_ 1392 DTC_State5 1 "Fault" 0 "Normal" ;
+VAL_ 1415 BOOT_Version_Number 15 "Invalid" ;
+VAL_ 1415 HardWare_Version_Number 15 "Invalid" ;
+VAL_ 1415 SoftWare_Version_Number -1 "Invalid" ;
+VAL_ 1415 Software_ID 65535 "Invalid" ;
+VAL_ 1035 VCC_1_CarMode 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Transport Mode" 1 "Factory Mode" 0 "Normal Mode" ;
+VAL_ 1601 RMR_ADCC 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Wakeup_Poweron 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Wakeup_NM 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Wakeup_Diag 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Awake_Poweron 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Awake_NM 1 "Active" 0 "Inactive" ;
+VAL_ 1601 ADCC_Awake_Diag 1 "Active" 0 "Inactive" ;

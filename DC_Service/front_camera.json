@@ -1,0 +1,8 @@
+{
+    "Front-120":"/sensor/fdc/camera/front_120_8M/compressed",
+    "Vehicle":"/iflytek/vehicle_service",
+    "Soc_state":"/iflytek/system_state/soc_state",
+    "Gnss_status":"/sensor/navi/navifusion",
+    "Pbox":"/iflytek/sensor/pbox/gnss",
+    "lidar":"/sensor/lidar/rotation_packet"
+}

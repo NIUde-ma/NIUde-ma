@@ -1,0 +1,13 @@
+{
+    "Front-120":"/sensor/fdc/camera/front_120_8M",
+    "Front_left":"/sensor/fdc/camera/front_left_100_2M",
+    "Front_right":"/sensor/fdc/camera/front_right_100_2M",
+    "Rear_100":"/sensor/fdc/camera/rear_100_2M",
+    "Rear_left":"/sensor/fdc/camera/rear_left_100_2M",
+    "Rear_right":"/sensor/fdc/camera/rear_right_100_2M",
+    "Vehicle":"/iflytek/vehicle_service",
+    "Soc_state":"/iflytek/system_state/soc_state",
+    "Gnss_status":"/sensor/navi/navifusion",
+    "Pbox":"/iflytek/sensor/pbox/gnss",
+    "lidar":"/sensor/lidar/rotation_packet"
+}

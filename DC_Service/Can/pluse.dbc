@@ -1,0 +1,1625 @@
+VERSION ""
+
+
+NS_ : 
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+        SG_MUL_VAL_
+
+BS_:
+
+BU_: ADCC_CH 
+
+
+BO_ 49 ACU_2: 8 Vector__XXX
+ SG_ ACU_2_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ACU_2_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ACU_2_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ACU_2_LateralAcceleration : 23|16@0+ (0.001,-2) [-2|2] "g"  ADCC_CH
+ SG_ ACU_2_YawRate : 39|16@0+ (0.01,-180) [-180|180] "deg/sec"  ADCC_CH
+ SG_ ACU_2_YASCalibrationSts : 48|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ACU_2_YawrateSigValidData : 50|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ ACU_2_LateralAccelerationSigVD : 52|2@0+ (1,0) [0|3] ""  ADCC_CH
+
+BO_ 33 ACU_3: 8 Vector__XXX
+ SG_ ACU_3_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ACU_3_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ACU_3_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ACU_3_LongitudinalAcceleration : 23|16@0+ (0.001,-2) [-2|2] "g"  ADCC_CH
+ SG_ ACU_3_LongitudinalAccelerationVD : 39|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ ACU_3_CrashOutputSts : 47|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ACU_3_SCMRequest : 37|3@0+ (1,0) [0|7] ""  ADCC_CH
+
+BO_ 405 ADS_EPS_1: 24 ADCC_CH
+ SG_ ADS_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_SteerAgReq : 21|14@0+ (0.1,-780) [-780|780] "degree"  Vector__XXX
+ SG_ ADS_1_SteerAgVld : 37|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_SteerPilotAgEna : 39|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_SteerTqEna : 83|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_LdwWarningCmd : 85|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_LdwWarningCmdVld : 87|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_SteerMaxTqReq : 95|13@0+ (0.02,-80) [-80|80] "Nm"  Vector__XXX
+ SG_ ADS_1_SteerMinTqReq : 111|13@0+ (0.02,-80) [-80|80] "Nm"  Vector__XXX
+ SG_ ADS_1_ADSHealthSts : 125|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ CutOutFreshvalues_2CB_S : 135|16@0+ (1,0) [0|65535] ""  Vector__XXX
+ SG_ CutOutMAC_2CB_S : 151|48@0+ (1,0) [0|281474976710655] ""  Vector__XXX
+
+BO_ 444 ADS_EPS_3: 24 ADCC_CH
+ SG_ ADS_3_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_3_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_3_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_3_SteerParkAgReq : 21|14@0+ (0.1,-780) [-780|780] "degree"  Vector__XXX
+ SG_ ADS_3_SteerParkAgVld : 37|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_3_SteerParkAgEna : 39|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_3_CRC2 : 71|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_3_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_3_Resd2 : 79|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_3_ParkFcnMode : 127|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_3_ADSParkHealthSts : 125|2@0+ (1,0) [0|3] ""  Vector__XXX
+
+BO_ 345 ADS_ONEBOX_1: 24 ADCC_CH
+ SG_ ADS_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_PilotCtrlRepSta : 23|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_PilotParkCtrlType : 21|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_PilotParkBrkDecTar : 19|12@0+ (0.01,-20) [-20|20] "m/s2"  Vector__XXX
+ SG_ ADS_1_PilotParkCtrlRepMod : 33|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_PilotParkBrkDecTarVld : 34|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_PilotParkBrkDecTarEnable : 35|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_PilotParkDec2StpReq : 36|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_PilotParkDriOffReq : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_StopDist : 47|16@0+ (1,0) [0|65535] "mm"  Vector__XXX
+ SG_ ADS_1_ParkCtrlMod : 58|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_1_PreFillReq : 59|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_EPBCtrlReqValid : 60|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_EPBCtrlReq : 62|2@0+ (1,0) [0|3] ""  Vector__XXX
+
+BO_ 359 ADS_VCU_1: 24 ADCC_CH
+ SG_ ADS_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_DrvTarTq : 23|16@0+ (1,0) [0|65535] "NM"  Vector__XXX
+ SG_ ADS_1_DrvTarTqVld : 32|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_DrvCtrlReq : 34|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_CtrlReqMod : 36|2@0+ (1,0) [0|3] ""  Vector__XXX
+ SG_ ADS_1_DrvTarTqEnable : 37|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_AMAPRequest : 38|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_AMAPRequestVld : 39|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_ADCCAvl : 40|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_AMAPTqLimit : 55|10@0+ (1,0) [0|1023] "NM"  Vector__XXX
+ SG_ ADS_1_AMAPTqLimitVld : 41|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  Vector__XXX
+ SG_ ADS_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  Vector__XXX
+ SG_ ADS_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  Vector__XXX
+ SG_ ADS_1_TarGearReq : 82|3@0+ (1,0) [0|7] ""  Vector__XXX
+ SG_ ADS_1_TarGearReqVld : 83|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_GearCtrlEnable : 85|1@0+ (1,0) [0|1] ""  Vector__XXX
+ SG_ ADS_1_RpaPTReadyReq : 86|1@0+ (1,0) [0|1] ""  Vector__XXX
+
+BO_ 612 EPB_R_1: 24 Vector__XXX
+ SG_ EPB_R_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPB_R_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPB_R_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPB_1_ActrSt : 23|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPB_1_RWUSt : 25|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_1_DynBrkgSt : 27|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_1_EPBAvlSt : 28|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_1_ParkBrkCpby : 30|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_1_FltLvl : 37|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_1_DrvrRqParkBrk : 39|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_1_DrvrRqParkBrkVld : 40|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPB_R_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPB_R_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPB_R_1_BrkLitReq : 80|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_Flt_Lamp : 82|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_R_1_Park_Lamp : 84|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_R_1_ActrSt : 87|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPB_R_1_CDP_Req : 88|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_RWU_St : 89|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_Dyn_BrkgSt : 91|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_R_1_EPB_R_1Avl_St : 92|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_TextDisp : 99|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPB_R_1_FltLvl : 100|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPB_R_1_DrvrRqParkBrk : 102|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPB_R_1_DrvrRqParkBrkVld : 103|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 290 EPS_1: 8 Vector__XXX
+ SG_ EPS_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_1_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPSFailSts : 18|2@0+ (1,0) [0|3] ""  ADCC_CH
+
+BO_ 715 EPS_3: 8 Vector__XXX
+ SG_ EPS_3_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_3_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_3_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ TorsionBarTorque : 23|10@0+ (0.01,0) [0|10.23] "Nm"  ADCC_CH
+ SG_ TorsionBarTorqueDir : 28|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ TosionBarTorqueValid : 29|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 421 EPS_4: 48 Vector__XXX
+ SG_ EPS_4_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_4_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_4_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPS_4_AgParkCtrlAvl : 17|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPS_4_AgPilotCtrlAvl : 31|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPS_4_AgPilotCtrlSts : 20|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_TqCtrlAvl : 22|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ EPS_4_TqCtrlSts : 26|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_LdwWarnSts : 29|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_LdwWarnStsVD : 38|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPS_4_AgParkCtrlSts : 34|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_4_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_4_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPS_4_SteerPinionTq : 87|12@0+ (0.02,-40) [-40|40] "Nm"  ADCC_CH
+ SG_ EPS_4_SteerPinionTqVld : 88|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPS_4_AsscMotCrtTq : 103|11@0+ (0.02,-20) [-20|20] "Nm"  ADCC_CH
+ SG_ EPS_4_AsscMotCrtTqVld : 104|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPS_4_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_4_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_4_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPS_4_SteerDrvrOvrd : 160|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPS_4_SteerDrvrOvrdVld : 161|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ EPS_4_SteerMod : 175|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_CRC4 : 199|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_4_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_4_Resd4 : 207|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPS_4_Tq2 : 231|11@0+ (0.02,-20) [-20|20] "Nm"  ADCC_CH
+ SG_ EPS_4_CRC5 : 263|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ EPS_4_RollgCntr5 : 267|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ EPS_4_Resd5 : 271|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ EPS_4_OverrangeFeedback : 279|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ EPS_4_ADSMaxTq : 276|13@0+ (0.02,-80) [-80|80] "Nm"  ADCC_CH
+ SG_ EPS_4_ADSMinTq : 295|13@0+ (0.02,-80) [-80|80] "Nm"  ADCC_CH
+ SG_ EPS_4_OverrangeFeedbackVD : 298|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 306 SAS_1: 8 Vector__XXX
+ SG_ SAM_1_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ SAM_1_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ SAM_1_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ SAM_1_SteeringAngle : 23|16@0+ (0.0625,-2048) [-2048|2047.875] "deg"  ADCC_CH
+ SG_ SAM_1_SteeringAngleSpeed : 39|8@0+ (4,0) [0|1016] "deg/Sec"  ADCC_CH
+ SG_ SAM_1_SteeringAngleVD : 41|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ SAM_1_SteeringAngleSpeedVD : 40|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 152 ONEBOX_1: 24 Vector__XXX
+ SG_ ONEBOX_1_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_1_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_1_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ABS_ESP_1_VehicleSpeedVSOSig : 23|13@0+ (0.0625,0) [0|511.875] "km/h"  ADCC_CH
+ SG_ ESP1_VehicleSpeedVSOSigValidData : 26|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_EBDFailSts : 25|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_ABSFailSts : 24|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ IPB_SimulatorPressure : 39|10@0+ (1,0) [0|1022] "Bar"  ADCC_CH
+ SG_ IPB_SimulatorPressureStatus : 40|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_ABSActive : 41|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_VDCFailSts : 42|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_VDCActive : 43|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_TCSFailSts : 44|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_TCSActive : 45|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ BrakeSystemType : 48|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_HHCFailSts : 49|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ HHCActive : 50|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_HDCCtrlSts : 52|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ ABS_ESP_1_HDCFailSts : 53|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ HLRequest : 54|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ABS_ESP_1_ESPSwitchStatus : 55|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ BLRequestController : 56|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ SwitchOffCruiseControl : 57|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_1_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_1_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_1_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ IPB_1_MbRegenTargetWheel : 87|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ IPB_1_MbRegenTargetWheelQ : 97|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ AEBdecActive : 98|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ AEBdecAvailable : 99|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ CDPActive : 100|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ CDPFailSts : 104|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 555 ONEBOX_3: 48 Vector__XXX
+ SG_ ONEBOX_3_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_3_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_3_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ AVHSts : 17|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ VehicleStandstill : 19|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ NoBrakeForce : 22|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ AVHFailSts : 23|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ Reserved_EDCActive : 24|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ECDTempOff : 25|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ DCFail : 26|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ CDDActive : 27|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ CDDAvailable : 28|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ Reserved_ESPLampInformation : 43|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_3_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_3_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_3_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ WheelBrakeForce : 87|16@0+ (8,-250000) [-250000|250000] "N"  ADCC_CH
+ SG_ ONEBOX_3_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_3_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_3_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ONEBOX_3_CRC4 : 199|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_3_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_3_Resd4 : 207|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ IPB_PlungerPressureValidData : 220|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ IPB_InputRodStrokeStatus : 221|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ SCMActive : 222|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ SCMAvalable : 223|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ IPB_PlungerPressure : 231|10@0+ (1,0) [0|1022] "Bar"  ADCC_CH
+ SG_ IPB_InputRodStroke : 237|10@0+ (0.05,-5) [-5|46.15] "mm"  ADCC_CH
+ SG_ DTC_Intervention : 243|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ DTCAvailable : 242|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ DTCActive : 241|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 587 ONEBOX_4: 48 Vector__XXX
+ SG_ ONEBOX_4_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_4_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_4_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ LHFWheelSpeedRPM : 23|16@0+ (0.0625,0) [0|4095.875] "rpm"  ADCC_CH
+ SG_ RHFWheelSpeedRPM : 39|16@0+ (0.0625,0) [0|4095.875] "rpm"  ADCC_CH
+ SG_ LHRWheelSpeedRPM : 55|16@0+ (0.0625,0) [0|4095.875] "rpm"  ADCC_CH
+ SG_ ONEBOX_4_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_4_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_4_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ RHRWheelSpeedRPM : 87|16@0+ (0.0625,0) [0|4095.875] "rpm"  ADCC_CH
+ SG_ LHRPulseCounterFailSts : 106|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ LHRPulseCounter : 103|13@0+ (1,0) [0|8191] "pulse"  ADCC_CH
+ SG_ RHRPulseCounterFailSts : 122|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ RHRPulseCounter : 119|13@0+ (1,0) [0|8191] "pulse"  ADCC_CH
+ SG_ ONEBOX_4_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_4_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_4_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ RHFPulseCounterFailSts : 154|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ RHFPulseCounter : 151|13@0+ (1,0) [0|8191] "pulse"  ADCC_CH
+ SG_ LHFPulseCounterFailSts : 170|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ LHFPulseCounter : 167|13@0+ (1,0) [0|8191] "pulse"  ADCC_CH
+ SG_ LHFWheelSpeedRaw : 183|12@0+ (0.05,-30) [-30|80] "m/s"  ADCC_CH
+ SG_ LHFWheelDriveDirection : 187|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ LHFWheelSpeedRawValidData : 184|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_4_CRC4 : 199|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_4_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_4_Resd4 : 207|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ RHFWheelSpeedRaw : 215|12@0+ (0.05,-30) [-30|80] "m/s"  ADCC_CH
+ SG_ RHFWheelDriveDirection : 219|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ RHFWheelSpeedRawValidData : 216|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ LHRWheelSpeedRaw : 231|12@0+ (0.05,-30) [-30|80] "m/s"  ADCC_CH
+ SG_ LHRWheelDriveDirection : 235|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ LHRWheelSpeedRawValidData : 232|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ RHRWheelSpeedRaw : 247|12@0+ (0.05,-30) [-30|80] "m/s"  ADCC_CH
+ SG_ RHRWheelDriveDirection : 251|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ RHRWheelSpeedRawValidData : 248|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 335 ONEBOX_5: 24 Vector__XXX
+ SG_ ONEBOX_5_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_5_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_5_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ONEBOX_5_PilotParkBrkDecCtlAvl : 16|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_PilotParkBrkDecActSts : 18|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ ONEBOX_5_CddAdcActiveVehHld : 19|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_APCFailureSts : 23|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ ONEBOX_5_APCStatus : 26|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ ONEBOX_5_ApaAvl : 27|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_RpaAvl : 28|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_MebAvl : 29|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_CddApActiveVehHld : 30|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_SysBrkP : 39|10@0+ (1,0) [0|1022] "Bar"  ADCC_CH
+ SG_ ONEBOX_5_SysBrkPVld : 40|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AbpActSts : 41|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AbpAvlSts : 42|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AwbActSts : 43|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AwbAvlSts : 44|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AbaActSts : 45|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AbaAvlSts : 48|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ ONEBOX_5_AbaLvlSts : 50|2@0+ (1,0) [0|3] ""  ADCC_CH
+
+BO_ 1193 ONEBOX_2_G: 8 Vector__XXX
+ SG_ ONEBOX_2_G_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ ONEBOX_2_G_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ ONEBOX_2_G_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ BrakesystemFailSts : 57|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 1204 VCU_1_G: 8 Vector__XXX
+ SG_ VCU_1_G_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_1_G_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_1_G_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_DriveMode : 35|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ VCU_AcceleratorPosRaw : 29|10@0+ (0.1,0) [0|100] "%"  ADCC_CH
+
+BO_ 1209 VCU_2_G: 8 Vector__XXX
+ SG_ VCU_2_G_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_2_G_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_2_G_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_GasPedalPosition : 49|10@0+ (0.1,0) [0|100] "%"  ADCC_CH
+ SG_ VCU_GasPedalPositionInvalidData : 24|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_HVReady : 38|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 1212 VCU_3_G: 8 Vector__XXX
+ SG_ VCU_ActWheelTorqueFA : 23|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_ActWheelTorqueRA : 39|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+
+BO_ 1229 VCU_4_G: 8 Vector__XXX
+ SG_ VCU_DynamicRangeAval : 29|10@0+ (1,0) [0|1022] "KM"  ADCC_CH
+
+BO_ 56 VCU_COM_10: 16 Vector__XXX
+ SG_ VCU_10_CRC : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_10_RollgCntr : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_10_Resd : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_TargetGear : 20|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ VCU_ActualGear : 23|3@0+ (1,0) [0|7] ""  ADCC_CH
+ SG_ VCU_TargetGearValidData : 28|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_ActualGearValidData : 29|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_BrakePedalStsValidData : 30|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_BrakePedalSts : 31|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+BO_ 59 VCU_ONEBOX_11: 64 Vector__XXX
+ SG_ VCU_11_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_11_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_11_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_IndicatedDriverReqWhlTqFA : 23|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_ActWheelSpdFA : 55|16@0+ (1,-32767) [-32767|32767] "RPM"  ADCC_CH
+ SG_ VCU_11_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_11_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_11_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_IndcdDriverReqWhlTqStsFA : 80|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_ActWheelTorqueStsFA : 82|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ VCU_ActWheelSpdStsFA : 83|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_IndicatedDriverReqWhlTqRA : 95|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_11_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_11_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_11_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_ActWheelSpdRA : 151|16@0+ (1,-32767) [-32767|32767] "RPM"  ADCC_CH
+ SG_ VCU_IndcdDriverReqWhlTqStsRA : 160|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_ActWheelTorqueStsRA : 162|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ VCU_ActWheelSpdStsRA : 164|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_11_CRC4 : 199|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_11_RollgCntr4 : 203|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_11_Resd4 : 207|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_GasPedalPositionInvalidData : 230|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_AcceleratorPosRawIVD : 231|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_GasPedalPosition : 239|10@0+ (0.1,0) [0|100] "%"  ADCC_CH
+ SG_ VCU_AcceleratorPosRaw : 245|10@0+ (0.1,0) [0|100] "%"  ADCC_CH
+
+BO_ 75 VCU_ADCC_12: 24 Vector__XXX
+ SG_ VCU_12_CRC1 : 7|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_12_RollgCntr1 : 11|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_12_Resd1 : 15|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_12_DrvrGearIntervention : 49|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_PtTqActvSts : 50|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_PtTqAvl : 52|2@0+ (1,0) [0|3] ""  ADCC_CH
+ SG_ VCU_12_DriverTorqueDesired : 23|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_12_DrvrAccrPedlOvrd : 53|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_VehWhlActTq : 39|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_12_VehWhlActTqVld : 48|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_CRC2 : 71|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_12_RollgCntr2 : 75|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_12_Resd2 : 79|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_12_PtTqMax : 87|16@0+ (1,-32768) [-32768|32767] "NM"  ADCC_CH
+ SG_ VCU_12_PtTqMaxVld : 103|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_GasPedalInhabition : 101|1@0+ (1,0) [0|1] ""  ADCC_CH
+ SG_ VCU_12_CRC3 : 135|8@0+ (1,0) [0|255] ""  ADCC_CH
+ SG_ VCU_12_RollgCntr3 : 139|4@0+ (1,0) [0|14] ""  ADCC_CH
+ SG_ VCU_12_Resd3 : 143|4@0+ (1,0) [0|15] ""  ADCC_CH
+ SG_ VCU_12_VehWhlActTqADS : 151|16@0+ (1,0) [0|65535] "NM"  ADCC_CH
+ SG_ VCU_12_VehWhlActTqADSVld : 167|1@0+ (1,0) [0|1] ""  ADCC_CH
+
+
+CM_ "Version:V3.4,Date:2023.04.26,Author:FangZheng,Review:ZhonglingWang,Approval:JiancaiLi,Description:(ADS_BNCM_1(0x367))1、change the ID and Msg Cycle Time(ms)
+2、change the Signal Value Description:
+   ADAS_enum_ParkingQuitInd
+   ADAS_enum_ParkingDriOperateInd
+   ADAS_enum_ParkingPauseInd
+3、add signal:
+   ParkOutDirectionSt`
+(BNCM_4(0x36F))1、change the ID and Msg Cycle Time(ms)
+2、change Start Bit:
+   BNCM_4_RpaDeviceDisSts
+   BNCM_4_BLEConnSts
+   BNCM_4_BLEErrStatus`
+(PDC_Priv_xx_Point)add“unknown”Type in the Signal “Point_xx_High”'s Signal  for Value Description PDC`
+(PDC_3(0x587))change the Bit Length for DA:
+BOOT_Version_Number
+HardWare_Version_Number
+SoftWare_Version_Number;
+Version:V3.41,Date:2023.05.29,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FCM_TSR00_03(0x415))change Signal Max. Value(phys) for HOLO:
+FCM_TsrInternal_ID01
+FCM_TsrInternal_ID02
+FCM_TsrInternal_ID03`
+(FCM_Lane_Left(0x416))change Signal Max. Value(phys) for HOLO:
+FCM_ConeRoadEdgeModelC3_Left
+FCM_LeftLaneModelC3
+FCM_NextLeftLaneModelC3`
+(FCM_Lane_Right(0x417))change Signal Max. Value(phys) for HOLO:
+FCM_ConeRoadEdgeModelC3_Right
+FCM_RightLaneModelC3
+FCM_NextRightLaneModelC3`
+(ADS_Parking_Status(0x20F))change the Msg ID to 0x20F for PDC`
+(FCM_RoadInformation(0x400))add signal:FCM_FailureSts For FRM(HOLO);
+Version:V3.5,Date:2023.06.15,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(LCM_2(0x02E))add Signal Value Description for LCM:
+INS_Calib_Status:0x3:Ins_Solution Divergence
+add signal:
+LCM_2_BlockCounter
+Ins_PrecisionStatus
+GNSS_Sts`
+(LCM_3(0x026))add signal for LCM:
+LCM_3_BlockCounter`
+(LCM_10(0x124))add signal for LCM:
+LCM_10_BlockCounter`
+(ASU_1(0x4C1))delete signal for DA:
+ASU_1_Resd1;
+Version:V3.51,Date:2023.07.12,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FLZCU_1(0x23B))add this message for DA;
+Version:V3.52,Date:2023.07.19,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(FLZCU_1(0x24B))add new signal for DA`
+(FLZCU_9(0x49D))add new signal for DA`
+(FRZCU_1(0x2AB))add this message for DA`
+(RZCU_2(0x2BB))add this message for DA;
+Version:V3.60,Date:2023.07.29,Author:ZhengFang,Review:ZhonglingWang,Approval:JiancaiLi,Description:(TCM_1(0x4AF))add this message for DA`
+(ADS_COM_1(0x30F))add signal for DA
+ADCC_SurroundCameraErrorSts
+ADCC_SysReadySts`
+(FLZCU_1(0x23B))add signal for DA:
+HoodLockSts
+FL_SeatOccupiedSts
+FL_SeatBeltFaultStatus`
+(FLZCU_9(0x49D))add E2E for DA`
+(FLZCU_12(0x406))add signal for DA:
+FLZCU_FrontWiperParkStatus
+FLZCU_FrontWiperWipingStatus
+RearViewFoldSts`
+(FRZCU_1(0x2AB))add signal for DA:
+RHFDoorLockSts
+RHRDoorLockSts`
+(RZCU_2(0x2BB))add signal for DA:
+LHRDoorLockSts
+TrunkLockSts`
+(RZCU_7(0x4EA))add signal for DA:
+RZCU_RearWiperWipingStatus
+RZCU_RearWiperParkStatus`
+(VCC_1(0x40B))add message and signal for DA:
+VCC_1_CarMode`
+(FCM_RoadInformation(0x400))add signal for FRM(HOLO):
+FCM_NumObstacles;
+ ";
+
+CM_ BO_ 405 "中配的ADCC与低配的FCM共用此帧信号，中配FCM不发此帧报文";
+CM_ BO_ 444 "APA与ADCC共用此帧信号";
+CM_ BO_ 345 "非冗余配置，此帧信号在中配发送，低配不发送；冗余配置，此帧信号与0x14A为冗余关系；";
+CM_ BO_ 359 "中配的ADCC与低配的FCM共用此帧信号，中配FCM不发此帧报文";
+CM_ SG_ 49 ACU_2_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0001";
+CM_ SG_ 49 ACU_2_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 49 ACU_2_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 49 ACU_2_LateralAcceleration "Lateral acceleration signal
+Sensor accuracy：0.0027680342857143g";
+CM_ SG_ 49 ACU_2_YawRate "Yaw rate signal
+Sensor accuracy：0.122189236 deg/s";
+CM_ SG_ 49 ACU_2_YASCalibrationSts "Indicates  IMU Calibration State";
+CM_ SG_ 49 ACU_2_YawrateSigValidData "Signal state for yawrate";
+CM_ SG_ 49 ACU_2_LateralAccelerationSigVD "If hasn’t been calibrated, after initialization, this signal ‘s value is always 10(invalid).";
+CM_ SG_ 33 ACU_3_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0002";
+CM_ SG_ 33 ACU_3_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 33 ACU_3_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 33 ACU_3_LongitudinalAcceleration "Longitudinal acceleration signal
+Sensor accuracy：0.0027680342857143 g";
+CM_ SG_ 33 ACU_3_LongitudinalAccelerationVD "If hasn’t been calibrated, after initialization, this signal ‘s value is always10(invalid)";
+CM_ SG_ 33 ACU_3_CrashOutputSts "Crash signal indicates the status according to bit:
+If multiple directions collide at the same time, each collision flag bit representing each direction will be set to 1.For example, if left crash is superimposed with right crash, the output signal is 00001100";
+CM_ SG_ 33 ACU_3_SCMRequest "SCM:Second Collision Mitigate
+For front crash,deceleration limitation is -5, The Maximum rate of Deceleration for Non-Front(Side and Rear) crash in the platform is maximum? (-14 M/S^2) in full brake system, the deceleration limitation is ASIL B related, should discussed by project specific.";
+CM_ SG_ 405 ADS_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0004";
+CM_ SG_ 405 ADS_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 405 ADS_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 405 ADS_1_SteerAgReq "转向转角请求";
+CM_ SG_ 405 ADS_1_SteerAgVld "转向转角请求有效位";
+CM_ SG_ 405 ADS_1_SteerPilotAgEna "转向转角控制使能";
+CM_ SG_ 405 ADS_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0005";
+CM_ SG_ 405 ADS_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 405 ADS_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 405 ADS_1_SteerTqEna "转向转矩控制使能";
+CM_ SG_ 405 ADS_1_LdwWarningCmd "车道偏离振动请求";
+CM_ SG_ 405 ADS_1_LdwWarningCmdVld "车道偏离振动请求有效位";
+CM_ SG_ 405 ADS_1_SteerMaxTqReq "最大转矩控制请求值";
+CM_ SG_ 405 ADS_1_SteerMinTqReq "最小转矩控制请求值";
+CM_ SG_ 444 ADS_3_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0006";
+CM_ SG_ 444 ADS_3_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 444 ADS_3_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 444 ADS_3_SteerParkAgReq "转向转角请求";
+CM_ SG_ 444 ADS_3_SteerParkAgVld "转向转角请求有效位";
+CM_ SG_ 444 ADS_3_SteerParkAgEna "转向转角控制使能";
+CM_ SG_ 444 ADS_3_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0007";
+CM_ SG_ 444 ADS_3_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 444 ADS_3_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 444 ADS_3_ParkFcnMode "ADS功能模式请求";
+CM_ SG_ 345 ADS_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0008";
+CM_ SG_ 345 ADS_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 345 ADS_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 345 ADS_1_PilotCtrlRepSta "Pilot  Control Request";
+CM_ SG_ 345 ADS_1_PilotParkCtrlType "Park  control state";
+CM_ SG_ 345 ADS_1_PilotParkBrkDecTar "Pilot/Parkt target deceleration(-12~12m/s2)";
+CM_ SG_ 345 ADS_1_PilotParkCtrlRepMod "Pilot/Park control request mode";
+CM_ SG_ 345 ADS_1_PilotParkBrkDecTarVld "Pilot/Park target deceleration valid";
+CM_ SG_ 345 ADS_1_PilotParkBrkDecTarEnable "Pilot/Park target deceleration enable";
+CM_ SG_ 345 ADS_1_PilotParkDec2StpReq "Pilot/Park  deceleration to stop request";
+CM_ SG_ 345 ADS_1_PilotParkDriOffReq "Pilot/Park drive off request";
+CM_ SG_ 345 ADS_1_StopDist "Parking distance request";
+CM_ SG_ 345 ADS_1_ParkCtrlMod "Parking control mode request";
+CM_ SG_ 345 ADS_1_PreFillReq "Park PreFill request";
+CM_ SG_ 345 ADS_EPBCtrlReqValid "EPB功能请求有效";
+CM_ SG_ 345 ADS_EPBCtrlReq "EPB功能请求";
+CM_ SG_ 359 ADS_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x000B";
+CM_ SG_ 359 ADS_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 359 ADS_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 359 ADS_1_DrvTarTq "ADS Drive traget torque  Request";
+CM_ SG_ 359 ADS_1_DrvTarTqVld "ADS Drive traget torque  Request valid";
+CM_ SG_ 359 ADS_1_DrvCtrlReq "ADS Drive Control Request";
+CM_ SG_ 359 ADS_1_CtrlReqMod "ADS Drive Control Mode";
+CM_ SG_ 359 ADS_1_DrvTarTqEnable "ADS Drive traget torque  Request enable";
+CM_ SG_ 359 ADS_1_AMAPRequest "域控ADCC 踏板误加速使能信
+号";
+CM_ SG_ 359 ADS_1_AMAPRequestVld "域控ADCC 踏板误加速使能信
+号有效值";
+CM_ SG_ 359 ADS_1_ADCCAvl "ADCC Function State
+ADCC整体可用状态";
+CM_ SG_ 359 ADS_1_AMAPTqLimit "AMAP function limit Tq 
+踏板误加速功能限制扭矩范围";
+CM_ SG_ 359 ADS_1_AMAPTqLimitVld "AMAP function limit Tq valid
+踏板误加速功能限制扭矩范围有效位";
+CM_ SG_ 359 ADS_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x000C";
+CM_ SG_ 359 ADS_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 359 ADS_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 359 ADS_1_TarGearReq "ADS Target Gear Request";
+CM_ SG_ 359 ADS_1_TarGearReqVld "ADS Target Gear Request Valid";
+CM_ SG_ 359 ADS_1_GearCtrlEnable "ADS Gear Control Enable";
+CM_ SG_ 359 ADS_1_RpaPTReadyReq "RPA功能用于PT ready保持的标识位";
+CM_ SG_ 612 EPB_R_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x002B";
+CM_ SG_ 612 EPB_R_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 612 EPB_R_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 612 EPB_1_ActrSt "Current state of APB actuator connected to ECU
+EPB卡钳执行状态";
+CM_ SG_ 612 EPB_1_RWUSt "EPB 后轮防抱死工作状态";
+CM_ SG_ 612 EPB_1_DynBrkgSt "EPB 动态驻车状态";
+CM_ SG_ 612 EPB_1_EPBAvlSt "EPB可用状态";
+CM_ SG_ 612 EPB_1_ParkBrkCpby "Park brake capability
+总驻车制动能力";
+CM_ SG_ 612 EPB_1_FltLvl "EPB故障状态";
+CM_ SG_ 612 EPB_1_DrvrRqParkBrk "驾驶员请求驻车制动（驾驶员干预）";
+CM_ SG_ 612 EPB_1_DrvrRqParkBrkVld "驾驶员请求驻车制动有效位";
+CM_ SG_ 612 EPB_R_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x002C";
+CM_ SG_ 612 EPB_R_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 612 EPB_R_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 612 EPB_R_1_BrkLitReq "制动灯点灯请求
+EPB控制的动态制动点制动灯";
+CM_ SG_ 612 EPB_R_1_Flt_Lamp "EPB故障状态
+诊断和转毂测试模式时闪烁";
+CM_ SG_ 612 EPB_R_1_Park_Lamp "EPB驻车灯状态
+动态制动时闪烁";
+CM_ SG_ 612 EPB_R_1_ActrSt "Current state of APB actuator connected to ECU
+EPB左卡钳执行状态";
+CM_ SG_ 612 EPB_R_1_CDP_Req "EPB 对液压动态制动的请求";
+CM_ SG_ 612 EPB_R_1_RWU_St "EPB 后轮防抱死工作状态";
+CM_ SG_ 612 EPB_R_1_Dyn_BrkgSt "EPB 动态驻车状态
+CDP或RWU触发=0x1";
+CM_ SG_ 612 EPB_R_1_EPB_R_1Avl_St "EPB可用状态";
+CM_ SG_ 612 EPB_R_1_TextDisp "EPB文本提示";
+CM_ SG_ 612 EPB_R_1_FltLvl "EPB故障状态-R";
+CM_ SG_ 612 EPB_R_1_DrvrRqParkBrk "驾驶员请求驻车制动（驾驶员干预）";
+CM_ SG_ 612 EPB_R_1_DrvrRqParkBrkVld "驾驶员请求驻车制动有效位";
+CM_ SG_ 290 EPS_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x002E";
+CM_ SG_ 290 EPS_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 290 EPS_1_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 290 EPSFailSts "EPS Fail Status";
+CM_ SG_ 715 EPS_3_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x002F";
+CM_ SG_ 715 EPS_3_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 715 EPS_3_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 715 TorsionBarTorque "Torsion BarTorque";
+CM_ SG_ 715 TorsionBarTorqueDir "Torsion Bar Torque Direction";
+CM_ SG_ 715 TosionBarTorqueValid "Tosion Bar Torque Valid";
+CM_ SG_ 421 EPS_4_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0030";
+CM_ SG_ 421 EPS_4_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 421 EPS_4_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 421 EPS_4_AgParkCtrlAvl "EPS监控自身故障，并反馈是否具备执行泊车转角控制的能力，握手信号";
+CM_ SG_ 421 EPS_4_AgPilotCtrlAvl "EPS监控自身故障，并反馈是否具备执行行车转角控制的能力，握手信号";
+CM_ SG_ 421 EPS_4_TqCtrlAvl "EPS监控自身故障，并反馈是否具备执行转矩控制的能力，握手信号";
+CM_ SG_ 421 EPS_4_LdwWarnStsVD "振动状态有效位";
+CM_ SG_ 421 EPS_4_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0031";
+CM_ SG_ 421 EPS_4_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 421 EPS_4_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 421 EPS_4_SteerPinionTq "电机执行扭矩最终会换算到手力端，";
+CM_ SG_ 421 EPS_4_AsscMotCrtTq "电机端扭矩";
+CM_ SG_ 421 EPS_4_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0032";
+CM_ SG_ 421 EPS_4_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 421 EPS_4_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 421 EPS_4_SteerDrvrOvrd "EPS作驾驶员转向干预退出防护策略，阈值和持续时间可标定（由ADS和EPS共同确定）";
+CM_ SG_ 421 EPS_4_SteerMod "EPS当前工作模式";
+CM_ SG_ 421 EPS_4_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0033";
+CM_ SG_ 421 EPS_4_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 421 EPS_4_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 421 EPS_4_CRC5 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0034";
+CM_ SG_ 421 EPS_4_RollgCntr5 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 421 EPS_4_Resd5 "Profile1A:E2E Reserved";
+CM_ SG_ 421 EPS_4_ADSMaxTq "最大转矩限制值";
+CM_ SG_ 421 EPS_4_ADSMinTq "最小转矩限制值";
+CM_ SG_ 306 SAM_1_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0035";
+CM_ SG_ 306 SAM_1_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 306 SAM_1_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 306 SAM_1_SteeringAngle "The actual range is from -720 deg to +720 deg.";
+CM_ SG_ 306 SAM_1_SteeringAngleVD "Steering Angle Valid Data";
+CM_ SG_ 306 SAM_1_SteeringAngleSpeedVD "Steering Angle Speed Valid Data";
+CM_ SG_ 152 ONEBOX_1_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0049";
+CM_ SG_ 152 ONEBOX_1_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 152 ONEBOX_1_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 152 ABS_ESP_1_VehicleSpeedVSOSig "Vehicle Speed";
+CM_ SG_ 152 ESP1_VehicleSpeedVSOSigValidData "Valid check bit of the signal ABS_ESP_1_VehicleSpeedVSOSig";
+CM_ SG_ 152 ABS_ESP_1_EBDFailSts "EBD Fail Status";
+CM_ SG_ 152 ABS_ESP_1_ABSFailSts "ABS Fail Status";
+CM_ SG_ 152 IPB_SimulatorPressure "Indicate simulator pressure";
+CM_ SG_ 152 IPB_SimulatorPressureStatus "Valid check bit of the signal simulator pressure";
+CM_ SG_ 152 ABS_ESP_1_ABSActive "ABS Active";
+CM_ SG_ 152 ABS_ESP_1_VDCFailSts "VDC Fail Status";
+CM_ SG_ 152 ABS_ESP_1_VDCActive "ESP lamp on ICM should blinking ;VDC Intervention";
+CM_ SG_ 152 ABS_ESP_1_TCSFailSts "TCS Fail Status";
+CM_ SG_ 152 ABS_ESP_1_TCSActive "ESP lamp on ICM should blinking; TCS Intervention";
+CM_ SG_ 152 BrakeSystemType "Brake System Type";
+CM_ SG_ 152 ABS_ESP_1_HHCFailSts "HHC Fail Sts";
+CM_ SG_ 152 HHCActive "HHC Active";
+CM_ SG_ 152 ABS_ESP_1_HDCCtrlSts "HDC Control Sts";
+CM_ SG_ 152 ABS_ESP_1_HDCFailSts "HDC Fail Sts";
+CM_ SG_ 152 HLRequest "HL Request";
+CM_ SG_ 152 ABS_ESP_1_ESPSwitchStatus "“1” means VDC and Engine Traction Control System (PTC) Function and Brake Traction Control System (BTC) Function disabled and Ignit ESP lamp.";
+CM_ SG_ 152 BLRequestController "BL Request Controller";
+CM_ SG_ 152 SwitchOffCruiseControl "Switch Off Cruise Control";
+CM_ SG_ 152 ONEBOX_1_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x004A";
+CM_ SG_ 152 ONEBOX_1_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 152 ONEBOX_1_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 152 IPB_1_MbRegenTargetWheel "This Torque is vehicle axle level,not generator axle level.";
+CM_ SG_ 152 AEBdecActive "AEB  braking function";
+CM_ SG_ 152 CDPActive "CDP Active";
+CM_ SG_ 152 CDPFailSts "CDP Fail Status";
+CM_ SG_ 555 ONEBOX_3_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x004D";
+CM_ SG_ 555 ONEBOX_3_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 555 ONEBOX_3_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 555 AVHSts "Auto Hold Functional state";
+CM_ SG_ 555 VehicleStandstill "Stationary state of vehicle";
+CM_ SG_ 555 NoBrakeForce "No brake pressure applied
+Generally it regards wheel cylinder pressure";
+CM_ SG_ 555 AVHFailSts "AutoHold Functional failure state";
+CM_ SG_ 555 ECDTempOff "Brake disc temperature is too high";
+CM_ SG_ 555 DCFail "Notify the FRM when ACC's deceleration function cannot be performed";
+CM_ SG_ 555 CDDActive "CDD Active";
+CM_ SG_ 555 CDDAvailable "CDD Available";
+CM_ SG_ 555 ONEBOX_3_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x004E";
+CM_ SG_ 555 ONEBOX_3_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 555 ONEBOX_3_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 555 WheelBrakeForce "Four-wheel total braking force
+0xF425~0xFFFE：Not Used";
+CM_ SG_ 555 ONEBOX_3_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x004F";
+CM_ SG_ 555 ONEBOX_3_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 555 ONEBOX_3_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 555 ONEBOX_3_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0050";
+CM_ SG_ 555 ONEBOX_3_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 555 ONEBOX_3_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 555 IPB_PlungerPressureValidData "Valid check bit of the signal PressureMasterCylinder";
+CM_ SG_ 555 IPB_InputRodStrokeStatus "Indicate inputRod stroke for pedal travel";
+CM_ SG_ 555 SCMActive "Indicate SCM active or not";
+CM_ SG_ 555 SCMAvalable "Indicate SCM available or not";
+CM_ SG_ 555 IPB_PlungerPressure "Pressure Master Cylinder";
+CM_ SG_ 555 IPB_InputRodStroke "Indicate inputRod stroke for pedal travel";
+CM_ SG_ 555 DTC_Intervention "DTC function of One Box, actived when the gas pedal was released so quick that the coast regen wasn't acive.";
+CM_ SG_ 555 DTCAvailable "DTC function available";
+CM_ SG_ 555 DTCActive "DTC function active";
+CM_ SG_ 587 ONEBOX_4_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0051";
+CM_ SG_ 587 ONEBOX_4_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 587 ONEBOX_4_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 587 LHFWheelSpeedRPM "left front Wheel Speed(the unit is RPM)";
+CM_ SG_ 587 RHFWheelSpeedRPM "right front  Wheel Speed(the unit is RPM)";
+CM_ SG_ 587 LHRWheelSpeedRPM "Left Rear Wheel Speed(the unit is RPM)";
+CM_ SG_ 587 ONEBOX_4_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0052";
+CM_ SG_ 587 ONEBOX_4_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 587 ONEBOX_4_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 587 RHRWheelSpeedRPM "right Rear  Wheel Speed(the unit is RPM)";
+CM_ SG_ 587 LHRPulseCounterFailSts "left rear wheel Pulse Counter Fail Status";
+CM_ SG_ 587 LHRPulseCounter "left rear wheel Pulse Counter";
+CM_ SG_ 587 RHRPulseCounterFailSts "right rear wheel Pulse Counter FailSts";
+CM_ SG_ 587 RHRPulseCounter "right rear wheel Pulse Counter";
+CM_ SG_ 587 ONEBOX_4_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0053";
+CM_ SG_ 587 ONEBOX_4_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 587 ONEBOX_4_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 587 RHFPulseCounterFailSts "right front wheel Pulse Counter FailSts";
+CM_ SG_ 587 RHFPulseCounter "right front wheel Pulse Counter";
+CM_ SG_ 587 LHFPulseCounterFailSts "left front wheel Pulse Counter FailSts";
+CM_ SG_ 587 LHFPulseCounter "left front wheel Pulse Counter";
+CM_ SG_ 587 LHFWheelSpeedRaw "raw left front Wheel Speed";
+CM_ SG_ 587 LHFWheelDriveDirection "left front Wheel Drive Direction";
+CM_ SG_ 587 LHFWheelSpeedRawValidData "Valid check bit of the signal LHFWheelSpeedRaw";
+CM_ SG_ 587 ONEBOX_4_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0054";
+CM_ SG_ 587 ONEBOX_4_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 587 ONEBOX_4_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 587 RHFWheelSpeedRaw "raw right front Wheel Speed";
+CM_ SG_ 587 RHFWheelDriveDirection "right front Wheel Speed Drive Direction";
+CM_ SG_ 587 RHFWheelSpeedRawValidData "Valid check bit of the signal RHFWheelSpeedRaw";
+CM_ SG_ 587 LHRWheelSpeedRaw "raw left rear Wheel Speed";
+CM_ SG_ 587 LHRWheelDriveDirection "left rear Wheel Speed Drive Direction";
+CM_ SG_ 587 LHRWheelSpeedRawValidData "Valid check bit of the signal LHRWheelSpeedRaw";
+CM_ SG_ 587 RHRWheelSpeedRaw "raw right rear Wheel Speed";
+CM_ SG_ 587 RHRWheelDriveDirection "right rear Wheel Speed Drive Direction";
+CM_ SG_ 587 RHRWheelSpeedRawValidData "Valid check bit of the signal RHRWheelSpeedRaw";
+CM_ SG_ 335 ONEBOX_5_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0055";
+CM_ SG_ 335 ONEBOX_5_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 335 ONEBOX_5_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 335 ONEBOX_5_PilotParkBrkDecCtlAvl "Pilot deceleration control interface available";
+CM_ SG_ 335 ONEBOX_5_PilotParkBrkDecActSts "Pilot deceleration control status";
+CM_ SG_ 335 ONEBOX_5_CddAdcActiveVehHld "Flag indicate that vehicle is actively hold by longitudinal actuator controller";
+CM_ SG_ 335 ONEBOX_5_APCFailureSts "error status";
+CM_ SG_ 335 ONEBOX_5_APCStatus "response park control status";
+CM_ SG_ 335 ONEBOX_5_ApaAvl "response APA available status";
+CM_ SG_ 335 ONEBOX_5_RpaAvl "response RPA/AVP(include HPA) available status";
+CM_ SG_ 335 ONEBOX_5_MebAvl "response MEB available status";
+CM_ SG_ 335 ONEBOX_5_CddApActiveVehHld "Flag indicate that vehicle is actively hold by longitudinal actuator controller";
+CM_ SG_ 335 ONEBOX_5_SysBrkP "Driver pedal pressure";
+CM_ SG_ 335 ONEBOX_5_SysBrkPVld "Driver pedal pressure status";
+CM_ SG_ 335 ONEBOX_5_AbpActSts "ABP active status";
+CM_ SG_ 335 ONEBOX_5_AbpAvlSts "ABP available status";
+CM_ SG_ 335 ONEBOX_5_AwbActSts "AWB active status";
+CM_ SG_ 335 ONEBOX_5_AwbAvlSts "AWB available status";
+CM_ SG_ 335 ONEBOX_5_AbaActSts "ABA active status";
+CM_ SG_ 335 ONEBOX_5_AbaAvlSts "ABA available status";
+CM_ SG_ 335 ONEBOX_5_AbaLvlSts "ABA level status";
+CM_ SG_ 1193 ONEBOX_2_G_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x007A";
+CM_ SG_ 1193 ONEBOX_2_G_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1193 ONEBOX_2_G_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 1204 VCU_1_G_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x005C";
+CM_ SG_ 1204 VCU_1_G_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1204 VCU_1_G_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 1204 VCU_DriveMode "Driving modes";
+CM_ SG_ 1204 VCU_AcceleratorPosRaw "Raw position of the accelerator pedal (unfiltered). Represents always raw pedal position without any other influcence only mandatory to calculated gradient acceleration pedal.";
+CM_ SG_ 1209 VCU_2_G_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x005D";
+CM_ SG_ 1209 VCU_2_G_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 1209 VCU_2_G_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 1209 VCU_GasPedalPosition "Driver/Cruise control
+This signal including compositive informations which are actual gas pedal position and dummy Cruise control gas pedal position";
+CM_ SG_ 1209 VCU_HVReady "HV Ready";
+CM_ SG_ 1212 VCU_ActWheelTorqueFA "Actual wheel torque at FA";
+CM_ SG_ 1212 VCU_ActWheelTorqueRA "Actual wheel torque at RA";
+CM_ SG_ 1229 VCU_DynamicRangeAval "Remain  Dynamic available range";
+CM_ SG_ 56 VCU_10_CRC "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0068";
+CM_ SG_ 56 VCU_10_RollgCntr "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 56 VCU_10_Resd "Profile1A:E2E Reserved";
+CM_ SG_ 56 VCU_TargetGear "Target gear";
+CM_ SG_ 56 VCU_ActualGear "actual gear";
+CM_ SG_ 56 VCU_TargetGearValidData "valid Target gear";
+CM_ SG_ 56 VCU_ActualGearValidData "valid actual gear";
+CM_ SG_ 59 VCU_11_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x0069";
+CM_ SG_ 59 VCU_11_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 59 VCU_11_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 59 VCU_IndicatedDriverReqWhlTqFA "Driver request wheel torque at FA";
+CM_ SG_ 59 VCU_ActWheelSpdFA "The motor terminal speed, forward and backward are both sent the positive value";
+CM_ SG_ 59 VCU_11_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006A";
+CM_ SG_ 59 VCU_11_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 59 VCU_11_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 59 VCU_IndcdDriverReqWhlTqStsFA "Driver request wheel torque status at FA";
+CM_ SG_ 59 VCU_ActWheelTorqueStsFA "Actual wheel torque status at FA";
+CM_ SG_ 59 VCU_ActWheelSpdStsFA "Actual wheel speed status at FA";
+CM_ SG_ 59 VCU_IndicatedDriverReqWhlTqRA "Driver request wheel torque at RA";
+CM_ SG_ 59 VCU_11_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006B";
+CM_ SG_ 59 VCU_11_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 59 VCU_11_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 59 VCU_ActWheelSpdRA "The motor terminal speed, forward and backward are both sent the positive value";
+CM_ SG_ 59 VCU_IndcdDriverReqWhlTqStsRA "Driver request wheel torque status at RA";
+CM_ SG_ 59 VCU_ActWheelTorqueStsRA "Actual wheel torque status at RA";
+CM_ SG_ 59 VCU_ActWheelSpdStsRA "Actual wheel speed status at RA";
+CM_ SG_ 59 VCU_11_CRC4 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006C";
+CM_ SG_ 59 VCU_11_RollgCntr4 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 59 VCU_11_Resd4 "Profile1A:E2E Reserved";
+CM_ SG_ 59 VCU_GasPedalPosition "Driver/Cruise control
+This signal including compositive informations which are actual gas pedal position and dummy Cruise control gas pedal position";
+CM_ SG_ 59 VCU_AcceleratorPosRaw "Raw position of the accelerator pedal (unfiltered). Represents always raw pedal position without any other influcence only mandatory to calculated gradient acceleration pedal.";
+CM_ SG_ 75 VCU_12_CRC1 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006D";
+CM_ SG_ 75 VCU_12_RollgCntr1 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 75 VCU_12_Resd1 "Profile1A:E2E Reserved";
+CM_ SG_ 75 VCU_12_DrvrGearIntervention "Driver Intervention Gear status";
+CM_ SG_ 75 VCU_12_PtTqActvSts "VCU Torque Active State";
+CM_ SG_ 75 VCU_12_PtTqAvl "VCU PT Torque Available";
+CM_ SG_ 75 VCU_12_DriverTorqueDesired "Driver Torque Desieed";
+CM_ SG_ 75 VCU_12_DrvrAccrPedlOvrd "Driver Accelerator Pedal Override";
+CM_ SG_ 75 VCU_12_VehWhlActTq "实际总的轮端扭矩值反馈";
+CM_ SG_ 75 VCU_12_VehWhlActTqVld "实际总的轮端扭矩值有效状态";
+CM_ SG_ 75 VCU_12_CRC2 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006E";
+CM_ SG_ 75 VCU_12_RollgCntr2 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 75 VCU_12_Resd2 "Profile1A:E2E Reserved";
+CM_ SG_ 75 VCU_12_PtTqMax "VCU PT Torque Max";
+CM_ SG_ 75 VCU_12_PtTqMaxVld "VCU PT Torque Max status";
+CM_ SG_ 75 VCU_12_GasPedalInhabition "VCU Gas Pedal Inhabition";
+CM_ SG_ 75 VCU_12_CRC3 "Profile1A:E2E CRC (SAE J1850 CRC-8) for 8 Bytes
+DataID:0x006F";
+CM_ SG_ 75 VCU_12_RollgCntr3 "Profile1A:E2E Rolling message counter(the maximum value of Alive counter is 14)";
+CM_ SG_ 75 VCU_12_Resd3 "Profile1A:E2E Reserved";
+CM_ SG_ 75 VCU_12_VehWhlActTqADS "实际响应ADS请求总的轮端扭矩值反馈";
+CM_ SG_ 75 VCU_12_VehWhlActTqADSVld "实际响应ADS请求总的轮端扭矩值有效状态";
+
+
+BA_DEF_ BO_  "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","IfActive","CE","CA","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition","CA","CE","Event";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BU_  "NmStationAddress" INT 0 63;
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_  "NmBaseAddress" HEX 1024 1087;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ SG_ "GenSigMeplex" STRING;
+BA_DEF_ SG_ "GenSigASIL" ENUM "QM","A","B","C","D","";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN_FD";
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "BusType" "CAN FD";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_ "GenSigMeplex" "";
+BA_DEF_DEF_ "GenSigASIL" "QM";
+BA_ "DBName" "BEV_E0X_OT_Car ADCC_CH Message list  V3.60 Draft _202308301702";
+BA_ "GenMsgILSupport" BO_ 49 1;
+BA_ "GenMsgCycleTime" BO_ 49 10;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_CRC1 5;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_Resd1 5;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_LateralAcceleration 2;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_YawRate 2;
+BA_ "GenSigStartValue" SG_ 49 ACU_2_YASCalibrationSts 1;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_YASCalibrationSts 2;
+BA_ "GenSigStartValue" SG_ 49 ACU_2_YawrateSigValidData 3;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_YawrateSigValidData 2;
+BA_ "GenSigStartValue" SG_ 49 ACU_2_LateralAccelerationSigVD 3;
+BA_ "GenSigASIL"  SG_ 49 ACU_2_LateralAccelerationSigVD 2;
+BA_ "GenMsgILSupport" BO_ 33 1;
+BA_ "GenMsgSendType" BO_ 33 3;
+BA_ "GenMsgCycleTime" BO_ 33 10;
+BA_ "GenMsgCycleTimeFast" BO_ 33 10;
+BA_ "GenMsgNrOfRepetition" BO_ 33 6;
+BA_ "GenMsgDelayTime" BO_ 33 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_CRC1 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_Resd1 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_LongitudinalAcceleration 2;
+BA_ "GenSigStartValue" SG_ 33 ACU_3_LongitudinalAccelerationVD 3;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_LongitudinalAccelerationVD 2;
+BA_ "GenSigSendType" SG_ 33 ACU_3_CrashOutputSts 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_CrashOutputSts 2;
+BA_ "GenSigSendType" SG_ 33 ACU_3_SCMRequest 5;
+BA_ "GenSigASIL"  SG_ 33 ACU_3_SCMRequest 2;
+BA_ "GenMsgILSupport" BO_ 405 1;
+BA_ "GenMsgCycleTime" BO_ 405 10;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_Resd1 5;
+BA_ "GenSigStartValue" SG_ 405 ADS_1_SteerAgReq 7800;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerAgReq 4;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerAgVld 4;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerPilotAgEna 2;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_Resd2 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerTqEna 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_LdwWarningCmd 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_LdwWarningCmdVld 5;
+BA_ "GenSigStartValue" SG_ 405 ADS_1_SteerMaxTqReq 4000;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerMaxTqReq 5;
+BA_ "GenSigStartValue" SG_ 405 ADS_1_SteerMinTqReq 4000;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_SteerMinTqReq 5;
+BA_ "GenSigASIL"  SG_ 405 ADS_1_ADSHealthSts 2;
+BA_ "GenSigASIL"  SG_ 405 CutOutFreshvalues_2CB_S 5;
+BA_ "GenSigASIL"  SG_ 405 CutOutMAC_2CB_S 5;
+BA_ "GenMsgILSupport" BO_ 444 1;
+BA_ "GenMsgCycleTime" BO_ 444 10;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_CRC1 5;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_Resd1 5;
+BA_ "GenSigStartValue" SG_ 444 ADS_3_SteerParkAgReq 7800;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_SteerParkAgReq 2;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_SteerParkAgVld 2;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_SteerParkAgEna 2;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_CRC2 5;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_Resd2 5;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_ParkFcnMode 2;
+BA_ "GenSigASIL"  SG_ 444 ADS_3_ADSParkHealthSts 2;
+BA_ "GenMsgILSupport" BO_ 345 1;
+BA_ "GenMsgCycleTime" BO_ 345 10;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotCtrlRepSta 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkCtrlType 2;
+BA_ "GenSigStartValue" SG_ 345 ADS_1_PilotParkBrkDecTar 2000;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkBrkDecTar 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkCtrlRepMod 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkBrkDecTarVld 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkBrkDecTarEnable 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkDec2StpReq 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PilotParkDriOffReq 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_StopDist 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_ParkCtrlMod 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_1_PreFillReq 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_EPBCtrlReqValid 2;
+BA_ "GenSigASIL"  SG_ 345 ADS_EPBCtrlReq 2;
+BA_ "GenMsgILSupport" BO_ 359 1;
+BA_ "GenMsgCycleTime" BO_ 359 10;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_DrvTarTq 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_DrvTarTqVld 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_DrvCtrlReq 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_CtrlReqMod 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_DrvTarTqEnable 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_AMAPRequest 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_AMAPRequestVld 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_ADCCAvl 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_AMAPTqLimit 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_AMAPTqLimitVld 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_Resd2 5;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_TarGearReq 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_TarGearReqVld 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_GearCtrlEnable 2;
+BA_ "GenSigASIL"  SG_ 359 ADS_1_RpaPTReadyReq 5;
+BA_ "GenMsgILSupport" BO_ 612 1;
+BA_ "GenMsgCycleTime" BO_ 612 20;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_ActrSt 3;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_RWUSt 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_DynBrkgSt 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_EPBAvlSt 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_ParkBrkCpby 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_FltLvl 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_DrvrRqParkBrk 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_1_DrvrRqParkBrkVld 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_Resd2 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_BrkLitReq 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_Flt_Lamp 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_Park_Lamp 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_ActrSt 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_CDP_Req 3;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_RWU_St 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_Dyn_BrkgSt 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_EPB_R_1Avl_St 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_TextDisp 5;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_FltLvl 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_DrvrRqParkBrk 2;
+BA_ "GenSigASIL"  SG_ 612 EPB_R_1_DrvrRqParkBrkVld 2;
+BA_ "GenMsgILSupport" BO_ 290 1;
+BA_ "GenMsgCycleTime" BO_ 290 10;
+BA_ "GenSigASIL"  SG_ 290 EPS_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 290 EPS_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 290 EPS_1_Resd 5;
+BA_ "GenSigASIL"  SG_ 290 EPSFailSts 2;
+BA_ "GenMsgILSupport" BO_ 715 1;
+BA_ "GenMsgCycleTime" BO_ 715 20;
+BA_ "GenSigASIL"  SG_ 715 EPS_3_CRC 5;
+BA_ "GenSigASIL"  SG_ 715 EPS_3_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 715 EPS_3_Resd 5;
+BA_ "GenSigASIL"  SG_ 715 TorsionBarTorque 4;
+BA_ "GenSigASIL"  SG_ 715 TorsionBarTorqueDir 4;
+BA_ "GenSigASIL"  SG_ 715 TosionBarTorqueValid 4;
+BA_ "GenMsgILSupport" BO_ 421 1;
+BA_ "GenMsgCycleTime" BO_ 421 10;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_CRC1 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Resd1 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AgParkCtrlAvl 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AgPilotCtrlAvl 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AgPilotCtrlSts 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_TqCtrlAvl 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_TqCtrlSts 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_LdwWarnSts 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_LdwWarnStsVD 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AgParkCtrlSts 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_CRC2 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Resd2 5;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_SteerPinionTq 2000;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_SteerPinionTq 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_SteerPinionTqVld 2;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_AsscMotCrtTq 1000;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AsscMotCrtTq 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_AsscMotCrtTqVld 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_CRC3 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Resd3 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_SteerDrvrOvrd 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_SteerDrvrOvrdVld 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_SteerMod 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_CRC4 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Resd4 5;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_Tq2 1000;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Tq2 2;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_CRC5 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_RollgCntr5 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_Resd5 5;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_OverrangeFeedback 2;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_ADSMaxTq 4000;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_ADSMaxTq 2;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_ADSMinTq 4000;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_ADSMinTq 2;
+BA_ "GenSigStartValue" SG_ 421 EPS_4_OverrangeFeedbackVD 1;
+BA_ "GenSigASIL"  SG_ 421 EPS_4_OverrangeFeedbackVD 2;
+BA_ "GenMsgILSupport" BO_ 306 1;
+BA_ "GenMsgCycleTime" BO_ 306 10;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_CRC 5;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_Resd 5;
+BA_ "GenSigStartValue" SG_ 306 SAM_1_SteeringAngle 65535;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_SteeringAngle 2;
+BA_ "GenSigStartValue" SG_ 306 SAM_1_SteeringAngleSpeed 255;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_SteeringAngleSpeed 2;
+BA_ "GenSigStartValue" SG_ 306 SAM_1_SteeringAngleVD 1;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_SteeringAngleVD 2;
+BA_ "GenSigStartValue" SG_ 306 SAM_1_SteeringAngleSpeedVD 1;
+BA_ "GenSigASIL"  SG_ 306 SAM_1_SteeringAngleSpeedVD 2;
+BA_ "GenMsgILSupport" BO_ 152 1;
+BA_ "GenMsgCycleTime" BO_ 152 10;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_CRC1 5;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_Resd1 5;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_VehicleSpeedVSOSig 3;
+BA_ "GenSigStartValue" SG_ 152 ESP1_VehicleSpeedVSOSigValidData 1;
+BA_ "GenSigASIL"  SG_ 152 ESP1_VehicleSpeedVSOSigValidData 4;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_EBDFailSts 2;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_ABSFailSts 4;
+BA_ "GenSigASIL"  SG_ 152 IPB_SimulatorPressure 2;
+BA_ "GenSigStartValue" SG_ 152 IPB_SimulatorPressureStatus 1;
+BA_ "GenSigASIL"  SG_ 152 IPB_SimulatorPressureStatus 2;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_ABSActive 4;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_VDCFailSts 4;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_VDCActive 4;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_TCSFailSts 4;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_TCSActive 4;
+BA_ "GenSigASIL"  SG_ 152 BrakeSystemType 5;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_HHCFailSts 5;
+BA_ "GenSigASIL"  SG_ 152 HHCActive 5;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_HDCCtrlSts 5;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_HDCFailSts 5;
+BA_ "GenSigASIL"  SG_ 152 HLRequest 5;
+BA_ "GenSigASIL"  SG_ 152 ABS_ESP_1_ESPSwitchStatus 2;
+BA_ "GenSigASIL"  SG_ 152 BLRequestController 2;
+BA_ "GenSigASIL"  SG_ 152 SwitchOffCruiseControl 2;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_CRC2 5;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 152 ONEBOX_1_Resd2 5;
+BA_ "GenSigStartValue" SG_ 152 IPB_1_MbRegenTargetWheel 32768;
+BA_ "GenSigASIL"  SG_ 152 IPB_1_MbRegenTargetWheel 2;
+BA_ "GenSigASIL"  SG_ 152 IPB_1_MbRegenTargetWheelQ 2;
+BA_ "GenSigASIL"  SG_ 152 AEBdecActive 2;
+BA_ "GenSigASIL"  SG_ 152 AEBdecAvailable 2;
+BA_ "GenSigASIL"  SG_ 152 CDPActive 2;
+BA_ "GenSigASIL"  SG_ 152 CDPFailSts 2;
+BA_ "GenMsgILSupport" BO_ 555 1;
+BA_ "GenMsgCycleTime" BO_ 555 20;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_CRC1 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_Resd1 5;
+BA_ "GenSigASIL"  SG_ 555 AVHSts 5;
+BA_ "GenSigASIL"  SG_ 555 VehicleStandstill 2;
+BA_ "GenSigStartValue" SG_ 555 NoBrakeForce 1;
+BA_ "GenSigASIL"  SG_ 555 NoBrakeForce 2;
+BA_ "GenSigASIL"  SG_ 555 AVHFailSts 5;
+BA_ "GenSigASIL"  SG_ 555 Reserved_EDCActive 5;
+BA_ "GenSigASIL"  SG_ 555 ECDTempOff 2;
+BA_ "GenSigASIL"  SG_ 555 DCFail 5;
+BA_ "GenSigASIL"  SG_ 555 CDDActive 2;
+BA_ "GenSigASIL"  SG_ 555 CDDAvailable 2;
+BA_ "GenSigASIL"  SG_ 555 Reserved_ESPLampInformation 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_CRC2 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_Resd2 5;
+BA_ "GenSigStartValue" SG_ 555 WheelBrakeForce 31250;
+BA_ "GenSigASIL"  SG_ 555 WheelBrakeForce 2;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_CRC3 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_Resd3 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_CRC4 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 555 ONEBOX_3_Resd4 5;
+BA_ "GenSigASIL"  SG_ 555 IPB_PlungerPressureValidData 3;
+BA_ "GenSigASIL"  SG_ 555 IPB_InputRodStrokeStatus 2;
+BA_ "GenSigASIL"  SG_ 555 SCMActive 5;
+BA_ "GenSigASIL"  SG_ 555 SCMAvalable 5;
+BA_ "GenSigASIL"  SG_ 555 IPB_PlungerPressure 3;
+BA_ "GenSigStartValue" SG_ 555 IPB_InputRodStroke 100;
+BA_ "GenSigASIL"  SG_ 555 IPB_InputRodStroke 2;
+BA_ "GenSigASIL"  SG_ 555 DTC_Intervention 5;
+BA_ "GenSigASIL"  SG_ 555 DTCAvailable 5;
+BA_ "GenSigASIL"  SG_ 555 DTCActive 5;
+BA_ "GenMsgILSupport" BO_ 587 1;
+BA_ "GenMsgCycleTime" BO_ 587 20;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_CRC1 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_Resd1 5;
+BA_ "GenSigASIL"  SG_ 587 LHFWheelSpeedRPM 4;
+BA_ "GenSigASIL"  SG_ 587 RHFWheelSpeedRPM 4;
+BA_ "GenSigASIL"  SG_ 587 LHRWheelSpeedRPM 2;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_CRC2 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_Resd2 5;
+BA_ "GenSigASIL"  SG_ 587 RHRWheelSpeedRPM 2;
+BA_ "GenSigASIL"  SG_ 587 LHRPulseCounterFailSts 2;
+BA_ "GenSigASIL"  SG_ 587 LHRPulseCounter 2;
+BA_ "GenSigASIL"  SG_ 587 RHRPulseCounterFailSts 2;
+BA_ "GenSigASIL"  SG_ 587 RHRPulseCounter 2;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_CRC3 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_Resd3 5;
+BA_ "GenSigASIL"  SG_ 587 RHFPulseCounterFailSts 2;
+BA_ "GenSigASIL"  SG_ 587 RHFPulseCounter 2;
+BA_ "GenSigASIL"  SG_ 587 LHFPulseCounterFailSts 2;
+BA_ "GenSigASIL"  SG_ 587 LHFPulseCounter 2;
+BA_ "GenSigASIL"  SG_ 587 LHFWheelSpeedRaw 2;
+BA_ "GenSigASIL"  SG_ 587 LHFWheelDriveDirection 2;
+BA_ "GenSigStartValue" SG_ 587 LHFWheelSpeedRawValidData 1;
+BA_ "GenSigASIL"  SG_ 587 LHFWheelSpeedRawValidData 2;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_CRC4 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 587 ONEBOX_4_Resd4 5;
+BA_ "GenSigASIL"  SG_ 587 RHFWheelSpeedRaw 2;
+BA_ "GenSigASIL"  SG_ 587 RHFWheelDriveDirection 2;
+BA_ "GenSigStartValue" SG_ 587 RHFWheelSpeedRawValidData 1;
+BA_ "GenSigASIL"  SG_ 587 RHFWheelSpeedRawValidData 2;
+BA_ "GenSigASIL"  SG_ 587 LHRWheelSpeedRaw 2;
+BA_ "GenSigASIL"  SG_ 587 LHRWheelDriveDirection 2;
+BA_ "GenSigStartValue" SG_ 587 LHRWheelSpeedRawValidData 1;
+BA_ "GenSigASIL"  SG_ 587 LHRWheelSpeedRawValidData 2;
+BA_ "GenSigASIL"  SG_ 587 RHRWheelSpeedRaw 2;
+BA_ "GenSigASIL"  SG_ 587 RHRWheelDriveDirection 2;
+BA_ "GenSigStartValue" SG_ 587 RHRWheelSpeedRawValidData 1;
+BA_ "GenSigASIL"  SG_ 587 RHRWheelSpeedRawValidData 2;
+BA_ "GenMsgILSupport" BO_ 335 1;
+BA_ "GenMsgCycleTime" BO_ 335 10;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_CRC1 5;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_Resd1 5;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_PilotParkBrkDecCtlAvl 2;
+BA_ "GenSigStartValue" SG_ 335 ONEBOX_5_PilotParkBrkDecActSts 1;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_PilotParkBrkDecActSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_CddAdcActiveVehHld 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_APCFailureSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_APCStatus 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_ApaAvl 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_RpaAvl 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_MebAvl 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_CddApActiveVehHld 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_SysBrkP 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_SysBrkPVld 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AbpActSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AbpAvlSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AwbActSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AwbAvlSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AbaActSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AbaAvlSts 2;
+BA_ "GenSigASIL"  SG_ 335 ONEBOX_5_AbaLvlSts 2;
+BA_ "GenMsgILSupport" BO_ 1193 1;
+BA_ "GenMsgCycleTime" BO_ 1193 100;
+BA_ "GenSigASIL"  SG_ 1193 ONEBOX_2_G_CRC 5;
+BA_ "GenSigASIL"  SG_ 1193 ONEBOX_2_G_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1193 ONEBOX_2_G_Resd 5;
+BA_ "GenSigASIL"  SG_ 1193 BrakesystemFailSts 2;
+BA_ "GenMsgILSupport" BO_ 1204 1;
+BA_ "GenMsgCycleTime" BO_ 1204 100;
+BA_ "GenSigASIL"  SG_ 1204 VCU_1_G_CRC 5;
+BA_ "GenSigASIL"  SG_ 1204 VCU_1_G_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1204 VCU_1_G_Resd 5;
+BA_ "GenSigStartValue" SG_ 1204 VCU_DriveMode 6;
+BA_ "GenSigASIL"  SG_ 1204 VCU_DriveMode 2;
+BA_ "GenSigASIL"  SG_ 1204 VCU_AcceleratorPosRaw 2;
+BA_ "GenMsgILSupport" BO_ 1209 1;
+BA_ "GenMsgCycleTime" BO_ 1209 100;
+BA_ "GenSigASIL"  SG_ 1209 VCU_2_G_CRC 5;
+BA_ "GenSigASIL"  SG_ 1209 VCU_2_G_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 1209 VCU_2_G_Resd 5;
+BA_ "GenSigASIL"  SG_ 1209 VCU_GasPedalPosition 2;
+BA_ "GenSigASIL"  SG_ 1209 VCU_GasPedalPositionInvalidData 2;
+BA_ "GenSigASIL"  SG_ 1209 VCU_HVReady 2;
+BA_ "GenMsgILSupport" BO_ 1212 1;
+BA_ "GenMsgCycleTime" BO_ 1212 100;
+BA_ "GenSigStartValue" SG_ 1212 VCU_ActWheelTorqueFA 32768;
+BA_ "GenSigASIL"  SG_ 1212 VCU_ActWheelTorqueFA 2;
+BA_ "GenSigStartValue" SG_ 1212 VCU_ActWheelTorqueRA 32768;
+BA_ "GenSigASIL"  SG_ 1212 VCU_ActWheelTorqueRA 2;
+BA_ "GenMsgILSupport" BO_ 1229 1;
+BA_ "GenMsgCycleTime" BO_ 1229 100;
+BA_ "GenSigASIL"  SG_ 1229 VCU_DynamicRangeAval 5;
+BA_ "GenMsgILSupport" BO_ 56 1;
+BA_ "GenMsgCycleTime" BO_ 56 10;
+BA_ "GenSigASIL"  SG_ 56 VCU_10_CRC 5;
+BA_ "GenSigASIL"  SG_ 56 VCU_10_RollgCntr 5;
+BA_ "GenSigASIL"  SG_ 56 VCU_10_Resd 5;
+BA_ "GenSigASIL"  SG_ 56 VCU_TargetGear 2;
+BA_ "GenSigASIL"  SG_ 56 VCU_ActualGear 2;
+BA_ "GenSigASIL"  SG_ 56 VCU_TargetGearValidData 2;
+BA_ "GenSigASIL"  SG_ 56 VCU_ActualGearValidData 2;
+BA_ "GenSigASIL"  SG_ 56 VCU_BrakePedalStsValidData 2;
+BA_ "GenSigASIL"  SG_ 56 VCU_BrakePedalSts 2;
+BA_ "GenMsgILSupport" BO_ 59 1;
+BA_ "GenMsgCycleTime" BO_ 59 10;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_CRC1 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_Resd1 5;
+BA_ "GenSigStartValue" SG_ 59 VCU_IndicatedDriverReqWhlTqFA 32768;
+BA_ "GenSigASIL"  SG_ 59 VCU_IndicatedDriverReqWhlTqFA 3;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelSpdFA 32767;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_CRC2 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_Resd2 5;
+BA_ "GenSigStartValue" SG_ 59 VCU_IndcdDriverReqWhlTqStsFA 1;
+BA_ "GenSigASIL"  SG_ 59 VCU_IndcdDriverReqWhlTqStsFA 2;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelTorqueStsFA 1;
+BA_ "GenSigASIL"  SG_ 59 VCU_ActWheelTorqueStsFA 3;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelSpdStsFA 1;
+BA_ "GenSigStartValue" SG_ 59 VCU_IndicatedDriverReqWhlTqRA 32768;
+BA_ "GenSigASIL"  SG_ 59 VCU_IndicatedDriverReqWhlTqRA 3;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_CRC3 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_Resd3 5;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelSpdRA 32767;
+BA_ "GenSigASIL"  SG_ 59 VCU_ActWheelSpdRA 5;
+BA_ "GenSigStartValue" SG_ 59 VCU_IndcdDriverReqWhlTqStsRA 1;
+BA_ "GenSigASIL"  SG_ 59 VCU_IndcdDriverReqWhlTqStsRA 2;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelTorqueStsRA 1;
+BA_ "GenSigASIL"  SG_ 59 VCU_ActWheelTorqueStsRA 5;
+BA_ "GenSigStartValue" SG_ 59 VCU_ActWheelSpdStsRA 1;
+BA_ "GenSigASIL"  SG_ 59 VCU_ActWheelSpdStsRA 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_CRC4 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_RollgCntr4 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_11_Resd4 5;
+BA_ "GenSigASIL"  SG_ 59 VCU_GasPedalPositionInvalidData 2;
+BA_ "GenSigASIL"  SG_ 59 VCU_AcceleratorPosRawIVD 2;
+BA_ "GenSigASIL"  SG_ 59 VCU_GasPedalPosition 2;
+BA_ "GenSigASIL"  SG_ 59 VCU_AcceleratorPosRaw 2;
+BA_ "GenMsgILSupport" BO_ 75 1;
+BA_ "GenMsgCycleTime" BO_ 75 10;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_CRC1 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_RollgCntr1 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_Resd1 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_DrvrGearIntervention 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_PtTqActvSts 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_PtTqAvl 2;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_DriverTorqueDesired 32768;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_DriverTorqueDesired 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_DrvrAccrPedlOvrd 2;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_VehWhlActTq 32768;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_VehWhlActTq 2;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_VehWhlActTqVld 1;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_VehWhlActTqVld 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_CRC2 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_RollgCntr2 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_Resd2 5;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_PtTqMax 32768;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_PtTqMax 2;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_PtTqMaxVld 1;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_PtTqMaxVld 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_GasPedalInhabition 2;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_CRC3 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_RollgCntr3 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_Resd3 5;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_VehWhlActTqADS 2;
+BA_ "GenSigStartValue" SG_ 75 VCU_12_VehWhlActTqADSVld 1;
+BA_ "GenSigASIL"  SG_ 75 VCU_12_VehWhlActTqADSVld 2;
+VAL_ 49 ACU_2_LateralAcceleration 65535 "Invalid" ;
+VAL_ 49 ACU_2_YawRate 65535 "Invalid" ;
+VAL_ 49 ACU_2_YASCalibrationSts 1 "Sensor  Calibrated" 0 "Sensor  Not Calibrated" ;
+VAL_ 49 ACU_2_YawrateSigValidData 3 "Initialize" 2 "Invalid" 1 "Reserved" 0 "Valid" ;
+VAL_ 49 ACU_2_LateralAccelerationSigVD 3 "Initialize" 2 "Invalid" 1 "Reserved" 0 "Valid" ;
+VAL_ 33 ACU_3_LongitudinalAcceleration 65535 "Invalid" ;
+VAL_ 33 ACU_3_LongitudinalAccelerationVD 3 "Initialize" 2 "Invalid" 1 "Reserved" 0 "Valid" ;
+VAL_ 33 ACU_3_CrashOutputSts 32 "Roll Crash" 16 "Rear Crash" 8 "Right Side Crash" 4 "Left Side Crash" 2 "Front Crash" 1 "Belt Crash" 0 "No crash" ;
+VAL_ 33 ACU_3_SCMRequest 7 "reserved" 6 "reserved" 5 "reserved" 4 "Roll Crash" 3 "Rear Crash" 2 "Side Crash" 1 "Front Crash" 0 "No crash" ;
+VAL_ 405 ADS_1_SteerAgReq 16383 "Invalid" ;
+VAL_ 405 ADS_1_SteerAgVld 3 "Reserved" 2 "Invalid" 1 "Valid" 0 "Initializing" ;
+VAL_ 405 ADS_1_SteerPilotAgEna 3 "Reserved" 2 "Active" 1 "Reserved" 0 "No request" ;
+VAL_ 405 ADS_1_SteerTqEna 3 "Reserved" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 405 ADS_1_LdwWarningCmd 3 "Reserved" 2 "LevelB(low)" 1 "LevelA(high)" 0 "No request" ;
+VAL_ 405 ADS_1_LdwWarningCmdVld 3 "Reserved" 2 "Invalid" 1 "Valid" 0 "Initializing" ;
+VAL_ 405 ADS_1_SteerMaxTqReq 8191 "Invalid" ;
+VAL_ 405 ADS_1_SteerMinTqReq 8191 "Invalid" ;
+VAL_ 405 ADS_1_ADSHealthSts 3 "reserved" 2 "reserved" 1 "not present" 0 "fail present" ;
+VAL_ 444 ADS_3_SteerParkAgReq 16383 "Invalid" ;
+VAL_ 444 ADS_3_SteerParkAgVld 3 "Reserved" 2 "Invalid" 1 "Valid" 0 "Initializing" ;
+VAL_ 444 ADS_3_SteerParkAgEna 3 "Reserved" 2 "Active" 1 "Ready" 0 "No request" ;
+VAL_ 444 ADS_3_ParkFcnMode 3 " HPA" 2 " RPA" 1 " APA" 0 " No function" ;
+VAL_ 444 ADS_3_ADSParkHealthSts 3 "reserved" 2 "reserved" 1 "not present" 0 "fail present" ;
+VAL_ 345 ADS_1_PilotCtrlRepSta 3 "reserved" 2 "reserved " 1 "L12" 0 "No Request" ;
+VAL_ 345 ADS_1_PilotParkCtrlType 1 "emergency" 0 "comfortable" ;
+VAL_ 345 ADS_1_PilotParkBrkDecTar 4095 "Invalid" ;
+VAL_ 345 ADS_1_PilotParkCtrlRepMod 3 "reserved" 2 "Park Mode" 1 "Pilot Mode" 0 "No Request" ;
+VAL_ 345 ADS_1_PilotParkBrkDecTarVld 1 "Valid" 0 "Invalid" ;
+VAL_ 345 ADS_1_PilotParkBrkDecTarEnable 1 "Enable" 0 "Disable" ;
+VAL_ 345 ADS_1_PilotParkDec2StpReq 1 "Request" 0 "No Request" ;
+VAL_ 345 ADS_1_PilotParkDriOffReq 1 "Request" 0 "No Request" ;
+VAL_ 345 ADS_1_StopDist 65535 "Invalid" ;
+VAL_ 345 ADS_1_ParkCtrlMod 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "MEB" 3 "AVP/HPA_VPA" 2 "RPA" 1 "APA/RA" 0 "None" ;
+VAL_ 345 ADS_1_PreFillReq 1 "Request" 0 "No Request" ;
+VAL_ 345 ADS_EPBCtrlReqValid 1 "Invalid" 0 "Valid" ;
+VAL_ 345 ADS_EPBCtrlReq 3 "Reserved" 2 "Release" 1 "Lock" 0 "No Request" ;
+VAL_ 359 ADS_1_DrvTarTqVld 1 "Valid" 0 "Invalid" ;
+VAL_ 359 ADS_1_DrvCtrlReq 3 "Reserved" 2 "Reserved" 1 "Req" 0 "No Req" ;
+VAL_ 359 ADS_1_CtrlReqMod 3 "MRM" 2 "Park Mode" 1 "Pilot Mode" 0 "No Request" ;
+VAL_ 359 ADS_1_DrvTarTqEnable 1 "enable" 0 "disenable" ;
+VAL_ 359 ADS_1_AMAPRequest 1 "Request" 0 "No Request" ;
+VAL_ 359 ADS_1_AMAPRequestVld 1 "Valid" 0 "Invalid" ;
+VAL_ 359 ADS_1_ADCCAvl 1 "Available" 0 "Not available" ;
+VAL_ 359 ADS_1_AMAPTqLimitVld 1 "Valid" 0 "Invalid" ;
+VAL_ 359 ADS_1_TarGearReq 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "D" 3 "N" 2 "R" 1 "P" 0 "No request" ;
+VAL_ 359 ADS_1_TarGearReqVld 1 "Valid" 0 "Invalid" ;
+VAL_ 359 ADS_1_GearCtrlEnable 1 "Disable" 0 "Enable" ;
+VAL_ 359 ADS_1_RpaPTReadyReq 1 "Request" 0 "No request" ;
+VAL_ 612 EPB_1_ActrSt 7 "Reserved" 6 "Half Applied" 5 "CompletelyReleased" 4 "Releasing" 3 "Applying" 2 "Released" 1 "Applied" 0 "Unknow" ;
+VAL_ 612 EPB_1_RWUSt 1 "active" 0 "No active" ;
+VAL_ 612 EPB_1_DynBrkgSt 3 "Limp home" 2 "RWU active" 1 "CDP active" 0 "Not active" ;
+VAL_ 612 EPB_1_EPBAvlSt 1 "Available" 0 "Not Available" ;
+VAL_ 612 EPB_1_ParkBrkCpby 3 "Reserved" 2 "Full" 1 "Reduced" 0 "None" ;
+VAL_ 612 EPB_1_FltLvl 3 "Two caliper fault" 2 "One caliper fault-R" 1 "One caliper fault-L " 0 "No fault" ;
+VAL_ 612 EPB_1_DrvrRqParkBrk 3 "Reserved" 2 "Apply" 1 "Release" 0 "NoRequest" ;
+VAL_ 612 EPB_1_DrvrRqParkBrkVld 1 "Valid" 0 "Invalid" ;
+VAL_ 612 EPB_R_1_BrkLitReq 1 "Request" 0 "No request" ;
+VAL_ 612 EPB_R_1_Flt_Lamp 3 "Reserved" 2 "Lamp Flash" 1 "Lamp ON" 0 "Lamp OFF" ;
+VAL_ 612 EPB_R_1_Park_Lamp 3 "Reserved" 2 "Lamp Flash" 1 "Lamp ON" 0 "Lamp OFF" ;
+VAL_ 612 EPB_R_1_ActrSt 7 "Reserved" 6 "Reserved" 5 "CompletelyReleased" 4 "Releasing" 3 "Applying" 2 "Released" 1 "Applied" 0 "Unknow" ;
+VAL_ 612 EPB_R_1_CDP_Req 1 "Request" 0 "No request" ;
+VAL_ 612 EPB_R_1_RWU_St 1 "active" 0 "No active" ;
+VAL_ 612 EPB_R_1_Dyn_BrkgSt 3 "Limp home" 2 "RWU active" 1 "CDP active" 0 "Not active" ;
+VAL_ 612 EPB_R_1_EPB_R_1Avl_St 1 "Available" 0 "Not Available" ;
+VAL_ 612 EPB_R_1_TextDisp 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Press brake pedal" 3 "fasten seatbelt" 2 "Clampforce not enough" 1 "Gradient too high" 0 "NO text message" ;
+VAL_ 612 EPB_R_1_FltLvl 1 "Fault_R" 0 "No fault" ;
+VAL_ 612 EPB_R_1_DrvrRqParkBrk 3 "Reserved" 2 "Apply" 1 "Release" 0 "NoRequest" ;
+VAL_ 612 EPB_R_1_DrvrRqParkBrkVld 1 "Valid" 0 "Invalid" ;
+VAL_ 290 EPSFailSts 3 "Reserved" 2 "Reserved" 1 "Fail present" 0 "Not present" ;
+VAL_ 715 TorsionBarTorqueDir 1 "negative" 0 "postive" ;
+VAL_ 715 TosionBarTorqueValid 1 "Valid" 0 "Invalid" ;
+VAL_ 421 EPS_4_AgParkCtrlAvl 1 "Available" 0 "Not available " ;
+VAL_ 421 EPS_4_AgPilotCtrlAvl 1 "Available" 0 "Not available " ;
+VAL_ 421 EPS_4_AgPilotCtrlSts 7 "Invalid" 2 "active" 1 "Reserved" 0 "No active" ;
+VAL_ 421 EPS_4_TqCtrlAvl 1 "Available" 0 "Not available " ;
+VAL_ 421 EPS_4_TqCtrlSts 7 "Invalid" 2 "active" 1 "Enable" 0 "Disable" ;
+VAL_ 421 EPS_4_LdwWarnSts 7 "Invalid" 3 "Reserved" 2 "Active LevelB (low)" 1 "Active LevelA (high)" 0 "NotActive" ;
+VAL_ 421 EPS_4_LdwWarnStsVD 1 "Valid" 0 "Invalid " ;
+VAL_ 421 EPS_4_AgParkCtrlSts 7 "Invalid" 2 "active" 1 "Ready" 0 "No active" ;
+VAL_ 421 EPS_4_SteerPinionTq 4095 "Invalid" ;
+VAL_ 421 EPS_4_SteerPinionTqVld 1 "Valid" 0 "Invalid " ;
+VAL_ 421 EPS_4_AsscMotCrtTq 2047 "Invalid" ;
+VAL_ 421 EPS_4_AsscMotCrtTqVld 1 "Valid" 0 "Invalid " ;
+VAL_ 421 EPS_4_SteerDrvrOvrd 1 "Override" 0 "Not override" ;
+VAL_ 421 EPS_4_SteerDrvrOvrdVld 1 "Valid" 0 "Invalid " ;
+VAL_ 421 EPS_4_SteerMod 3 "emergency mode" 2 "driving mode" 1 "parking mode" 0 "no function" ;
+VAL_ 421 EPS_4_Tq2 2047 "Invalid" ;
+VAL_ 421 EPS_4_OverrangeFeedback 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "torque overrange" 2 "anglespeed overrange" 1 "angle overrange" 0 "not overrange" ;
+VAL_ 421 EPS_4_ADSMaxTq 8191 "Invalid" ;
+VAL_ 421 EPS_4_ADSMinTq 8191 "Invalid" ;
+VAL_ 421 EPS_4_OverrangeFeedbackVD 1 "Not Valid" 0 "Valid" ;
+VAL_ 306 SAM_1_SteeringAngle 65535 "Invalid" ;
+VAL_ 306 SAM_1_SteeringAngleSpeed 255 "Invalid" ;
+VAL_ 306 SAM_1_SteeringAngleVD 1 "Not Valid" 0 "Valid" ;
+VAL_ 306 SAM_1_SteeringAngleSpeedVD 1 "Not Valid" 0 "Valid" ;
+VAL_ 152 ABS_ESP_1_VehicleSpeedVSOSig 8191 "Invalid" ;
+VAL_ 152 ESP1_VehicleSpeedVSOSigValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 152 ABS_ESP_1_EBDFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 ABS_ESP_1_ABSFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 IPB_SimulatorPressure 1023 "Invalid" ;
+VAL_ 152 IPB_SimulatorPressureStatus 1 "Not Valid" 0 "Valid" ;
+VAL_ 152 ABS_ESP_1_ABSActive 1 "Active" 0 "Not active" ;
+VAL_ 152 ABS_ESP_1_VDCFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 ABS_ESP_1_VDCActive 1 "Active" 0 "Not active" ;
+VAL_ 152 ABS_ESP_1_TCSFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 ABS_ESP_1_TCSActive 1 "Active" 0 "Not active" ;
+VAL_ 152 BrakeSystemType 1 "ESP" 0 "ABS" ;
+VAL_ 152 ABS_ESP_1_HHCFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 HHCActive 1 "Active" 0 "Not active" ;
+VAL_ 152 ABS_ESP_1_HDCCtrlSts 3 "Not Used" 2 "active braking(lamp flash)" 1 "Not active braking(lamp on)" 0 "OFF" ;
+VAL_ 152 ABS_ESP_1_HDCFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 152 HLRequest 1 "Illuminate" 0 "Not illuminate" ;
+VAL_ 152 ABS_ESP_1_ESPSwitchStatus 1 "Disable" 0 "On" ;
+VAL_ 152 BLRequestController 1 "Illuminate" 0 "Not illuminate" ;
+VAL_ 152 SwitchOffCruiseControl 1 "Switch off cruise control" 0 "Not switch off cruise control                          " ;
+VAL_ 152 IPB_1_MbRegenTargetWheelQ 3 "Reserved" 2 "Faulty" 1 "Normal" 0 "NotIntialized" ;
+VAL_ 152 AEBdecActive 1 "Active" 0 "Not active" ;
+VAL_ 152 AEBdecAvailable 1 "Available" 0 "Not available" ;
+VAL_ 152 CDPActive 1 "Active" 0 "Not active" ;
+VAL_ 152 CDPFailSts 1 "Fail present (lamp on)" 0 "Fail not present" ;
+VAL_ 555 AVHSts 3 "Not used" 2 "Active" 1 "Standby" 0 "Off" ;
+VAL_ 555 VehicleStandstill 3 "Reserved" 2 "invalid" 1 "Standstill" 0 "Not standstill" ;
+VAL_ 555 NoBrakeForce 1 "No Brake Force" 0 "Exist Brake Force" ;
+VAL_ 555 AVHFailSts 1 "Fail present (lamp on)" 0 "Not present" ;
+VAL_ 555 Reserved_EDCActive 1 "Active" 0 "Not active" ;
+VAL_ 555 ECDTempOff 1 "temp too high" 0 "not high" ;
+VAL_ 555 DCFail 1 "Error" 0 "No error" ;
+VAL_ 555 CDDActive 1 "Active" 0 "Not active" ;
+VAL_ 555 CDDAvailable 1 "Available" 0 "Not available" ;
+VAL_ 555 Reserved_ESPLampInformation 1 "ESP Control Active" 0 "ESP Control Inactive" ;
+VAL_ 555 WheelBrakeForce 65535 "Invalid" ;
+VAL_ 555 IPB_PlungerPressureValidData 1 "Invalid" 0 "Valid " ;
+VAL_ 555 IPB_InputRodStrokeStatus 1 "Invalid" 0 "Valid " ;
+VAL_ 555 SCMActive 1 "Active" 0 "Not Active" ;
+VAL_ 555 SCMAvalable 1 "Available" 0 "Not Available" ;
+VAL_ 555 IPB_PlungerPressure 1023 "Invalid" ;
+VAL_ 555 DTC_Intervention 1 "Active" 0 "Not Active" ;
+VAL_ 555 DTCAvailable 1 "Available" 0 "Not Available" ;
+VAL_ 555 DTCActive 1 "Active" 0 "Not Active" ;
+VAL_ 587 LHFWheelSpeedRPM 65535 "Invalid" ;
+VAL_ 587 RHFWheelSpeedRPM 65535 "Invalid" ;
+VAL_ 587 LHRWheelSpeedRPM 65535 "Invalid" ;
+VAL_ 587 RHRWheelSpeedRPM 65535 "Invalid" ;
+VAL_ 587 LHRPulseCounterFailSts 1 "Fail Present" 0 "Fail Not Present" ;
+VAL_ 587 RHRPulseCounterFailSts 1 "Fail Present" 0 "Fail Not Present" ;
+VAL_ 587 RHFPulseCounterFailSts 1 "Fail Present" 0 "Fail Not Present" ;
+VAL_ 587 LHFPulseCounterFailSts 1 "Fail Present" 0 "Fail Not Present" ;
+VAL_ 587 LHFWheelDriveDirection 7 "reserved" 6 "reserved" 5 "reserved" 4 "Invalid" 3 "Stop" 2 "Backward" 1 "Forward" 0 "Init" ;
+VAL_ 587 LHFWheelSpeedRawValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 587 RHFWheelDriveDirection 7 "reserved" 6 "reserved" 5 "reserved" 4 "Invalid" 3 "Stop" 2 "Backward" 1 "Forward" 0 "Init" ;
+VAL_ 587 RHFWheelSpeedRawValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 587 LHRWheelDriveDirection 7 "reserved" 6 "reserved" 5 "reserved" 4 "Invalid" 3 "Stop" 2 "Backward" 1 "Forward" 0 "Init" ;
+VAL_ 587 LHRWheelSpeedRawValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 587 RHRWheelDriveDirection 7 "reserved" 6 "reserved" 5 "reserved" 4 "Invalid" 3 "Stop" 2 "Backward" 1 "Forward" 0 "Init" ;
+VAL_ 587 RHRWheelSpeedRawValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 335 ONEBOX_5_PilotParkBrkDecCtlAvl 1 "Not valid" 0 "Valid" ;
+VAL_ 335 ONEBOX_5_PilotParkBrkDecActSts 3 "reserved" 2 "reserved" 1 "Active L12" 0 "Not active" ;
+VAL_ 335 ONEBOX_5_CddAdcActiveVehHld 1 "True" 0 "False" ;
+VAL_ 335 ONEBOX_5_APCFailureSts 8 "APC24(RPA AVP) trigger without secure" 7 "Error" 6 "VehicleBlock" 5 "reserved" 4 "unexpect EPB Apply" 3 "too high speed" 2 "APC24(RPA AVP)  too high slope" 1 "APC1(APA) driver not present" 0 "no error" ;
+VAL_ 335 ONEBOX_5_APCStatus 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "MEB" 3 "AVP/HPA_VPA" 2 "RPA" 1 "APA" 0 "Not Active" ;
+VAL_ 335 ONEBOX_5_ApaAvl 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_RpaAvl 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_MebAvl 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_CddApActiveVehHld 1 "True" 0 "False" ;
+VAL_ 335 ONEBOX_5_SysBrkP 1023 "Invalid" ;
+VAL_ 335 ONEBOX_5_SysBrkPVld 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_AbpActSts 1 "Active" 0 "Not active" ;
+VAL_ 335 ONEBOX_5_AbpAvlSts 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_AwbActSts 1 "Active" 0 "Not active" ;
+VAL_ 335 ONEBOX_5_AwbAvlSts 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_AbaActSts 1 "Active" 0 "Not active" ;
+VAL_ 335 ONEBOX_5_AbaAvlSts 1 "Available" 0 "Not available" ;
+VAL_ 335 ONEBOX_5_AbaLvlSts 3 "Level3" 2 "Level2" 1 "Level1" 0 "No level" ;
+VAL_ 1193 BrakesystemFailSts 1 " Fail present" 0 " Fail not present" ;
+VAL_ 1204 VCU_DriveMode 7 "SAND(Res)" 6 "Not Display" 5 "Offroad(Res)" 4 "MUD(Res)" 3 "SNOW(Res)" 2 "SPORT" 1 "NORMAL" 0 "ECO" ;
+VAL_ 1209 VCU_GasPedalPosition 1023 "Invalid" ;
+VAL_ 1209 VCU_GasPedalPositionInvalidData 1 "Invalid" 0 "Valid" ;
+VAL_ 1209 VCU_HVReady 1 "LmpON" 0 "LmpOFF" ;
+VAL_ 1229 VCU_DynamicRangeAval 1023 "Invalid" ;
+VAL_ 56 VCU_TargetGear 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Target gear D" 3 "Target gear N" 2 "Target gear R" 1 "Target gear P" 0 "No Request" ;
+VAL_ 56 VCU_ActualGear 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "gear D" 3 "gear N" 2 "gear R" 1 "gear P" 0 "No Request" ;
+VAL_ 56 VCU_TargetGearValidData 1 "V alid" 0 "Not Valid" ;
+VAL_ 56 VCU_ActualGearValidData 1 "V alid" 0 "Not Valid" ;
+VAL_ 56 VCU_BrakePedalStsValidData 1 "Not Valid" 0 "Valid" ;
+VAL_ 56 VCU_BrakePedalSts 1 "Applied" 0 "Not applied" ;
+VAL_ 59 VCU_ActWheelSpdFA 65535 "Invalid" ;
+VAL_ 59 VCU_IndcdDriverReqWhlTqStsFA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_ActWheelTorqueStsFA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_ActWheelSpdStsFA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_ActWheelSpdRA 65535 "Invalid" ;
+VAL_ 59 VCU_IndcdDriverReqWhlTqStsRA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_ActWheelTorqueStsRA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_ActWheelSpdStsRA 1 "failure" 0 "no failure " ;
+VAL_ 59 VCU_GasPedalPositionInvalidData 1 "Invalid" 0 "Valid" ;
+VAL_ 59 VCU_AcceleratorPosRawIVD 1 "Invalid" 0 "Valid" ;
+VAL_ 59 VCU_GasPedalPosition 1023 "Invalid" ;
+VAL_ 59 VCU_AcceleratorPosRaw 1023 "Invalid" ;
+VAL_ 75 VCU_12_DrvrGearIntervention 1 "Intervention" 0 "No Intervention" ;
+VAL_ 75 VCU_12_PtTqActvSts 1 "Responsed" 0 "Not response " ;
+VAL_ 75 VCU_12_PtTqAvl 3 "fault" 2 "available degraded" 1 "available" 0 "not available" ;
+VAL_ 75 VCU_12_DrvrAccrPedlOvrd 1 "Override" 0 "Not override" ;
+VAL_ 75 VCU_12_VehWhlActTqVld 1 "failure" 0 "no failure " ;
+VAL_ 75 VCU_12_PtTqMaxVld 1 "failure" 0 "no failure " ;
+VAL_ 75 VCU_12_GasPedalInhabition 1 "Intervention" 0 "Not Intervention" ;
+VAL_ 75 VCU_12_VehWhlActTqADSVld 1 "failure" 0 "no failure " ;
