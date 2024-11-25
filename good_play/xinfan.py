@@ -18,8 +18,8 @@ def get_json_():
         yuanshen = data.get("kunkun_yuanshen", "Unknown")
         fan = data.get("kunkun_fan", "Unknown")
         kunming = data.get("kunkun_jiming", "Unknown")
-
-        return a2_url_local_am, a2_url_local_pm, a4_url_local_am, a4_url_local_pm, yuanshen, fan, kunming
+        Cookies = data.get("Cookie","Unknown")
+        return a2_url_local_am, a2_url_local_pm, a4_url_local_am, a4_url_local_pm, yuanshen, fan, kunming, Cookies
 
 def get_local():
     currentDateAndTime = datetime.now()
@@ -28,14 +28,12 @@ def get_local():
     month_and_day = currentDateAndTime.strftime("%m-%d")
     return times,month_and_day
 
-def get_Food_a2(times,month_and_day,a2_url_local_am,a2_url_local_pm):
+def get_Food_a2(times,month_and_day,a2_url_local_am,a2_url_local_pm, Cookies):
     if times <= 12:
         date = "AM"
-        # a4_url = "https://ipark.iflytek.com/portal-web/pc/menu/food/weekMenu?diningId=3be87e575fa34097a85aedbed68f1213&foodType=2&parkId=101"
         a2_url = a2_url_local_am
     else:
         date = "PM"
-        # a4_url = "https://ipark.iflytek.com/portal-web/pc/menu/food/weekMenu?diningId=3be87e575fa34097a85aedbed68f1213&foodType=3&parkId=101"
         a2_url = a2_url_local_pm
 
     ua = UserAgent()
@@ -45,7 +43,7 @@ def get_Food_a2(times,month_and_day,a2_url_local_am,a2_url_local_pm):
         "Accept": "application/json, text/javascript, */*; q=0.01",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Connection": "keep-alive",
-        "Cookie": "JSESSIONID=8013922FADE51DCB8616E75E3BB43DBB-n2; casgwusercred=nUd96pDymhxFOD46b7uiQ-64MV5EqoteD1unj1SUg-vpPsmyEy3lVNxyMvIB35zB71ROFHUaTBz0u3a4rk_6ojkPGX0WWU3db9wQ8KrR2qNodV6DiQ3IupdQ6o_OHNzKmP7JU0HnnczxfPOi_ysfrQ; crosgwusercred=rzrZQtvNt0rOKPYW94JmAvcyeqOsWeJCUN46CPr9EtqrIKwGoT43ruVk-tijTjKE4715f0450402291c77b33567dcb2f9c7",
+        "Cookie": Cookies ,
     }
 
     response = requests.get(a2_url, headers=headers)
@@ -54,6 +52,7 @@ def get_Food_a2(times,month_and_day,a2_url_local_am,a2_url_local_pm):
         print("请求失败！")
         exit(1)
     else:
+        print("请求成功！",response.status_code)
         page_content = response.json()
         matched_content = []
         
@@ -105,15 +104,13 @@ def get_Food_a2(times,month_and_day,a2_url_local_am,a2_url_local_pm):
             message_a2["content"]["text"] += f"餐线: {content['lineName']}\n菜单: {content['menu']}\n\n"
     return message_a2
 
-def get_Food_a4(times,month_and_day,a4_url_local_am, a4_url_local_pm):
+def get_Food_a4(times,month_and_day,a4_url_local_am, a4_url_local_pm, Cookies):
     if times <= 12:
         date = "AM"
         a4_url = a4_url_local_am
-        # a2_url = "https://ipark.iflytek.com/portal-web/pc/menu/food/weekMenu?diningId=d53b0e1cd06c11e88296a44cc863d6eb&foodType=2&parkId=101"
     else:
         date = "PM"
         a4_url = a4_url_local_pm
-        # a2_url = "https://ipark.iflytek.com/portal-web/pc/menu/food/weekMenu?diningId=d53b0e1cd06c11e88296a44cc863d6eb&foodType=3&parkId=101"
 
     ua = UserAgent()
     
@@ -122,7 +119,7 @@ def get_Food_a4(times,month_and_day,a4_url_local_am, a4_url_local_pm):
         "Accept": "application/json, text/javascript, */*; q=0.01",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Connection": "keep-alive",
-        "Cookie": "JSESSIONID=8013922FADE51DCB8616E75E3BB43DBB-n2; casgwusercred=nUd96pDymhxFOD46b7uiQ-64MV5EqoteD1unj1SUg-vpPsmyEy3lVNxyMvIB35zB71ROFHUaTBz0u3a4rk_6ojkPGX0WWU3db9wQ8KrR2qNodV6DiQ3IupdQ6o_OHNzKmP7JU0HnnczxfPOi_ysfrQ; crosgwusercred=rzrZQtvNt0rOKPYW94JmAvcyeqOsWeJCUN46CPr9EtqrIKwGoT43ruVk-tijTjKE4715f0450402291c77b33567dcb2f9c7",
+        "Cookie": Cookies ,
     }
 
     response = requests.get(a4_url, headers=headers)
@@ -131,6 +128,7 @@ def get_Food_a4(times,month_and_day,a4_url_local_am, a4_url_local_pm):
         print("请求失败！")
         exit(1)
     else:
+        print("请求成功！",response.status_code)
         page_content = response.json()
         matched_content = []
         
@@ -159,9 +157,7 @@ def get_Food_a4(times,month_and_day,a4_url_local_am, a4_url_local_pm):
 
 def send_kunkun(food, kunming):
     send_url = kunming
-    
     response_a2 = requests.post(send_url, json=food_a2)
-    # response_a4 = requests.post(send_url, json=food_a4)
     
     if response_a2.status_code == 200:
         result = response_a2.json()
@@ -171,7 +167,6 @@ def send_kunkun(food, kunming):
 
 def send_kunkun2(food, kunming):
     send_url = kunming
-    # response_a2 = requests.post(send_url, json=food_a2)
     response_a4 = requests.post(send_url, json=food_a4)
     
     if response_a4.status_code == 200:
@@ -182,9 +177,9 @@ def send_kunkun2(food, kunming):
 
 if __name__ == '__main__':
     times , month_and_day = get_local()
-    a2_url_local_am, a2_url_local_pm, a4_url_local_am, a4_url_local_pm, yuanshen, fan, kunming = get_json_()
-    food_a2 = get_Food_a2(times, month_and_day,a2_url_local_am, a2_url_local_pm)
-    food_a4 = get_Food_a4(times, month_and_day,a4_url_local_am, a4_url_local_pm)
+    a2_url_local_am, a2_url_local_pm, a4_url_local_am, a4_url_local_pm, yuanshen, fan, kunming, Cookies = get_json_()
+    food_a2 = get_Food_a2(times, month_and_day,a2_url_local_am, a2_url_local_pm, Cookies)
+    food_a4 = get_Food_a4(times, month_and_day,a4_url_local_am, a4_url_local_pm, Cookies)
     send_kunkun(food_a2,kunming)
     time.sleep(3)
     send_kunkun2(food_a4,kunming)
