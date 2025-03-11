@@ -4,12 +4,28 @@ LABEL maintainer="shuaima6@iflytek.com"
 ENV DEBIAN_FRONTEND noninteractive
 RUN sed -i 's|ports.ubuntu.com|mirrors.ustc.edu.cn|g' /etc/apt/sources.list
 
+# 安装 Python 3.9
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    python3 \
-    python3-pip \
-    && rm -rf /var/lib/apt/lists/
+    curl \
+    software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+    python3.9 \
+    python3.9-distutils \
+    && rm -rf /var/lib/apt/lists/*
 
+# 将 Python 3.9 设置为默认版本
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1 && \
+    update-alternatives --set python3 /usr/bin/python3.9
+
+# 确保 pip 指向 Python 3.9
+RUN curl https://mirrors.aliyun.com/pypi/get-pip.py -o get-pip.py && \
+    python3.9 get-pip.py && \
+    rm get-pip.py
+
+# 继续安装其他依赖
 RUN apt-get clean
 RUN apt-get update && apt-get install -y \
     tmux \
@@ -18,11 +34,10 @@ RUN apt-get update && apt-get install -y \
     iputils-clockdiff \
     openssh-server  passwd \
     vim \
-    cron \
+    autossh \
     mc \
     ncdu \
     mc \
-    curl \
     git \
     wget \
     nmap \
@@ -96,12 +111,13 @@ RUN pip3 install --no-cache-dir --trusted-host files.pythonhosted.org --upgrade 
     paramiko \
     flasgger \
     requests \
-    fake_useragent \
+    fake-useragent==2.0.3 \
     lxml \
     bs4 \
     lxml \
     moviepy \
-    keras
+    keras \
+    --ignore-installed blinker
 
 RUN apt-get update && apt-get install -y \
     libhdf5-dev \
@@ -114,12 +130,17 @@ RUN pip config set global.index-url https://pypi.org/simple
 RUN pip3 install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow
 
 
-RUN useradd -m -d /home/myuser -s /bin/bash myuser && \
-    echo 'myuser:auto' | chpasswd
+# RUN useradd -m -d /home/myuser -s /bin/bash myuser && \
+#     echo 'myuser:auto' | chpasswd
 
-RUN sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+    sed -i -E 's/^#?AllowTcpForwarding.*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && \
+    sed -i -E 's/^#?GatewayPorts.*/GatewayPorts yes/' /etc/ssh/sshd_config
 
-RUN service ssh start
+RUN echo 'root:NIUde' | chpasswd && \
+    rm -f /etc/ssh/ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key.pub && \
+    ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key -N "" && \
+    service ssh start
 
 
 ENV ROS_DISTRO=noetic
