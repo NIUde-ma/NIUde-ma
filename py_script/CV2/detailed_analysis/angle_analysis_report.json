@@ -1,0 +1,32 @@
+{
+  "analysis_time": "2025-12-09 06:08:27",
+  "camera_image": "./potor/20251203-153210.jpg",
+  "simulation_image": "./potor/img_v3_02sp_e51b3634-66a9-4d6b-9b3d-69e53271910g.jpg",
+  "image_dimensions": {
+    "original_camera": [
+      2756,
+      1746
+    ],
+    "original_simulation": [
+      2756,
+      1746
+    ],
+    "resized": [
+      2756,
+      1746
+    ]
+  },
+  "method": "angle_analysis",
+  "angles": {
+    "camera_angle": 2.0359885841334937,
+    "simulation_angle": 2.8325732552810936,
+    "angle_difference": 0.7965846711475999
+  },
+  "projected_image": "./detailed_analysis/angle_projection.jpg",
+  "difference_plot": "./detailed_analysis/angle_difference.jpg",
+  "assessment": {
+    "status": "PASS",
+    "message": "安装角度偏差(0.80°)在允许范围内(≤2.0°)",
+    "recommendation": "安装合格，无需调整"
+  }
+}
